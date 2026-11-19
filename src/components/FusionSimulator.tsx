@@ -1,3 +1,4 @@
+import { scheduleCloudPush } from "../lib/storage";
 import { useEffect, useState } from "preact/hooks";
 
 interface FusionSpell {
@@ -106,7 +107,7 @@ export default function FusionSimulator({ gameId, fusions }: { gameId: string; f
 
   const updateParty = (next: Slot[]) => {
     setParty(next);
-    try { localStorage.setItem(storageKey, JSON.stringify(next)); } catch {}
+    try { localStorage.setItem(storageKey, JSON.stringify(next)); scheduleCloudPush(); } catch {}
   };
 
   const setSkill = (idx: number, skill: string) => {

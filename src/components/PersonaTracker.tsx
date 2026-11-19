@@ -1,3 +1,4 @@
+import { scheduleCloudPush } from "../lib/storage";
 import { useEffect, useState } from "preact/hooks";
 
 interface Persona {
@@ -59,7 +60,7 @@ export default function PersonaTracker({ gameId, personas }: { gameId: string; p
 
   const save = (next: TrackerState) => {
     setSt(next);
-    try { localStorage.setItem(storageKey, JSON.stringify(next)); } catch {}
+    try { localStorage.setItem(storageKey, JSON.stringify(next)); scheduleCloudPush(); } catch {}
   };
 
   const adjCards = (delta: number) => save({ ...st, freeCards: Math.max(0, st.freeCards + delta) });
