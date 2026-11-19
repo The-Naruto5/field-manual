@@ -1,0 +1,409 @@
+{
+  "game": "persona2-ep",
+  "sideQuests": [
+    {
+      "id": "ep-shrine",
+      "type": "Missable",
+      "name": "Mt. Mifune Old Shrine (10,000 Yen)",
+      "window": "Ch. 1 — Before finishing Sanitarium",
+      "reward": "Unlocks Junnosuke Kuroda, Tenchu-Satsu, Carma Ring & Alice",
+      "missable": true
+    },
+    {
+      "id": "ep-mansearch",
+      "type": "Standard",
+      "name": "Shiraishi Man-Searcher (21 Targets)",
+      "window": "Ch. 2–5 (unlock via Toku)",
+      "reward": "Legendary Blacksmith (Takumi Asano) -> Padparcha Legendary forging",
+      "missable": false
+    },
+    {
+      "id": "ep-hastur",
+      "type": "Secret",
+      "name": "Secret Hastur Card (HASTURCOMEFORTH)",
+      "window": "Anytime after 2X Slash opens",
+      "reward": "King in Yellow Material Card (Tower Hastur Lv. 62) at Maya's desk",
+      "missable": false
+    },
+    {
+      "id": "ep-bomb",
+      "type": "Standard",
+      "name": "Bomb Shelter (Areas 1–8)",
+      "window": "Ch. 2–5 beneath Kasugayama High",
+      "reward": "Shaka, Izanami, Odin, Virocana & Alice Material Cards",
+      "missable": false
+    },
+    {
+      "id": "ep-ex",
+      "type": "Postgame",
+      "name": "Extra Dungeon (EX Dungeon)",
+      "window": "NG+ after clearing BOTH Nate & Ellen routes",
+      "reward": "Gabriel, Alfred, Azazel Material Cards & Philemon superboss",
+      "missable": false
+    }
+  ],
+  "ultimateWeapons": [
+    {
+      "id": "ep-uw-gun",
+      "char": "Maya / Katsuya",
+      "weapon": "Legendary Handgun -> Megido Fire (180 ATK Alm)",
+      "req": "Forge at Padparcha (Legendbright + Akashic Ring + 100k Yen) + Demon Rumor. (Strongest gun overall: Gun of Might, 255 ATK from Rank 8 Lucifer.)"
+    },
+    {
+      "id": "ep-uw-glove",
+      "char": "Ulala",
+      "weapon": "Legendary Glove -> Fist of Godliness (180 ATK Nuc)",
+      "req": "Forge at Padparcha (Legendbright + Akashic Ring + 100k Yen) + Demon Rumor."
+    },
+    {
+      "id": "ep-uw-coin",
+      "char": "Baofu",
+      "weapon": "Legendary Coin -> Nayuta (180 ATK Ear, +60 MAtk)",
+      "req": "Forge at Padparcha + Demon Rumor (or Gougasha for Ice/Freeze)."
+    },
+    {
+      "id": "ep-uw-katana",
+      "char": "Nate / Tatsuya",
+      "weapon": "Legendary Katana -> Laevateinn (180 ATK Fir, +60 MAtk)",
+      "req": "Forge at Padparcha + Demon Rumor (or Victory for Counterattack)."
+    },
+    {
+      "id": "ep-uw-rapier",
+      "char": "Ellen",
+      "weapon": "Legendary Rapier -> Genesis (180 ATK Nuc, +60 MAtk)",
+      "req": "Forge at Padparcha + Demon Rumor (or Paradoxer for HP Absorb)."
+    }
+  ],
+  "rumormongers": [
+    {
+      "name": "Rumormonger Chunky (Toro)",
+      "loc": "Gatten Sushi",
+      "district": "Rengedai"
+    },
+    {
+      "name": "Rumormonger Barkeep (Master)",
+      "loc": "Jolly Roger",
+      "district": "Konan"
+    },
+    {
+      "name": "Rumormonger Toku",
+      "loc": "Red Lantern Shiraishi",
+      "district": "Hirasaka"
+    },
+    {
+      "name": "Rumormonger Chikalin",
+      "loc": "Peace Diner",
+      "district": "Yumezaki"
+    },
+    {
+      "name": "Demon Rumormonger Nekomata",
+      "loc": "Kuzunoha Agency Bathroom (Lucky Cat)",
+      "district": "Aoba"
+    },
+    {
+      "name": "Rumor-Lovin' Bartender",
+      "loc": "Ebony",
+      "district": "Narumi"
+    },
+    {
+      "name": "2X Slash Message Board",
+      "loc": "2X Slash",
+      "district": "Aoba"
+    },
+    {
+      "name": "Sumaru Genie",
+      "loc": "Seaside Mall (Fortunes & Affinity)",
+      "district": "Konan"
+    }
+  ],
+  "materialCards": [
+    {
+      "id": "mc-fuuma",
+      "card": "Book of the Fuuma",
+      "persona": "Fuuma Kotarou",
+      "arcana": "Fool",
+      "lv": 65,
+      "how": "Mystic Change Tobi Katou.",
+      "route": "all"
+    },
+    {
+      "id": "mc-rangda",
+      "card": "Dancing Mask",
+      "persona": "Rangda",
+      "arcana": "Magician",
+      "lv": 69,
+      "how": "Defeat Rangda in Sumaru Castle.",
+      "route": "all"
+    },
+    {
+      "id": "mc-izanami",
+      "card": "Path to Hades",
+      "persona": "Izanami",
+      "arcana": "Priestess",
+      "lv": 51,
+      "how": "Defeat Izanami in Bomb Shelter Room 5.",
+      "route": "all"
+    },
+    {
+      "id": "mc-lakshmi",
+      "card": "Water Lotus Petal",
+      "persona": "Lakshmi",
+      "arcana": "Priestess",
+      "lv": 71,
+      "how": "18,000 coins at Mu Continent.",
+      "route": "all"
+    },
+    {
+      "id": "mc-kali",
+      "card": "Necklace of Heads",
+      "persona": "Kali",
+      "arcana": "Empress",
+      "lv": 61,
+      "how": "15,000 coins at Mu Continent.",
+      "route": "all"
+    },
+    {
+      "id": "mc-gaia",
+      "card": "Cradle of Creation",
+      "persona": "Gaia",
+      "arcana": "Empress",
+      "lv": 78,
+      "how": "Defeat Gaia in the final area of Monado Mandala.",
+      "route": "all"
+    },
+    {
+      "id": "mc-odin",
+      "card": "Runic Monument",
+      "persona": "Odin",
+      "arcana": "Emperor",
+      "lv": 65,
+      "how": "Defeat Odin in Bomb Shelter Room 6.",
+      "route": "all"
+    },
+    {
+      "id": "mc-vishnu",
+      "card": "Avatarah",
+      "persona": "Vishnu",
+      "arcana": "Emperor",
+      "lv": 86,
+      "how": "Mystic Change Lakshmi.",
+      "route": "all"
+    },
+    {
+      "id": "mc-shaka",
+      "card": "Yuiga Dokuson",
+      "persona": "Shaka",
+      "arcana": "Hierophant",
+      "lv": 29,
+      "how": "Defeat Shaka in Bomb Shelter Room 2.",
+      "route": "all"
+    },
+    {
+      "id": "mc-alfred",
+      "card": "Amber Eyeglasses",
+      "persona": "Alfred (Yamaoka)",
+      "arcana": "Hierophant",
+      "lv": 75,
+      "how": "Area 2-C of the Extra Dungeon (EX).",
+      "route": "nate"
+    },
+    {
+      "id": "mc-brahma",
+      "card": "Eyepatch",
+      "persona": "Brahma",
+      "arcana": "Hierophant",
+      "lv": 82,
+      "how": "20,000 coins at Mu Continent.",
+      "route": "all"
+    },
+    {
+      "id": "mc-alice",
+      "card": "Champion",
+      "persona": "Alice",
+      "arcana": "Lovers",
+      "lv": 80,
+      "how": "Contract Alice in Bomb Shelter Room 8, make her Joyful while wearing Carma Ring.",
+      "route": "all"
+    },
+    {
+      "id": "mc-siva",
+      "card": "Maximum Tempest",
+      "persona": "Siva (Shiva)",
+      "arcana": "Chariot",
+      "lv": 85,
+      "how": "Mystic Change Skanda.",
+      "route": "all"
+    },
+    {
+      "id": "mc-nata",
+      "card": "Paopei",
+      "persona": "Nata",
+      "arcana": "Justice",
+      "lv": 38,
+      "how": "Defeat Nata in Aoba Park.",
+      "route": "all"
+    },
+    {
+      "id": "mc-bishamon",
+      "card": "Chess Piece",
+      "persona": "Bishamonten",
+      "arcana": "Justice",
+      "lv": 59,
+      "how": "15,000 coins at Mu Continent.",
+      "route": "all"
+    },
+    {
+      "id": "mc-hyperion",
+      "card": "Ancient Sun",
+      "persona": "Hyperion",
+      "arcana": "Justice",
+      "lv": 63,
+      "how": "Found in Mt. Iwato (Katsuya Ultimate).",
+      "route": "all"
+    },
+    {
+      "id": "mc-skuld",
+      "card": "Urdrbrunn",
+      "persona": "Skuld",
+      "arcana": "Fortune",
+      "lv": 66,
+      "how": "Found in Ameno Torifune B6.",
+      "route": "all"
+    },
+    {
+      "id": "mc-prometheus",
+      "card": "Bronze Ring",
+      "persona": "Prometheus",
+      "arcana": "Hanged Man",
+      "lv": 61,
+      "how": "Found in Mt. Iwato (Baofu Ultimate).",
+      "route": "all"
+    },
+    {
+      "id": "mc-azazel",
+      "card": "Black Goat",
+      "persona": "Azazel",
+      "arcana": "Hanged Man",
+      "lv": 90,
+      "how": "EX Dungeon: Persona Talk with Shax, Barbatos & Adramelech.",
+      "route": "all"
+    },
+    {
+      "id": "mc-charon",
+      "card": "Styx",
+      "persona": "Charon",
+      "arcana": "Death",
+      "lv": 47,
+      "how": "10,000 coins at Mu Continent.",
+      "route": "all"
+    },
+    {
+      "id": "mc-suzaku",
+      "card": "Scarlet Wings",
+      "persona": "Suzaku",
+      "arcana": "Temperance",
+      "lv": 63,
+      "how": "Found in Ameno Torifune B6.",
+      "route": "all"
+    },
+    {
+      "id": "mc-lucifer",
+      "card": "Morning Star",
+      "persona": "Lucifer",
+      "arcana": "Devil",
+      "lv": 99,
+      "how": "50,000 coins at Mu Continent (Nate route).",
+      "route": "nate"
+    },
+    {
+      "id": "mc-hastur",
+      "card": "King in Yellow",
+      "persona": "Hastur",
+      "arcana": "Tower",
+      "lv": 62,
+      "how": "2X Slash Wang Long girl -> enter HASTURCOMEFORTH -> Maya's desk at Kismet.",
+      "route": "all"
+    },
+    {
+      "id": "mc-iris",
+      "card": "Rainbow Gleam",
+      "persona": "Iris",
+      "arcana": "Star",
+      "lv": 18,
+      "how": "Locker on GOLD 1F.",
+      "route": "all"
+    },
+    {
+      "id": "mc-astria",
+      "card": "Ortyx",
+      "persona": "Astria",
+      "arcana": "Star",
+      "lv": 62,
+      "how": "Found in Mt. Iwato (Ulala Ultimate).",
+      "route": "all"
+    },
+    {
+      "id": "mc-artemis",
+      "card": "Silver Bow",
+      "persona": "Artemis",
+      "arcana": "Moon",
+      "lv": 63,
+      "how": "Found in Mt. Iwato (Maya Ultimate).",
+      "route": "all"
+    },
+    {
+      "id": "mc-nanna",
+      "card": "Moon of Ur",
+      "persona": "Nanna",
+      "arcana": "Moon",
+      "lv": 73,
+      "how": "Mystic Change Tsukuyomi.",
+      "route": "all"
+    },
+    {
+      "id": "mc-ildana",
+      "card": "Dul-Dauna's Oar",
+      "persona": "Il-Dana",
+      "arcana": "Sun",
+      "lv": 46,
+      "how": "Treasure chest on Nichirinmaru.",
+      "route": "all"
+    },
+    {
+      "id": "mc-virocana",
+      "card": "1000 Lotus Petals",
+      "persona": "Virocana",
+      "arcana": "Sun",
+      "lv": 73,
+      "how": "Defeat Virocana in Bomb Shelter Room 7.",
+      "route": "all"
+    },
+    {
+      "id": "mc-gabriel",
+      "card": "Lily",
+      "persona": "Gabriel",
+      "arcana": "Judgement",
+      "lv": 76,
+      "how": "Area 2-A of the Extra Dungeon (EX).",
+      "route": "ellen"
+    },
+    {
+      "id": "mc-satan",
+      "card": "Accuser's Diary",
+      "persona": "Satan",
+      "arcana": "Judgement",
+      "lv": 96,
+      "how": "50,000 coins at Mu Continent (Ellen route).",
+      "route": "ellen"
+    },
+    {
+      "id": "mc-njord",
+      "card": "Noatun",
+      "persona": "Njord",
+      "arcana": "World",
+      "lv": 38,
+      "how": "Mystic Change Grinbulsti.",
+      "route": "all"
+    }
+  ]
+}

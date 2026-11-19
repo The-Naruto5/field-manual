@@ -1,0 +1,281 @@
+{
+  "game": "persona2-is",
+  "items": [
+    {
+      "stage": "Elemental",
+      "name": "Blazing Burst",
+      "seq": "Fire, Fire",
+      "el": [
+        "FIR"
+      ],
+      "effect": "Dx-based Fire; single target"
+    },
+    {
+      "stage": "Elemental",
+      "name": "Towering Inferno",
+      "seq": "Water, Earth, Fire",
+      "el": [
+        "WAT",
+        "EAR",
+        "FIR"
+      ],
+      "effect": "Medium Fire; single target"
+    },
+    {
+      "stage": "Elemental",
+      "name": "Mega Blaze",
+      "seq": "Fire, Wind, Fire",
+      "el": [
+        "FIR",
+        "WND"
+      ],
+      "effect": "Dx-based Fire; all enemies"
+    },
+    {
+      "stage": "Elemental",
+      "name": "L'oiseau de Feu",
+      "seq": "Fire, Earth, Maragion",
+      "el": [
+        "FIR",
+        "EAR"
+      ],
+      "effect": "High Fire; all enemies"
+    },
+    {
+      "stage": "Elemental",
+      "name": "Salamander",
+      "seq": "Fire, Summon Spirits",
+      "el": [
+        "FIR"
+      ],
+      "effect": "Level-based Fire; all enemies"
+    },
+    {
+      "stage": "Elemental",
+      "name": "Heavy Rain",
+      "seq": "Water, Water",
+      "el": [
+        "WAT"
+      ],
+      "effect": "Dx-based Water; single target"
+    },
+    {
+      "stage": "Elemental",
+      "name": "Hydro Boost",
+      "seq": "Fire, Earth, Water",
+      "el": [
+        "FIR",
+        "EAR",
+        "WAT"
+      ],
+      "effect": "Medium Water; single target"
+    },
+    {
+      "stage": "Elemental",
+      "name": "Bane Splash",
+      "seq": "Water, Earth, Water",
+      "el": [
+        "WAT",
+        "EAR"
+      ],
+      "effect": "Dx-based Water; all enemies"
+    },
+    {
+      "stage": "Elemental",
+      "name": "Undine",
+      "seq": "Water, Summon Spirits",
+      "el": [
+        "WAT"
+      ],
+      "effect": "Level-based Water; all enemies"
+    },
+    {
+      "stage": "Elemental",
+      "name": "Dragon Flight",
+      "seq": "Wind, Wind",
+      "el": [
+        "WND"
+      ],
+      "effect": "Dx-based Wind; single target"
+    },
+    {
+      "stage": "Elemental",
+      "name": "Maxi Tempest",
+      "seq": "Wind, Fire, Wind",
+      "el": [
+        "WND",
+        "FIR"
+      ],
+      "effect": "Dx-based Wind; all enemies"
+    },
+    {
+      "stage": "Elemental",
+      "name": "Sylph",
+      "seq": "Wind, Summon Spirits",
+      "el": [
+        "WND"
+      ],
+      "effect": "Level-based Wind; all enemies"
+    },
+    {
+      "stage": "Elemental",
+      "name": "Boulder Smash",
+      "seq": "Earth, Earth",
+      "el": [
+        "EAR"
+      ],
+      "effect": "Dx-based Earth; single target"
+    },
+    {
+      "stage": "Elemental",
+      "name": "Craggy Fang",
+      "seq": "Earth, Water, Earth",
+      "el": [
+        "EAR",
+        "WAT"
+      ],
+      "effect": "Dx-based Earth; all enemies"
+    },
+    {
+      "stage": "Elemental",
+      "name": "Gnome",
+      "seq": "Earth, Summon Spirits",
+      "el": [
+        "EAR"
+      ],
+      "effect": "Level-based Earth; all enemies"
+    },
+    {
+      "stage": "Elemental",
+      "name": "Ice Blast / Ice Crush",
+      "seq": "Water, Wind, Bufula / Water, Earth, Bufudyne",
+      "el": [
+        "ICE",
+        "WAT"
+      ],
+      "effect": "100% Freeze; single / all"
+    },
+    {
+      "stage": "Elemental",
+      "name": "Thunder Blast / Crush",
+      "seq": "Fire, Wind, Zionga / Fire, Earth, Ziodyne",
+      "el": [
+        "ELE",
+        "FIR"
+      ],
+      "effect": "100% Shock; single / all"
+    },
+    {
+      "stage": "Elemental",
+      "name": "Kagutsuchi",
+      "seq": "Freila, Summon Spirits",
+      "el": [
+        "NUC"
+      ],
+      "effect": "Level-based Nuclear; all enemies"
+    },
+    {
+      "stage": "Elemental",
+      "name": "Meltdown / Tidal Wave / Giga Cyclone / Last Quake",
+      "seq": "Element, Almighty, Ma-dyne",
+      "el": [
+        "ALM"
+      ],
+      "effect": "High Dx-based damage"
+    },
+    {
+      "stage": "Elemental",
+      "name": "Hachiman",
+      "seq": "Megidola, Summon Spirits",
+      "el": [
+        "ALM"
+      ],
+      "effect": "Level-based Almighty; all enemies"
+    },
+    {
+      "stage": "Instant Kill",
+      "name": "Atomic Destruction",
+      "seq": "Fire, Water, Zanma",
+      "el": [
+        "FIR",
+        "WAT"
+      ],
+      "effect": "100% instant kill; single target"
+    },
+    {
+      "stage": "Instant Kill",
+      "name": "Black Hole",
+      "seq": "Wind, Dark, Grydyne",
+      "el": [
+        "WND",
+        "DRK"
+      ],
+      "effect": "50% instant kill; all enemies"
+    },
+    {
+      "stage": "Instant Kill",
+      "name": "Death's Roulette",
+      "seq": "Light, Dark",
+      "el": [
+        "LGT",
+        "DRK"
+      ],
+      "effect": "Instant kill lowest-luck target"
+    },
+    {
+      "stage": "Recovery",
+      "name": "Diamai / Mediamai",
+      "seq": "Dia or Media, Healing Melody",
+      "el": [
+        "WAT"
+      ],
+      "effect": "1/8 max HP regen per turn"
+    },
+    {
+      "stage": "Recovery",
+      "name": "Party Buffs (-kaja)",
+      "seq": "-kaja, Heartfelt Prayer",
+      "el": [
+        "ALM"
+      ],
+      "effect": "1.5x party-wide buff (note: Sukukaja + Heartfelt Prayer is misnamed Masukunda in PSP EN)"
+    },
+    {
+      "stage": "Physical",
+      "name": "Pegasus Strike",
+      "seq": "Wind, Sonic Punch",
+      "el": [
+        "PHY",
+        "WND"
+      ],
+      "effect": "High Strike/Wind; single target"
+    },
+    {
+      "stage": "Persona",
+      "name": "Grand Cross",
+      "seq": "Nova Kaiser, Bloody Honeymoon, Foamy Lover, Cross Fortune, Crescent Mirror",
+      "el": [
+        "ALM"
+      ],
+      "effect": "5 Ultimate Personas; high AoE"
+    },
+    {
+      "stage": "Persona",
+      "name": "Ohm / Trimurti",
+      "seq": "Pralaya + Stiti + Suristi (Shiva/Vishnu/Brahma)",
+      "el": [
+        "ALM"
+      ],
+      "effect": "999 Almighty AoE / 100% instant kill (Trimurti: Thunderous Fury + Megidolaon + Alpha Blaster)"
+    },
+    {
+      "stage": "Persona",
+      "name": "Armageddon",
+      "seq": "Omega Cluster (Lucifer), Alpha Blaster (Satan)",
+      "el": [
+        "ALM"
+      ],
+      "effect": "100% destroy all enemies (incl. bosses)"
+    }
+  ]
+}

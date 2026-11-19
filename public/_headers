@@ -1,0 +1,10 @@
+/*
+  X-Frame-Options: DENY
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: same-origin
+
+/sw.js
+  Cache-Control: no-cache
+
+/pagefind/*
+  Cache-Control: public, max-age=86400

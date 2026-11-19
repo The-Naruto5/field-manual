@@ -1,0 +1,16 @@
+{
+  "name": "Field Manual \u2014 Private Game Guides",
+  "short_name": "Field Manual",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#121316",
+  "theme_color": "#121316",
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

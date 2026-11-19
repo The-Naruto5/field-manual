@@ -1,0 +1,38 @@
+---
+import { getCollection } from "astro:content";
+import AppShell from "../../../layouts/AppShell.astro";
+import ResumeButton from "../../../components/ResumeButton";
+import { PATHS } from "../../../config/paths";
+
+export async function getStaticPaths() {
+  const games = await getCollection("games");
+  return games.map(g => ({ params: { game: g.data.id }, props: { game: g.data } }));
+}
+const { game } = Astro.props;
+const chapters = (await getCollection("chapters"))
+  .filter(c => c.data.game === game.id)
+  .sort((a, b) => a.data.order - b.data.order);
+const stepList = chapters.flatMap(ch => ch.data.steps.map(s => ({ chId: ch.data.id, stepId: s.id })));
+---
+<AppShell title={game.title} gameId={game.id} accent={game.accent}>
+  <div class="ch-head" style="display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:12px;">
+    <div class="ch-num-bg">HUB</div>
+    <div>
+      <h1 class="ch-title">{game.title} — Choose Path</h1>
+      <p style="font-size:13px;color:var(--muted);margin:4px 0 0;">{game.summary}</p>
+    </div>
+    <ResumeButton client:load gameId={game.id} stepList={stepList} />
+  </div>
+  <div class="grid-2">
+    {Object.values(PATHS).map(p => (
+      <div class="panel">
+        <div style="display:flex;justify-content:space-between;align-items:center;">
+          <strong class="fh" style="font-size:18px;">{p.name}</strong>
+          <span class="fm" style="font-size:12px;color:var(--muted);">{p.time}</span>
+        </div>
+        <p style="font-size:13px;color:var(--muted);">{p.suits}</p>
+        <a class="btn btn-accent" href={`/g/${game.id}/${p.id}/ch01`}>Start {p.name}</a>
+      </div>
+    ))}
+  </div>
+</AppShell>

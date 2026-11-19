@@ -1,0 +1,14 @@
+{
+  "game": "persona2-is",
+  "terms": {
+    "Rumor": "Spreading a rumor at Kuzunoha Detective Agency (human rumors) or via Pact demons (demon rumors) makes it become reality in Sumaru City.",
+    "Fusion Spell": "Casting specific element or skill types consecutively in a single round triggers a combo spell. Killing the last foe with one boosts +2 Rank Up and Mutation odds.",
+    "Contact": "Negotiating with demons in battle. Raise Eager 3x for Tarot Cards, or raise Happy 3x to form a Pact.",
+    "Eager": "Yellow emotion meter. Raising Eager 3x ends the fight peacefully and awards Tarot Cards matching the demon's Arcana.",
+    "Pact": "Formed by raising Happy 3x. Encountering that demon again lets you ask for money, items, Free Cards, or demon rumors.",
+    "Estoma": "Field/Persona spell (e.g. Nemesis Lv. 24, Umayadono-Ouji Lv. 23) that prevents random encounters with lower-level demons.",
+    "Free Card": "Blank Tarot Card earned from Pact demons when raising Eager; convertible to any Arcana at the Velvet Room Painter.",
+    "Prime Persona": "Mid-game upgraded Persona granted by Philemon in Chapter 3 if you trust your party members in key Chapter 1–3 dialogues.",
+    "Dx": "Dexterity — the highest-priority stat in Persona 2 (governs magic/Fusion Spell damage). Raise to 60–80 first."
+  }
+}

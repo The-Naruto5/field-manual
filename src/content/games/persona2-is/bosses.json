@@ -1,0 +1,232 @@
+{
+  "game": "persona2-is",
+  "items": [
+    {
+      "ch": "Ch. 1",
+      "name": "Principal Hanya",
+      "loc": "Seven Sisters 4F Clock Tower",
+      "lv": "7",
+      "hp": "662",
+      "weak": [
+        "FIR"
+      ],
+      "tactic": "Weak ONLY to Fire; nulls Water & Electric. Spam Fire Fusion Spells and answer \"No, he made it.\" afterward."
+    },
+    {
+      "ch": "Ch. 1",
+      "name": "Leader (Optional)",
+      "loc": "Club Zodiac",
+      "lv": "9",
+      "hp": "794",
+      "weak": [
+        "FIR"
+      ],
+      "tactic": "WARNING: Fighting him instead of choosing \"Wait and see what happens\" permanently locks out Eikichi's Prime Persona!"
+    },
+    {
+      "ch": "Ch. 1",
+      "name": "Council President",
+      "loc": "Kasugayama 4F Roof",
+      "lv": "14",
+      "hp": "740",
+      "weak": [
+        "FIR",
+        "EAR",
+        "PHY"
+      ],
+      "tactic": "Weak to Fire, Earth, Ranged & Thrown; drains Water & Ice."
+    },
+    {
+      "ch": "Ch. 2",
+      "name": "Prince Taurus",
+      "loc": "Aoba Outdoor Concert Stage",
+      "lv": "24",
+      "hp": "1,223",
+      "weak": [
+        "NONE"
+      ],
+      "tactic": "NO elemental weaknesses (repels Earth, nulls Ranged/Dark/Mind). Use non-Earth Fusion Spells + Media healing."
+    },
+    {
+      "ch": "Ch. 2",
+      "name": "Ixquic & Belphegor",
+      "loc": "Smile Hirasaka 5F",
+      "lv": "23 / 24",
+      "hp": "1,656 / 1,778",
+      "weak": [
+        "PHY",
+        "LGT"
+      ],
+      "tactic": "Ixquic weak to Sword & Light (nulls Ranged/Strike/Thrown/Havoc/Dark/Mind). Belphegor has NO weaknesses and resists Physical."
+    },
+    {
+      "ch": "Ch. 3",
+      "name": "King Leo",
+      "loc": "Aerospace Museum Roof",
+      "lv": "29",
+      "hp": "2,067",
+      "weak": [
+        "WAT",
+        "ICE"
+      ],
+      "tactic": "Weak to Water & Ice; drains Fire and repels Nuclear."
+    },
+    {
+      "ch": "Ch. 3",
+      "name": "[spoiler]Shadow Maya[/spoiler]",
+      "loc": "Mt. Iwato B4F Final Pool",
+      "lv": "38",
+      "hp": "2,582",
+      "weak": [
+        "NONE"
+      ],
+      "tactic": "No weaknesses (resists Elements/Almighty 2/4, nulls Dark/Mind). Party starts at ~half HP, but fight is straightforward."
+    },
+    {
+      "ch": "Ch. 4",
+      "name": "Longinus 13, 12, 11",
+      "loc": "Caracol Entrance (Mt. Katatsumuri)",
+      "lv": "39",
+      "hp": "1,210–1,508",
+      "weak": [
+        "FIR",
+        "EAR",
+        "WAT"
+      ],
+      "tactic": "13 weak Fire, 12 weak Earth, 11 weak Water; all resist Physical (1/4). Checkpoints before Caracol."
+    },
+    {
+      "ch": "Ch. 4",
+      "name": "Longinus 10, 9, 8 / [spoiler]Lady Scorpio & Shadow Yukino[/spoiler]",
+      "loc": "Caracol B4F (Central Bridge)",
+      "lv": "41 / 42–43",
+      "hp": "2,265 / 2,274–2,504",
+      "weak": [
+        "WND",
+        "EAR",
+        "FIR",
+        "ICE"
+      ],
+      "tactic": "If Yukino stayed: Longinus 10/9/8 (Wind/Earth/Fire). If Yukino left: Lady Scorpio (Wind) & Shadow Yukino (Ice)."
+    },
+    {
+      "ch": "Ch. 4",
+      "name": "Joker & [spoiler]Angel Joker[/spoiler]",
+      "loc": "Caracol B6F",
+      "lv": "45 / 46",
+      "hp": "2,816 / 3,417",
+      "weak": [
+        "DRK"
+      ],
+      "tactic": "Joker has no weakness (repels Light/Dark). Angel Joker is weak to Dark (2x) and nulls Light/Nerve/Mind. Spam Fusion Spells + buffs."
+    },
+    {
+      "ch": "Ch. 4",
+      "name": "Longinus 7, 6, 5",
+      "loc": "Aquarius Temple 3F",
+      "lv": "48",
+      "hp": "2,500 each",
+      "weak": [
+        "EAR",
+        "WND",
+        "WAT"
+      ],
+      "tactic": "7 weak Earth, 6 weak Wind, 5 weak Water; all resist Physical (1/4). Reward: Wind Crystal Skull."
+    },
+    {
+      "ch": "Ch. 4",
+      "name": "[spoiler]Shadow Eikichi / Shadow Ginko / Shadow Tatsuya[/spoiler]",
+      "loc": "Scorpio / Taurus / Leo Temples",
+      "lv": "52 / 52 / 53",
+      "hp": "3,711 / 3,423 / 3,590",
+      "weak": [
+        "LGT"
+      ],
+      "tactic": "All three are weak to Light (2x). Equip each character's Ultimate Persona (Hades/Venus/Apollo) before fighting their Shadow."
+    },
+    {
+      "ch": "Ch. 5",
+      "name": "Longinus 4, 3, 2, 1",
+      "loc": "Xibalba B8F Lamat Hall",
+      "lv": "51–54 / 55",
+      "hp": "4,000–6,000",
+      "weak": [
+        "WAT",
+        "WND",
+        "FIR"
+      ],
+      "tactic": "\"Definitely\": L4–2 weak Water/Wind/Fire (4,000 HP), L1 none (5,000 HP). \"Not so sure\": L4–2 weak Ice/Elec/Nuc (5,000 HP), L1 6,000 HP."
+    },
+    {
+      "ch": "Ch. 5",
+      "name": "Metal Daddy",
+      "loc": "Xibalba B8F Muluk' Hall",
+      "lv": "59",
+      "hp": "4,773",
+      "weak": [
+        "NONE"
+      ],
+      "tactic": "No weaknesses; nulls Light/Dark/Nerve/Mind. Watch for Pressure Point (instant Strike kill) & buff defense."
+    },
+    {
+      "ch": "Ch. 5",
+      "name": "Metal Mama",
+      "loc": "Xibalba B9F Ok Hall",
+      "lv": "60",
+      "hp": "5,308",
+      "weak": [
+        "NONE"
+      ],
+      "tactic": "Jun absent. Repels ALL Magic & Almighty — use Physical/Melee attacks only."
+    },
+    {
+      "ch": "Ch. 5",
+      "name": "5x Bolontiku",
+      "loc": "Xibalba B9F Cryonics Room",
+      "lv": "58 (Rec. 65+)",
+      "hp": "2,200 each",
+      "weak": [
+        "PHY",
+        "WAT",
+        "ICE",
+        "WND",
+        "FIR",
+        "EAR"
+      ],
+      "tactic": "Type 2 (Maya) repels ALL Magic & Almighty (weak only to Physical). Types 1/3/4/5 weak to Water+Ice / Wind / Fire / Earth."
+    },
+    {
+      "ch": "Ch. 5",
+      "name": "[spoiler]Fuhrer[/spoiler]",
+      "loc": "Heart of Xibalba",
+      "lv": "63",
+      "hp": "7,792",
+      "weak": [
+        "NONE"
+      ],
+      "tactic": "No weaknesses; watch for Holy Grail (1–3 turn invincibility) & Holy Lance (Persona seal). Auto full heal afterward."
+    },
+    {
+      "ch": "Ch. 5",
+      "name": "[spoiler]Great Father[/spoiler] (Final)",
+      "loc": "Heart of Xibalba",
+      "lv": "65 / 63",
+      "hp": "13,308 / 5,000",
+      "weak": [
+        "NONE"
+      ],
+      "tactic": "Head (Lv. 65, 13,308 HP) & 4 parts (Lv. 63, 5,000 HP each). Use AoE Fusion Spells on parts, then single-target Head; bring SP recovery."
+    },
+    {
+      "ch": "Climax (PSP)",
+      "name": "Angel / Persephone / Kushiel",
+      "loc": "Climax Theater Films",
+      "lv": "18 / 25 / 65",
+      "hp": "—",
+      "weak": [
+        "ALM"
+      ],
+      "tactic": "Optional PSP Climax Theater scenario bosses."
+    }
+  ]
+}

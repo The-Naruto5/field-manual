@@ -1,0 +1,43 @@
+---
+import { getCollection } from "astro:content";
+import AppShell from "../../../../layouts/AppShell.astro";
+
+export async function getStaticPaths() {
+  const all = await getCollection("areas");
+  return all.flatMap(a => a.data.items.map(item => ({ params: { game: a.data.game, area: item.id }, props: { area: item, game: a.data.game } })));
+}
+const { area, game } = Astro.props;
+---
+<AppShell title={area.name} gameId={game}>
+  <div class="ch-head">
+    <div class="ch-num-bg">MAP</div>
+    <h1 class="ch-title">{area.name}</h1>
+    <p style="font-size:13px;color:var(--muted);margin:4px 0 0;">{area.legend}</p>
+  </div>
+  <div class="panel" id="areaMapWrap" data-game={game} set:html={area.svg} />
+  <p class="fm" style="font-size:11px;color:var(--muted);margin-top:8px;">Tip: Tap any colored map marker to jump directly to its matching checklist step in your active path.</p>
+
+  <script is:inline>
+    (function () {
+      const wrap = document.getElementById("areaMapWrap");
+      if (!wrap) return;
+      const gameId = wrap.dataset.game;
+      wrap.querySelectorAll(".map-marker[data-step]").forEach(el => {
+        el.setAttribute("role", "link");
+        el.setAttribute("tabindex", "0");
+        const go = () => {
+          const stepId = el.dataset.step;
+          const chId = stepId.split("-")[0];
+          let pathId = "beginner";
+          try {
+            const raw = localStorage.getItem("field_manual_v2");
+            if (raw) { const p = JSON.parse(raw); if (p.activePath) pathId = p.activePath; }
+          } catch {}
+          window.location.href = `/g/${gameId}/${pathId}/${chId}#step-${stepId}`;
+        };
+        el.addEventListener("click", go);
+        el.addEventListener("keydown", (e) => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); go(); } });
+      });
+    })();
+  </script>
+</AppShell>

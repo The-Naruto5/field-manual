@@ -1,0 +1,160 @@
+{
+  "game": "persona2-is",
+  "sideQuests": [
+    {
+      "id": "sq-factory",
+      "type": "Standard",
+      "name": "Abandoned Factory (Rooms 1–6 & 14 Notes)",
+      "window": "All game (Rooms 1–6 unlock Ch. 2–5)",
+      "reward": "6 Material Cards + Tatsuya & Ginko Ultimate Weapons",
+      "missable": false
+    },
+    {
+      "id": "sq-casino",
+      "type": "Standard",
+      "name": "Mu Casino",
+      "window": "After Hanya (Ch. 1); expands after Jun joins (Ch. 4)",
+      "reward": "Star Metal Boots, Waterlily Petal, Miracle Object, Skill Cards",
+      "missable": false
+    },
+    {
+      "id": "sq-sweep",
+      "type": "Standard",
+      "name": "Magazine Sweepstakes",
+      "window": "After Hanya (Ch. 1) — Toro rumor = best",
+      "reward": "Soma, AntiMatter, Musouken, Miracle Object",
+      "missable": false
+    },
+    {
+      "id": "rq-hanako",
+      "type": "Rumor",
+      "name": "Hanako Rumor",
+      "window": "Ch. 1 — Seven Sisters High (Class 2-B)",
+      "reward": "Brink Tea x5",
+      "missable": true
+    },
+    {
+      "id": "rq-bukimi",
+      "type": "Rumor",
+      "name": "Bukimi Rumor",
+      "window": "Ch. 1 — Kasugayama High (before 4F Roof)",
+      "reward": "Soma x5",
+      "missable": true
+    },
+    {
+      "id": "rq-dresser",
+      "type": "Rumor",
+      "name": "Dresser Hag Rumor",
+      "window": "Ch. 2 — Kounan PD (before Aoba Park)",
+      "reward": "Incense Card Set",
+      "missable": true
+    },
+    {
+      "id": "rq-idol",
+      "type": "Rumor",
+      "name": "Idol's Ghost Rumor",
+      "window": "Ch. 2 — Shiraishi Ramen (before finishing Aoba Park)",
+      "reward": "Frei Card",
+      "missable": true
+    },
+    {
+      "id": "rq-taxi",
+      "type": "Rumor",
+      "name": "Cursed Taxi Rumor",
+      "window": "Ch. 3 — Fuyuko in Peace Diner",
+      "reward": "Mediarama Card",
+      "missable": true
+    },
+    {
+      "id": "rq-escort",
+      "type": "Rumor",
+      "name": "Cursed Escort Rumor",
+      "window": "Ch. 3 — After Cursed Taxi",
+      "reward": "Sacrifice Card",
+      "missable": true
+    },
+    {
+      "id": "rq-kuchisake",
+      "type": "Rumor",
+      "name": "Kuchisake-Onna Rumor",
+      "window": "Ch. 3 — Old Man outside Mt. Iwato",
+      "reward": "Megido Card",
+      "missable": true
+    },
+    {
+      "id": "rq-geezer",
+      "type": "Rumor",
+      "name": "Jumping Geezer Rumor",
+      "window": "Ch. 4 — Hiker outside Mt. Katatsumuri",
+      "reward": "Holylight Card",
+      "missable": true
+    },
+    {
+      "id": "rq-kudan",
+      "type": "Rumor",
+      "name": "Kudan Rumor",
+      "window": "Ch. 4 — Sumaru TV -> Abandoned Factory",
+      "reward": "None in Innocent Sin (Kudan's Head has no turn-in)",
+      "missable": true
+    }
+  ],
+  "ultimateWeapons": [
+    {
+      "id": "uw-tatsuya",
+      "char": "Tatsuya",
+      "weapon": "Legendary Katana -> Laevateinn (160 ATK Fire)",
+      "req": "Read Notes 1–11 (Room #6 opens post-Silver River) -> demon rumor \"Hidden room at the factory\" -> Room 4 S-wall switchboard -> Kei Nanjo (1st option; wrong choice misses it)."
+    },
+    {
+      "id": "uw-michel",
+      "char": "Michel",
+      "weapon": "Legendary Case -> Legendary Supercase (160 ATK)",
+      "req": "Zodiac Temples+ demon rumor \"Shiraishi Ramen rumor\" -> talk to Ma'am -> spread at Agency -> pick 1st option (eat ramen) -> buy for 500,000 Yen."
+    },
+    {
+      "id": "uw-ginko",
+      "char": "Ginko",
+      "weapon": "Legendary Gloves -> Shinsa Bakunetsu Sho (160 ATK Alm)",
+      "req": "Read Notes 12–13 (Exec Suite) & Note 14 (1F cracked floor) -> demon rumor \"Waste treatment plant at the factory\" -> Room 6 B1F escalators S then W -> Reiji Kido (1st option)."
+    },
+    {
+      "id": "uw-maya",
+      "char": "Maya",
+      "weapon": "Legendary Gun -> Megido Fire (160 ATK Alm)",
+      "req": "Zodiac Temples+ demon rumor \"Clair de Lune rumor\" -> Garcon Soejima -> spread at Agency -> pick 1st option twice -> buy for 500,000 Yen."
+    },
+    {
+      "id": "uw-jun",
+      "char": "[spoiler]Jun[/spoiler]",
+      "weapon": "Legendary Flower -> Unearthly Flower (160 ATK)",
+      "req": "Requires Case & Gun -> Alaya Shrine boy -> Honmaru Park board -> Time Castle -> talk to all 5 Rumormongers -> spread Baofu's rumor (free from Maki at Tony's if Hanya lived, Sevens 3-B if not). NEVER spread Chikarin's (permanently lost)."
+    }
+  ],
+  "rumormongers": [
+    {
+      "name": "Toku",
+      "loc": "Honmaru Park",
+      "district": "Rengedai"
+    },
+    {
+      "name": "Toro",
+      "loc": "Gatten Sushi (Kameya Alley)",
+      "district": "Hirasaka"
+    },
+    {
+      "name": "Chikarin",
+      "loc": "Peace Diner (Central Avenue)",
+      "district": "Yumezaki"
+    },
+    {
+      "name": "Baofu",
+      "loc": "Double Slash (Aoba Way)",
+      "district": "Aoba"
+    },
+    {
+      "name": "Sumaru Genie",
+      "loc": "Sumaru Genie (Seaside Mall)",
+      "district": "Kounan"
+    }
+  ]
+}

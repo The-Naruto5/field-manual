@@ -1,0 +1,19 @@
+---
+import { getCollection } from "astro:content";
+import AppShell from "../../../../layouts/AppShell.astro";
+import PersonaTracker from "../../../../components/PersonaTracker";
+
+export async function getStaticPaths() {
+  const all = await getCollection("personas");
+  return all.map(p => ({ params: { game: p.data.game }, props: { personas: p.data.items, game: p.data.game } }));
+}
+const { personas, game } = Astro.props;
+---
+<AppShell title="Personas, Tarot Cards & Mutations" gameId={game}>
+  <div class="ch-head">
+    <div class="ch-num-bg">PER</div>
+    <h1 class="ch-title">Personas, Tarot Cards &amp; Mutations</h1>
+    <p style="font-size:13px;color:var(--muted);margin:4px 0 0;">Track Free Tarot Cards, Rank 8 Persona returns, and key Fusion/Mystic Change mutations.</p>
+  </div>
+  <PersonaTracker client:load gameId={game} personas={personas} />
+</AppShell>

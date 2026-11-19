@@ -1,0 +1,117 @@
+{
+  "game": "persona2-is",
+  "items": [
+    {
+      "name": "Pixie",
+      "arcana": "Lovers",
+      "lv": 2,
+      "role": "Early",
+      "note": "Early staple; can mutate into Budai (lowest-level Estoma)."
+    },
+    {
+      "name": "Kinnara",
+      "arcana": "Star",
+      "lv": 15,
+      "role": "Healer",
+      "note": "Low-SP Healing Melody for Diamai/Mediamai."
+    },
+    {
+      "name": "Jack Frost",
+      "arcana": "Lovers",
+      "lv": 18,
+      "role": "Early",
+      "note": "Enables Ice Blast and Pegasus Strike."
+    },
+    {
+      "name": "Nemesis",
+      "arcana": "Empress",
+      "lv": 24,
+      "role": "Estoma",
+      "note": "Keep all game for Estoma (skips lower-level fights)."
+    },
+    {
+      "name": "Sakya",
+      "arcana": "Hierophant",
+      "lv": 29,
+      "role": "LGT/DRK Null",
+      "note": "Needs Buddha's Words card (Factory Room 2); nulls Light/Dark/Nerve/Mind."
+    },
+    {
+      "name": "Agrippa",
+      "arcana": "Magician",
+      "lv": 31,
+      "role": "+1 Dx",
+      "note": "Earliest Summon Spirits + +1 Dx on level up."
+    },
+    {
+      "name": "Demeter",
+      "arcana": "World",
+      "lv": 31,
+      "role": "LGT/DRK Null",
+      "note": "+1 Dx/level, nullifies Light/Dark, Diarama."
+    },
+    {
+      "name": "Seioubo",
+      "arcana": "Empress",
+      "lv": 36,
+      "role": "Healer",
+      "note": "Heartfelt Prayer (party buffs) + elemental resists."
+    },
+    {
+      "name": "Baal",
+      "arcana": "Emperor",
+      "lv": 37,
+      "role": "Healer",
+      "note": "25 SP, Mediarama, Photon Cannon, +1 Dx/level."
+    },
+    {
+      "name": "Abe no Seimei",
+      "arcana": "Magician",
+      "lv": 41,
+      "role": "+1 Dx",
+      "note": "Reflects all magic, Summon Spirits, +1 Dx/level."
+    },
+    {
+      "name": "Manannan",
+      "arcana": "Magician",
+      "lv": 49,
+      "role": "+1 Dx",
+      "note": "+1 Dx/level, Fear Torrent, Deathbound, LGT/DRK resist."
+    },
+    {
+      "name": "Phoenix",
+      "arcana": "Temperance",
+      "lv": 54,
+      "role": "LGT/DRK Null",
+      "note": "Nullifies Light/Dark; add non-Fire Skill Card."
+    },
+    {
+      "name": "Mucalinda",
+      "arcana": "World",
+      "lv": 54,
+      "role": "Healer",
+      "note": "+1 Dx/level, strong resists, Samarecarm."
+    },
+    {
+      "name": "Odin",
+      "arcana": "Emperor",
+      "lv": 55,
+      "role": "+1 Dx",
+      "note": "Needs Rune Monument card (Factory Room 6); nulls all magic/status, Thunder Baptism, +1 Dx/level."
+    },
+    {
+      "name": "Vishnu",
+      "arcana": "Emperor",
+      "lv": 86,
+      "role": "Endgame",
+      "note": "Needs Avatar card; resists nearly all attacks, nulls Light/Dark/Nerve/Mind, +1 Dx/level."
+    },
+    {
+      "name": "Lucifer",
+      "arcana": "Devil",
+      "lv": 99,
+      "role": "Endgame",
+      "note": "Needs Morning Star card (or Michael mutation); unlocks Armageddon."
+    }
+  ]
+}

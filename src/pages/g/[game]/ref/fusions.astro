@@ -1,0 +1,19 @@
+---
+import { getCollection } from "astro:content";
+import AppShell from "../../../../layouts/AppShell.astro";
+import FusionSimulator from "../../../../components/FusionSimulator";
+
+export async function getStaticPaths() {
+  const all = await getCollection("fusions");
+  return all.map(f => ({ params: { game: f.data.game }, props: { fusions: f.data.items, game: f.data.game } }));
+}
+const { fusions, game } = Astro.props;
+---
+<AppShell title="Fusion Spells & Turn Simulator" gameId={game}>
+  <div class="ch-head">
+    <div class="ch-num-bg">FUS</div>
+    <h1 class="ch-title">Fusion Spells &amp; Turn Simulator</h1>
+    <p style="font-size:13px;color:var(--muted);margin:4px 0 0;">Reorder your 5-person turn sequence to see which Fusion Spells fire automatically.</p>
+  </div>
+  <FusionSimulator client:load gameId={game} fusions={fusions} />
+</AppShell>

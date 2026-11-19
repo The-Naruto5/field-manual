@@ -1,0 +1,140 @@
+{
+  "game": "persona2-ep",
+  "items": [
+    {
+      "stage": "Elemental",
+      "name": "Stone Rise",
+      "seq": "Water -> Fire -> Earth",
+      "el": [
+        "EAR"
+      ],
+      "effect": "Huge Earth damage (1 enemy); usable from Dungeon 1."
+    },
+    {
+      "stage": "Elemental",
+      "name": "Tower Inferno",
+      "seq": "Wind -> Earth -> Fire",
+      "el": [
+        "FIR"
+      ],
+      "effect": "Huge Fire damage (1 enemy)."
+    },
+    {
+      "stage": "Elemental",
+      "name": "Hydro-Boost",
+      "seq": "Earth -> Wind -> Water",
+      "el": [
+        "WAT"
+      ],
+      "effect": "Huge Water damage (1 enemy)."
+    },
+    {
+      "stage": "Elemental",
+      "name": "Wind Cutter",
+      "seq": "Fire -> Water -> Wind",
+      "el": [
+        "WND"
+      ],
+      "effect": "Huge Wind damage (1 enemy)."
+    },
+    {
+      "stage": "Elemental",
+      "name": "Meltdown",
+      "seq": "Fire -> Earth -> Maha Agidyne",
+      "el": [
+        "FIR"
+      ],
+      "effect": "Huge Fire damage (all enemies)."
+    },
+    {
+      "stage": "Elemental",
+      "name": "Giga Cyclone",
+      "seq": "Wind -> Water -> Maha Garudyne",
+      "el": [
+        "WND"
+      ],
+      "effect": "Huge Wind damage (all enemies)."
+    },
+    {
+      "stage": "Elemental",
+      "name": "Lightning Blast / Jihad",
+      "seq": "Elec + Elec / Elec -> Almighty -> Guardian Hammer",
+      "el": [
+        "ELE"
+      ],
+      "effect": "All-enemy Elec + 40% Shock (works on bosses)."
+    },
+    {
+      "stage": "Elemental",
+      "name": "Ice Blast / Jihad",
+      "seq": "Ice + Ice / Ice -> Almighty -> Release Jail",
+      "el": [
+        "ICE"
+      ],
+      "effect": "All-enemy Ice + 40% Freeze (works on bosses)."
+    },
+    {
+      "stage": "Elemental",
+      "name": "Nuclear Blast / Jihad",
+      "seq": "Nuclear + Nuclear / Nuclear -> Almighty -> Nuclear Missile",
+      "el": [
+        "NUC"
+      ],
+      "effect": "Heavy all-enemy Nuclear damage."
+    },
+    {
+      "stage": "Almighty",
+      "name": "Meteor Crush",
+      "seq": "Fire -> Earth -> Asteroid Bomb",
+      "el": [
+        "ALM"
+      ],
+      "effect": "Huge Almighty damage (Pwr 140) to all enemies."
+    },
+    {
+      "stage": "Recovery",
+      "name": "Mediamai",
+      "seq": "Media -> Affectionate Prayer",
+      "el": [
+        "WAT"
+      ],
+      "effect": "12.5% max HP regen per turn for entire party."
+    },
+    {
+      "stage": "Buff",
+      "name": "Party Buffs (Maha -kaja)",
+      "seq": "Maka/Taru/Raku Kaja -> Affectionate Prayer",
+      "el": [
+        "ALM"
+      ],
+      "effect": "Party-wide SAt, At, or Df buff."
+    },
+    {
+      "stage": "Defense",
+      "name": "Celestial Veil",
+      "seq": "Wall of Air (Seiryuu) -> Fire (Suzaku) -> Earth (Genbu) -> Water (Byakko)",
+      "el": [
+        "ALM"
+      ],
+      "effect": "Nullifies all 4 base elements for the entire battle."
+    },
+    {
+      "stage": "Ultimate",
+      "name": "Dragon Cross",
+      "seq": "Wiseman Snap -> Twinkle Nebula -> Crescent Mirror -> Justice Shot -> Nova Cyther",
+      "el": [
+        "ALM"
+      ],
+      "effect": "5 Ultimate Personas; huge non-elemental AoE (Pwr 120)."
+    },
+    {
+      "stage": "Ultimate",
+      "name": "Armageddon",
+      "seq": "Omega Cluster (Lucifer) -> Alpha Blaster (Satan)",
+      "el": [
+        "ALM"
+      ],
+      "effect": "100% destroys all enemies/bosses (except Philemon & PSP Tatsuya Scenario superbosses)."
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+---
+import { getCollection } from "astro:content";
+import AppShell from "../../../../layouts/AppShell.astro";
+import BossList from "../../../../components/BossList";
+
+export async function getStaticPaths() {
+  const all = await getCollection("bosses");
+  return all.map(b => ({ params: { game: b.data.game }, props: { bosses: b.data.items, game: b.data.game } }));
+}
+const { bosses, game } = Astro.props;
+---
+<AppShell title="Boss Reference" gameId={game}>
+  <div class="ch-head"><div class="ch-num-bg">BOS</div><h1 class="ch-title">Boss Reference</h1></div>
+  <BossList client:load gameId={game} bosses={bosses} />
+</AppShell>

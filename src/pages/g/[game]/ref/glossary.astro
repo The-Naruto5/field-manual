@@ -1,0 +1,18 @@
+---
+import { getCollection } from "astro:content";
+import AppShell from "../../../../layouts/AppShell.astro";
+
+export async function getStaticPaths() {
+  const all = await getCollection("glossary");
+  return all.map(g => ({ params: { game: g.data.game }, props: { terms: g.data.terms, game: g.data.game } }));
+}
+const { terms, game } = Astro.props;
+---
+<AppShell title="Glossary" gameId={game}>
+  <div class="ch-head"><div class="ch-num-bg">GLO</div><h1 class="ch-title">Glossary</h1></div>
+  <div style="display:grid;gap:8px;">
+    {Object.entries(terms).map(([k, v]) => (
+      <div class="panel"><strong>{k}</strong><p style="margin:4px 0 0;font-size:13px;color:var(--muted);">{v}</p></div>
+    ))}
+  </div>
+</AppShell>

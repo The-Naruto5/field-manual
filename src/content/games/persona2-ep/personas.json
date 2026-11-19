@@ -1,0 +1,89 @@
+{
+  "game": "persona2-ep",
+  "items": [
+    {
+      "name": "Pixie",
+      "arcana": "Lovers",
+      "lv": 2,
+      "role": "Early Utility",
+      "note": "99 LUC at Rank 8, learns Megido, cheapest SP host for Mediarahan card."
+    },
+    {
+      "name": "Hel",
+      "arcana": "Death",
+      "lv": 22,
+      "role": "Fusion Catalyst",
+      "note": "Multi-element coverage + Void Holy/Dark with no weaknesses."
+    },
+    {
+      "name": "Shaka",
+      "arcana": "Hierophant",
+      "lv": 29,
+      "role": "Mid Tank",
+      "note": "Needs Yuiga Dokuson (Bomb Shelter Room 2); Strong vs ALL + Void Holy/Dark."
+    },
+    {
+      "name": "Maia Custom",
+      "arcana": "Moon",
+      "lv": 31,
+      "role": "Maya Healer",
+      "note": "Mutated from Maia in Ch. 2; Medirama + Multidimension (bypasses magic reflect)."
+    },
+    {
+      "name": "Apollo",
+      "arcana": "Sun",
+      "lv": 62,
+      "role": "Tatsuya DPS",
+      "note": "Tatsuya's Ultimate (Nova Cyther); Void Fire/Nuclear/Holy/Ailments."
+    },
+    {
+      "name": "Artemis",
+      "arcana": "Moon",
+      "lv": 63,
+      "role": "Maya Reflect",
+      "note": "Needs Silver Bow (Mt. Iwato); REFLECTS all Magic & Ailments + Crescent Mirror."
+    },
+    {
+      "name": "Lakshmi",
+      "arcana": "Priestess",
+      "lv": 71,
+      "role": "Endgame Healer",
+      "note": "Needs Water Lotus Petal (18k Mu coins); Diarahan, Mediarahan (Mut), Dance of Bravery."
+    },
+    {
+      "name": "Alice",
+      "arcana": "Lovers",
+      "lv": 80,
+      "role": "All-Rounder",
+      "note": "Needs Champion card (Carma Ring Pact); Strong All + Mediarahan, Omega Cluster, Megidolaonn."
+    },
+    {
+      "name": "Siva (Shiva)",
+      "arcana": "Chariot",
+      "lv": 85,
+      "role": "Endgame DPS",
+      "note": "Needs Maximum Tempest (Mystic Change Skanda); Strong All + Nuclear Missile, Puraraya."
+    },
+    {
+      "name": "Vishnu",
+      "arcana": "Emperor",
+      "lv": 86,
+      "role": "Endgame Core",
+      "note": "Needs Avatarah (Mystic Change Lakshmi); Strong All + Diarahan, Megidolaonn, Sthiti."
+    },
+    {
+      "name": "Satan",
+      "arcana": "Judgement",
+      "lv": 96,
+      "role": "Armageddon",
+      "note": "Needs Accuser's Diary (50k Mu coins, Ellen route); Reflects all Physical + Alpha Blaster."
+    },
+    {
+      "name": "Lucifer",
+      "arcana": "Devil",
+      "lv": 99,
+      "role": "Ultimate",
+      "note": "Needs Morning Star (50k Mu coins, Nate route); Strong All + Omega Cluster; Rank 8 Return = Gun of Might (255 ATK)."
+    }
+  ]
+}

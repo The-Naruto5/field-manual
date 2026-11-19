@@ -1,0 +1,256 @@
+{
+  "game": "persona2-ep",
+  "items": [
+    {
+      "ch": "Ch. 1",
+      "name": "Empusa x2 & Apep",
+      "loc": "Seven Sisters 4F Clock Tower",
+      "lv": "4 / 3",
+      "hp": "54 / 68",
+      "weak": [
+        "EAR",
+        "FIR"
+      ],
+      "tactic": "Empusa weak Earth (2x), Apep weak Fire (2x). Sweep with Stone Rise (Water -> Fire -> Earth)."
+    },
+    {
+      "ch": "Ch. 1",
+      "name": "Hellhound",
+      "loc": "Morimoto Sanitarium 4F",
+      "lv": "13",
+      "hp": "700",
+      "weak": [
+        "WAT",
+        "ICE"
+      ],
+      "tactic": "Baofu sits out. Drains Fire, nulls Nuclear. Spam Stone Rise and heal Fire Breath with Maia."
+    },
+    {
+      "ch": "Ch. 1",
+      "name": "Tatsuya Sudou",
+      "loc": "Sky Museum",
+      "lv": "20",
+      "hp": "1,280",
+      "weak": [
+        "WAT"
+      ],
+      "tactic": "Drains Fire. Clear Shax first; have EVERYONE Defend on Old Maid; finish with Hydro-Boost + Gigantic Fist."
+    },
+    {
+      "ch": "Ch. 2",
+      "name": "JOKER Ulala",
+      "loc": "GOLD Fitness Club",
+      "lv": "20",
+      "hp": "940",
+      "weak": [
+        "EAR"
+      ],
+      "tactic": "Defend on Old Maid; burst with Stone Rise. Pick \"Shut up! You're wrong about her!\" afterward for Maia Custom."
+    },
+    {
+      "ch": "Ch. 2",
+      "name": "JOKER Noriko",
+      "loc": "Club Zodiac 3F",
+      "lv": "26",
+      "hp": "1,220",
+      "weak": [
+        "FIR"
+      ],
+      "tactic": "Cast Wall of Water to block Maha Aques; Defend on Old Maid; burn with Tower Inferno."
+    },
+    {
+      "ch": "Ch. 3 (Nate)",
+      "name": "Devil Sugimoto",
+      "loc": "Science Lab",
+      "lv": "35",
+      "hp": "2,800",
+      "weak": [
+        "FIR",
+        "LGT"
+      ],
+      "tactic": "Clear Red Berets first; hit Sugimoto with Fire/Holy or Lightning Blast; watch Roar (Fury) & Freeze."
+    },
+    {
+      "ch": "Ch. 3 (Ellen)",
+      "name": "Stalker (3 Fights)",
+      "loc": "Sumaru TV",
+      "lv": "30",
+      "hp": "1,200–1,900",
+      "weak": [
+        "NONE"
+      ],
+      "tactic": "Nulls Holy. Uses Serenade of Madness (Fury) & Marvelous Dance; cure ailments and spam magic fusions."
+    },
+    {
+      "ch": "Ch. 3 (Ellen)",
+      "name": "Black Cat",
+      "loc": "Sumaru TV",
+      "lv": "35",
+      "hp": "2,200",
+      "weak": [
+        "PHY"
+      ],
+      "tactic": "REPELS ALL MAGIC! Use weapon/physical attacks strictly."
+    },
+    {
+      "ch": "Ch. 3 (Ellen)",
+      "name": "Chizuru (Dummy) & Shikigami x4",
+      "loc": "Sumaru TV",
+      "lv": "53 / 24",
+      "hp": "1 / 1,050 ea.",
+      "weak": [
+        "PHY"
+      ],
+      "tactic": "Hit Chizuru physically Turn 1 (1 HP). Hit each Shikigami with its opposite element."
+    },
+    {
+      "ch": "Ch. 3",
+      "name": "JOKER Ginji",
+      "loc": "Smile Mall",
+      "lv": "40",
+      "hp": "2,600",
+      "weak": [
+        "WND"
+      ],
+      "tactic": "Drains Earth. Defend on Old Maid and burst with Wind Cutter / Maximum Tempest."
+    },
+    {
+      "ch": "Ch. 3",
+      "name": "Captain Shimazu + SAT x4",
+      "loc": "Aoba Park Concert Hall",
+      "lv": "42",
+      "hp": "2,360",
+      "weak": [
+        "NONE"
+      ],
+      "tactic": "Heavy Shot damage; clear SAT troops with AoE magic and equip Shot-resistant Personas."
+    },
+    {
+      "ch": "Ch. 3",
+      "name": "X-1 (Factory x1 / Ship x3)",
+      "loc": "Abandoned Factory / Nichirinmaru",
+      "lv": "45",
+      "hp": "3,000 ea.",
+      "weak": [
+        "ELE"
+      ],
+      "tactic": "Resists Physical & non-Elec magic. Spam Maka Kaja + Lightning Blast; watch Muramasa Copy."
+    },
+    {
+      "ch": "Ch. 3 (Nate)",
+      "name": "Guido Kandori + X-2 x4",
+      "loc": "Undersea Ruins",
+      "lv": "55 / 45",
+      "hp": "3,600 / 2,500",
+      "weak": [
+        "ELE"
+      ],
+      "tactic": "Clear X-2s with Lightning Blast; block Unperishable Black with Tetraja/Silver Manisha; reflect Rain of Arrows."
+    },
+    {
+      "ch": "Ch. 3 (Ellen)",
+      "name": "Chizuru Ishigami",
+      "loc": "Undersea Ruins",
+      "lv": "53",
+      "hp": "3,200",
+      "weak": [
+        "PHY"
+      ],
+      "tactic": "Her 4 fakes repel everything. Hit the real Chizuru with single-target weapon attacks."
+    },
+    {
+      "ch": "Ch. 4",
+      "name": "Metal Trio (Jun/Lisa/Eikichi)",
+      "loc": "Ameno Torifune B6",
+      "lv": "57",
+      "hp": "2,200–3,080",
+      "weak": [
+        "EAR",
+        "WND",
+        "FIR"
+      ],
+      "tactic": "NULL ALL PHYSICAL! Cast Wall of Air + Tetraja; hit Eikichi (Fire), Lisa (Wind), Jun (Earth)."
+    },
+    {
+      "ch": "Ch. 4",
+      "name": "Was Sugawara",
+      "loc": "Ameno Torifune",
+      "lv": "60",
+      "hp": "6,200",
+      "weak": [
+        "FIR"
+      ],
+      "tactic": "Regens 775 HP/turn & drains Shot/Strike. Out-damage regen with Maka Kaja + Meltdown/Tower Inferno."
+    },
+    {
+      "ch": "Ch. 4",
+      "name": "Detested Hunter (Tatsuzou)",
+      "loc": "Sumaru Castle",
+      "lv": "67",
+      "hp": "5,500",
+      "weak": [
+        "ICE"
+      ],
+      "tactic": "Drains Wind; Dark Baptism permanently disables healing magic—bring Somas/items and nuke with Ice."
+    },
+    {
+      "ch": "Ch. 4",
+      "name": "Gozen (Kiyotada Sumaru)",
+      "loc": "Sumaru Castle Utena",
+      "lv": "75",
+      "hp": "8,000",
+      "weak": [
+        "SWD"
+      ],
+      "tactic": "Tenchu-Satsu (3 Ancestral Personas) INSTANT-KILLS Gozen in 1 hit! Otherwise use Sword attacks + heavy heals."
+    },
+    {
+      "ch": "Ch. 5",
+      "name": "Shadow Katsuya & Shadow Ulala",
+      "loc": "Monado Mandala",
+      "lv": "62–72 / 61–71",
+      "hp": "3,960–4,760",
+      "weak": [
+        "WAT",
+        "ICE",
+        "EAR"
+      ],
+      "tactic": "Katsuya weak Water/Ice; Ulala weak Earth. Dragon Cross hits both for 2,000+."
+    },
+    {
+      "ch": "Ch. 5",
+      "name": "Shadow Maya & Shadow Baofu",
+      "loc": "Monado Mandala",
+      "lv": "63–74 / 63–73",
+      "hp": "4,000–5,920",
+      "weak": [
+        "PHY",
+        "ELE"
+      ],
+      "tactic": "Shadow Maya REPELS ALL MAGIC & ALMIGHTY! Beat her with Physical first, then Lightning on Baofu."
+    },
+    {
+      "ch": "Ch. 5",
+      "name": "Moon Howler (Phase 1)",
+      "loc": "Monado Mandala",
+      "lv": "77 / 80 / 82",
+      "hp": "8,160–9,560",
+      "weak": [
+        "WAT",
+        "WND"
+      ],
+      "tactic": "Scales by Shadow Room choices (Lv. 82 nulls Almighty & casts Omega Cluster). Block Unperishable Black with Tetraja."
+    },
+    {
+      "ch": "Ch. 5",
+      "name": "Nyarlathotep (Final Phase 2)",
+      "loc": "Monado Mandala",
+      "lv": "99",
+      "hp": "18,000",
+      "weak": [
+        "NONE"
+      ],
+      "tactic": "Enter with endgame Personas equipped (Wheel of Fortune locks switching 8 turns). Race down with Dragon Cross / Armageddon."
+    }
+  ]
+}

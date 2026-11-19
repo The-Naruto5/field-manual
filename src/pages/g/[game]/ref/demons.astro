@@ -1,0 +1,15 @@
+---
+import { getCollection } from "astro:content";
+import AppShell from "../../../../layouts/AppShell.astro";
+import DemonLookup from "../../../../components/DemonLookup";
+
+export async function getStaticPaths() {
+  const all = await getCollection("demons");
+  return all.map(d => ({ params: { game: d.data.game }, props: { demons: d.data.items, game: d.data.game } }));
+}
+const { demons, game } = Astro.props;
+---
+<AppShell title="Live Battle & Contact Lookup" gameId={game}>
+  <div class="ch-head"><div class="ch-num-bg">CON</div><h1 class="ch-title">Live Battle &amp; Contact Lookup</h1></div>
+  <DemonLookup client:load demons={demons} />
+</AppShell>

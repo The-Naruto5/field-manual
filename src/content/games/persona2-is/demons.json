@@ -1,0 +1,1984 @@
+{
+  "game": "persona2-is",
+  "items": [
+    {
+      "name": "Ghost",
+      "lv": 1,
+      "arcana": "Devil",
+      "dungeons": [
+        "Seven Sisters High",
+        "Abandoned Factory"
+      ],
+      "weak": [
+        "SWD",
+        "LGT"
+      ],
+      "avoid": [
+        "RNG (Null)",
+        "STK (Null)",
+        "THR (Null)",
+        "HVC (Null)",
+        "DRK (Null)"
+      ],
+      "eager": "Death Stare (Tatsuya)",
+      "happy": "Eikichi + Maya",
+      "cards": "2 Devil / 1 Free"
+    },
+    {
+      "name": "Slime",
+      "lv": 1,
+      "arcana": "Tower",
+      "dungeons": [
+        "Seven Sisters High",
+        "Abandoned Factory"
+      ],
+      "weak": [
+        "LGT"
+      ],
+      "avoid": [
+        "DRK (Null)"
+      ],
+      "eager": "Death Stare (Tatsuya)",
+      "happy": "Seduce (Lisa)",
+      "cards": "3 Tower / 2 Free"
+    },
+    {
+      "name": "Pixie",
+      "lv": 2,
+      "arcana": "Lovers",
+      "dungeons": [
+        "Seven Sisters High",
+        "Club Zodiac",
+        "Abandoned Factory"
+      ],
+      "weak": [
+        "EAR"
+      ],
+      "avoid": [
+        "WND (Strong)",
+        "LGT (Strong)",
+        "DRK (Strong)"
+      ],
+      "eager": "Discuss Manliness (Tatsuya)",
+      "happy": "Do Impressions (Tatsuya)",
+      "cards": "4 Lovers / 3 Free"
+    },
+    {
+      "name": "Poltergeist",
+      "lv": 2,
+      "arcana": "Devil",
+      "dungeons": [
+        "Seven Sisters High",
+        "Club Zodiac",
+        "Abandoned Factory"
+      ],
+      "weak": [
+        "LGT"
+      ],
+      "avoid": [
+        "DRK (Null)"
+      ],
+      "eager": "Persuade (Tatsuya)",
+      "happy": "Eikichi + Maya",
+      "cards": "4 Devil / 3 Free"
+    },
+    {
+      "name": "Nightmare",
+      "lv": 3,
+      "arcana": "Moon",
+      "dungeons": [
+        "Seven Sisters High",
+        "Club Zodiac",
+        "Abandoned Factory"
+      ],
+      "weak": [
+        "SWD",
+        "LGT"
+      ],
+      "avoid": [
+        "RNG (Null)",
+        "STK (Null)",
+        "THR (Null)",
+        "HVC (Null)",
+        "DRK (Null)"
+      ],
+      "eager": "Persuade (Tatsuya)",
+      "happy": "Reason (Yukino)",
+      "cards": "6 Moon / 4 Free"
+    },
+    {
+      "name": "Xaphan",
+      "lv": 3,
+      "arcana": "Hanged Man",
+      "dungeons": [
+        "Seven Sisters High",
+        "Club Zodiac",
+        "Abandoned Factory"
+      ],
+      "weak": [
+        "WAT"
+      ],
+      "avoid": [
+        "FIR (Strong)",
+        "LGT (Strong)",
+        "DRK (Strong)"
+      ],
+      "eager": "Discuss Manliness (Tatsuya)",
+      "happy": "Do Impressions (Tatsuya)",
+      "cards": "8 Hanged Man / 6 Free"
+    },
+    {
+      "name": "Ratatoskr",
+      "lv": 4,
+      "arcana": "Hermit",
+      "dungeons": [
+        "Seven Sisters High",
+        "Club Zodiac",
+        "Abandoned Factory"
+      ],
+      "weak": [
+        "WND"
+      ],
+      "avoid": [
+        "EAR (Strong)",
+        "LGT (Strong)",
+        "DRK (Strong)"
+      ],
+      "eager": "Interview (Maya)",
+      "happy": "Persuade (Tatsuya)",
+      "cards": "8 Hermit / 6 Free"
+    },
+    {
+      "name": "Blob",
+      "lv": 5,
+      "arcana": "Tower",
+      "dungeons": [
+        "Club Zodiac",
+        "Kasugayama High",
+        "Abandoned Factory"
+      ],
+      "weak": [
+        "LGT"
+      ],
+      "avoid": [
+        "DRK (Null)"
+      ],
+      "eager": "Death Stare (Tatsuya)",
+      "happy": "Seduce (Lisa)",
+      "cards": "6 Tower / 4 Free"
+    },
+    {
+      "name": "Harpy",
+      "lv": 5,
+      "arcana": "Temperance",
+      "dungeons": [
+        "Club Zodiac",
+        "Kasugayama High",
+        "Abandoned Factory"
+      ],
+      "weak": [
+        "RNG",
+        "EAR"
+      ],
+      "avoid": [
+        "SWD (Strong)",
+        "STK (Strong)",
+        "HVC (Strong)",
+        "LGT (Strong)",
+        "DRK (Strong)"
+      ],
+      "eager": "Discuss Parents (Maya)",
+      "happy": "Persuade (Tatsuya)",
+      "cards": "10 Temperance / 7 Free"
+    },
+    {
+      "name": "Phantom",
+      "lv": 6,
+      "arcana": "Devil",
+      "dungeons": [
+        "Club Zodiac",
+        "Kasugayama High",
+        "Abandoned Factory"
+      ],
+      "weak": [
+        "SWD",
+        "LGT"
+      ],
+      "avoid": [
+        "RNG (Null)",
+        "STK (Null)",
+        "THR (Null)",
+        "HVC (Null)",
+        "DRK (Null)"
+      ],
+      "eager": "Death Stare (Tatsuya)",
+      "happy": "Persuade (Tatsuya)",
+      "cards": "10 Devil / 7 Free"
+    },
+    {
+      "name": "Puck",
+      "lv": 6,
+      "arcana": "Lovers",
+      "dungeons": [
+        "Club Zodiac",
+        "Kasugayama High",
+        "Abandoned Factory"
+      ],
+      "weak": [
+        "EAR"
+      ],
+      "avoid": [
+        "WND (Repel)",
+        "LGT (Strong)",
+        "DRK (Strong)"
+      ],
+      "eager": "Discuss Manliness (Tatsuya)",
+      "happy": "Do Impressions (Tatsuya)",
+      "cards": "10 Lovers / 7 Free"
+    },
+    {
+      "name": "Empusa",
+      "lv": 7,
+      "arcana": "Magician",
+      "dungeons": [
+        "Kasugayama High",
+        "Abandoned Factory"
+      ],
+      "weak": [
+        "LGT"
+      ],
+      "avoid": [
+        "DRK (Null)"
+      ],
+      "eager": "Do Impressions (Tatsuya)",
+      "happy": "Discuss Life (Eikichi)",
+      "cards": "12 Magician / 9 Free"
+    },
+    {
+      "name": "Phaleg",
+      "lv": 7,
+      "arcana": "Judgement",
+      "dungeons": [
+        "Kasugayama High",
+        "Air Raid Shelter",
+        "Abandoned Factory"
+      ],
+      "weak": [
+        "DRK"
+      ],
+      "avoid": [
+        "LGT (Null)"
+      ],
+      "eager": "Self-Promotion (Eikichi)",
+      "happy": "Persuade (Tatsuya)",
+      "cards": "13 Judgement / 9 Free"
+    },
+    {
+      "name": "Agathion",
+      "lv": 8,
+      "arcana": "Star",
+      "dungeons": [
+        "Kasugayama High",
+        "Air Raid Shelter",
+        "Abandoned Factory"
+      ],
+      "weak": [
+        "WAT"
+      ],
+      "avoid": [
+        "FIR (Null)",
+        "LGT (Strong)",
+        "DRK (Strong)"
+      ],
+      "eager": "Discuss Life (Eikichi)",
+      "happy": "Do Impressions (Tatsuya)",
+      "cards": "12 Star / 9 Free"
+    },
+    {
+      "name": "Ogre",
+      "lv": 8,
+      "arcana": "Chariot",
+      "dungeons": [
+        "Kasugayama High",
+        "Air Raid Shelter",
+        "Abandoned Factory"
+      ],
+      "weak": [
+        "FIR",
+        "WAT",
+        "WND",
+        "EAR",
+        "ICE",
+        "ELE",
+        "NUC",
+        "ALM"
+      ],
+      "avoid": [
+        "PHY (Strong)"
+      ],
+      "eager": "Take Control (Eikichi)",
+      "happy": "Consult (Maya)",
+      "cards": "12 Chariot / 9 Free"
+    },
+    {
+      "name": "Apep",
+      "lv": 9,
+      "arcana": "Strength",
+      "dungeons": [
+        "Kasugayama High",
+        "Air Raid Shelter",
+        "Abandoned Factory"
+      ],
+      "weak": [
+        "FIR"
+      ],
+      "avoid": [
+        "WAT (Strong)",
+        "LGT (Strong)",
+        "DRK (Strong)"
+      ],
+      "eager": "Do Impressions (Tatsuya)",
+      "happy": "Discuss Life (Eikichi)",
+      "cards": "13 Strength / 9 Free"
+    },
+    {
+      "name": "Erinyes",
+      "lv": 10,
+      "arcana": "Moon",
+      "dungeons": [
+        "Kasugayama High",
+        "Air Raid Shelter",
+        "Abandoned Factory"
+      ],
+      "weak": [],
+      "avoid": [
+        "THR (Null)",
+        "HVC (Null)",
+        "LGT (Null)",
+        "DRK (Null)"
+      ],
+      "eager": "Discuss Manliness (Tatsuya)",
+      "happy": "Tatsuya + Maya",
+      "cards": "20 Moon / 15 Free"
+    },
+    {
+      "name": "Nisroc",
+      "lv": 10,
+      "arcana": "Hanged Man",
+      "dungeons": [
+        "Kasugayama High",
+        "Air Raid Shelter",
+        "Abandoned Factory"
+      ],
+      "weak": [
+        "WAT"
+      ],
+      "avoid": [
+        "FIR (Null)",
+        "NUC (Repel)",
+        "LGT (Strong)",
+        "DRK (Strong)"
+      ],
+      "eager": "Interview (Maya)",
+      "happy": "Do Impressions (Tatsuya)",
+      "cards": "15 Hanged Man / 11 Free"
+    },
+    {
+      "name": "Robin Goodfellow",
+      "lv": 11,
+      "arcana": "Lovers",
+      "dungeons": [
+        "Air Raid Shelter",
+        "Mu Continent",
+        "Abandoned Factory"
+      ],
+      "weak": [
+        "WND"
+      ],
+      "avoid": [
+        "EAR (Strong)",
+        "LGT (Strong)",
+        "DRK (Strong)"
+      ],
+      "eager": "Self-Promotion (Eikichi)",
+      "happy": "Do Impressions (Tatsuya)",
+      "cards": "17 Lovers / 12 Free"
+    },
+    {
+      "name": "Moh Shuvuu",
+      "lv": 12,
+      "arcana": "Temperance",
+      "dungeons": [
+        "Mu Continent",
+        "Giga Macho",
+        "Abandoned Factory"
+      ],
+      "weak": [
+        "RNG",
+        "EAR"
+      ],
+      "avoid": [
+        "SWD (Strong)",
+        "STK (Strong)",
+        "HVC (Strong)",
+        "LGT (Strong)",
+        "DRK (Strong)"
+      ],
+      "eager": "Dance (Lisa)",
+      "happy": "Discuss Life (Eikichi)",
+      "cards": "18 Temperance / 13 Free"
+    },
+    {
+      "name": "Ixtab",
+      "lv": 13,
+      "arcana": "Death",
+      "dungeons": [
+        "Mu Continent",
+        "Giga Macho",
+        "Abandoned Factory"
+      ],
+      "weak": [],
+      "avoid": [
+        "LGT (Null)",
+        "DRK (Null)"
+      ],
+      "eager": "Dance (Lisa)",
+      "happy": "Discuss Life (Eikichi)",
+      "cards": "20 Death / 15 Free"
+    },
+    {
+      "name": "Ochre Jelly",
+      "lv": 13,
+      "arcana": "Tower",
+      "dungeons": [
+        "Mu Continent",
+        "Giga Macho",
+        "Abandoned Factory"
+      ],
+      "weak": [
+        "LGT"
+      ],
+      "avoid": [
+        "DRK (Null)"
+      ],
+      "eager": "Death Stare (Tatsuya)",
+      "happy": "Eikichi + Maya",
+      "cards": "20 Tower / 15 Free"
+    },
+    {
+      "name": "Cockatrice",
+      "lv": 14,
+      "arcana": "World",
+      "dungeons": [
+        "Mu Continent",
+        "Giga Macho",
+        "Abandoned Factory"
+      ],
+      "weak": [
+        "RNG",
+        "EAR"
+      ],
+      "avoid": [
+        "SWD (Strong)",
+        "STK (Strong)",
+        "HVC (Strong)",
+        "LGT (Strong)",
+        "DRK (Strong)"
+      ],
+      "eager": "Death Stare (Tatsuya)",
+      "happy": "Seduce (Lisa)",
+      "cards": "9 World / 6 Free"
+    },
+    {
+      "name": "Nekomata",
+      "lv": 14,
+      "arcana": "Hermit",
+      "dungeons": [
+        "Mu Continent",
+        "Giga Macho",
+        "Abandoned Factory"
+      ],
+      "weak": [],
+      "avoid": [
+        "LGT (Strong)",
+        "DRK (Strong)"
+      ],
+      "eager": "Self-Promotion (Eikichi)",
+      "happy": "Sing (Eikichi)",
+      "cards": "20 Hermit / 15 Free"
+    },
+    {
+      "name": "Kinnara",
+      "lv": 15,
+      "arcana": "Star",
+      "dungeons": [
+        "Giga Macho",
+        "Aoba Park",
+        "Abandoned Factory"
+      ],
+      "weak": [
+        "WAT"
+      ],
+      "avoid": [
+        "FIR (Null)",
+        "LGT (Strong)",
+        "DRK (Strong)"
+      ],
+      "eager": "Take Control (Eikichi)",
+      "happy": "Do Impressions (Tatsuya)",
+      "cards": "20 Star / 15 Free"
+    },
+    {
+      "name": "Minotaur",
+      "lv": 15,
+      "arcana": "Chariot",
+      "dungeons": [
+        "Mu Continent",
+        "Giga Macho",
+        "Aoba Park",
+        "Abandoned Factory"
+      ],
+      "weak": [
+        "FIR",
+        "WAT",
+        "WND",
+        "EAR",
+        "ICE",
+        "ELE",
+        "NUC",
+        "ALM"
+      ],
+      "avoid": [
+        "PHY (Strong)"
+      ],
+      "eager": "Take Control (Eikichi)",
+      "happy": "Consult (Maya)",
+      "cards": "20 Chariot / 15 Free"
+    },
+    {
+      "name": "Tengu",
+      "lv": 16,
+      "arcana": "Magician",
+      "dungeons": [
+        "Giga Macho",
+        "Aoba Park",
+        "Abandoned Factory"
+      ],
+      "weak": [
+        "EAR"
+      ],
+      "avoid": [
+        "WND (Null)",
+        "LGT (Strong)",
+        "DRK (Strong)"
+      ],
+      "eager": "Self-Promotion (Eikichi)",
+      "happy": "Persuade (Tatsuya)",
+      "cards": "23 Magician / 17 Free"
+    },
+    {
+      "name": "Wraith",
+      "lv": 16,
+      "arcana": "Devil",
+      "dungeons": [
+        "Giga Macho",
+        "Aoba Park",
+        "Abandoned Factory"
+      ],
+      "weak": [
+        "SWD",
+        "LGT"
+      ],
+      "avoid": [
+        "RNG (Null)",
+        "STK (Null)",
+        "THR (Null)",
+        "HVC (Null)",
+        "DRK (Null)"
+      ],
+      "eager": "Dance (Lisa)",
+      "happy": "Discuss Life (Eikichi)",
+      "cards": "16 Devil / 12 Free"
+    },
+    {
+      "name": "Kiyohime",
+      "lv": 17,
+      "arcana": "Strength",
+      "dungeons": [
+        "Giga Macho",
+        "Aoba Park",
+        "Abandoned Factory"
+      ],
+      "weak": [
+        "WAT"
+      ],
+      "avoid": [
+        "FIR (Null)",
+        "NUC (Drain)",
+        "LGT (Strong)",
+        "DRK (Strong)"
+      ],
+      "eager": "Compliment (Maya)",
+      "happy": "Take Photo (Yukino)",
+      "cards": "27 Strength / 20 Free"
+    },
+    {
+      "name": "Shax",
+      "lv": 17,
+      "arcana": "Hanged Man",
+      "dungeons": [
+        "Giga Macho",
+        "Aoba Park",
+        "Abandoned Factory"
+      ],
+      "weak": [
+        "RNG",
+        "FIR",
+        "EAR"
+      ],
+      "avoid": [
+        "SWD (Strong)",
+        "STK (Strong)",
+        "HVC (Strong)",
+        "WAT (Null)",
+        "LGT (Strong)",
+        "DRK (Strong)"
+      ],
+      "eager": "Do Impressions (Tatsuya)",
+      "happy": "Discuss Life (Eikichi)",
+      "cards": "23 Hanged Man / 17 Free"
+    },
+    {
+      "name": "Angel",
+      "lv": 18,
+      "arcana": "Judgement",
+      "dungeons": [
+        "Aoba Park",
+        "Smile Hirasaka",
+        "Abandoned Factory"
+      ],
+      "weak": [
+        "DRK"
+      ],
+      "avoid": [
+        "LGT (Null)"
+      ],
+      "eager": "Self-Promotion (Eikichi)",
+      "happy": "Discuss Parents (Maya)",
+      "cards": "25 Judgement / 18 Free"
+    },
+    {
+      "name": "Jack Frost",
+      "lv": 18,
+      "arcana": "Lovers",
+      "dungeons": [
+        "Giga Macho",
+        "Aoba Park",
+        "Smile Hirasaka",
+        "Abandoned Factory"
+      ],
+      "weak": [
+        "FIR"
+      ],
+      "avoid": [
+        "WAT (Null)",
+        "ICE (Drain)",
+        "LGT (Strong)",
+        "DRK (Strong)"
+      ],
+      "eager": "Death Stare (Tatsuya)",
+      "happy": "Dance (Lisa)",
+      "cards": "10 Lovers / 7 Free"
+    },
+    {
+      "name": "Fjalar",
+      "lv": 19,
+      "arcana": "Temperance",
+      "dungeons": [
+        "Aoba Park",
+        "Smile Hirasaka",
+        "Abandoned Factory"
+      ],
+      "weak": [
+        "RNG",
+        "EAR"
+      ],
+      "avoid": [
+        "SWD (Strong)",
+        "STK (Strong)",
+        "HVC (Strong)",
+        "LGT (Strong)",
+        "DRK (Strong)"
+      ],
+      "eager": "Sing (Eikichi)",
+      "happy": "Discuss Life (Eikichi)",
+      "cards": "25 Temperance / 18 Free"
+    },
+    {
+      "name": "Faust",
+      "lv": 20,
+      "arcana": "Magician",
+      "dungeons": [
+        "Aoba Park",
+        "Smile Hirasaka",
+        "Abandoned Factory"
+      ],
+      "weak": [
+        "LGT"
+      ],
+      "avoid": [
+        "DRK (Null)"
+      ],
+      "eager": "Discuss Parents (Maya)",
+      "happy": "Discuss Life (Eikichi)",
+      "cards": "30 Magician / 22 Free"
+    },
+    {
+      "name": "Gandharva",
+      "lv": 21,
+      "arcana": "Star",
+      "dungeons": [
+        "Smile Hirasaka",
+        "GOLD",
+        "Abandoned Factory"
+      ],
+      "weak": [
+        "WAT"
+      ],
+      "avoid": [
+        "FIR (Drain)",
+        "LGT (Strong)",
+        "DRK (Strong)"
+      ],
+      "eager": "Self-Promotion (Eikichi)",
+      "happy": "Do Impressions (Tatsuya)",
+      "cards": "30 Star / 22 Free"
+    },
+    {
+      "name": "Kraken",
+      "lv": 21,
+      "arcana": "World",
+      "dungeons": [
+        "Smile Hirasaka",
+        "GOLD",
+        "Abandoned Factory"
+      ],
+      "weak": [
+        "FIR"
+      ],
+      "avoid": [
+        "WAT (Null)",
+        "LGT (Strong)",
+        "DRK (Strong)"
+      ],
+      "eager": "Death Stare (Tatsuya)",
+      "happy": "Speak w/ Fists (Yukino)",
+      "cards": "25 World / 18 Free"
+    },
+    {
+      "name": "Hel",
+      "lv": 22,
+      "arcana": "Death",
+      "dungeons": [
+        "Smile Hirasaka",
+        "GOLD",
+        "Abandoned Factory"
+      ],
+      "weak": [],
+      "avoid": [
+        "LGT (Null)",
+        "DRK (Null)"
+      ],
+      "eager": "Reason (Yukino)",
+      "happy": "Discuss Life (Eikichi)",
+      "cards": "37 Death / 27 Free"
+    },
+    {
+      "name": "Pairika",
+      "lv": 22,
+      "arcana": "Moon",
+      "dungeons": [
+        "Smile Hirasaka",
+        "GOLD",
+        "Abandoned Factory"
+      ],
+      "weak": [
+        "SWD",
+        "LGT"
+      ],
+      "avoid": [
+        "RNG (Null)",
+        "STK (Null)",
+        "THR (Null)",
+        "HVC (Null)",
+        "DRK (Null)"
+      ],
+      "eager": "Dance (Lisa)",
+      "happy": "Discuss Life (Eikichi)",
+      "cards": "35 Moon / 26 Free"
+    },
+    {
+      "name": "Lich",
+      "lv": 23,
+      "arcana": "Devil",
+      "dungeons": [
+        "Smile Hirasaka",
+        "GOLD",
+        "Aerospace Museum",
+        "Abandoned Factory"
+      ],
+      "weak": [
+        "LGT"
+      ],
+      "avoid": [
+        "DRK (Null)"
+      ],
+      "eager": "Discuss Manliness (Tatsuya)",
+      "happy": "Discuss Life (Eikichi)",
+      "cards": "30 Devil / 22 Free"
+    },
+    {
+      "name": "Rasputin",
+      "lv": 24,
+      "arcana": "Magician",
+      "dungeons": [
+        "GOLD",
+        "Aerospace Museum",
+        "Abandoned Factory"
+      ],
+      "weak": [
+        "PHY"
+      ],
+      "avoid": [
+        "All Magic/Alm (Null)"
+      ],
+      "eager": "Dance (Lisa)",
+      "happy": "Discuss Life (Eikichi)",
+      "cards": "36 Magician / 27 Free"
+    },
+    {
+      "name": "Kabandha",
+      "lv": 25,
+      "arcana": "Hanged Man",
+      "dungeons": [
+        "GOLD",
+        "Aerospace Museum",
+        "Mt. Iwato",
+        "Abandoned Factory"
+      ],
+      "weak": [
+        "FIR"
+      ],
+      "avoid": [
+        "WAT (Null)",
+        "LGT (Strong)",
+        "DRK (Strong)"
+      ],
+      "eager": "Discuss Manliness (Tatsuya)",
+      "happy": "Do Impressions (Tatsuya)",
+      "cards": "35 Hanged Man / 26 Free"
+    },
+    {
+      "name": "Pyro Jack",
+      "lv": 26,
+      "arcana": "Lovers",
+      "dungeons": [
+        "GOLD",
+        "Aerospace Museum",
+        "Mt. Iwato",
+        "Abandoned Factory"
+      ],
+      "weak": [
+        "WAT"
+      ],
+      "avoid": [
+        "FIR (Drain)",
+        "LGT (Strong)",
+        "DRK (Strong)"
+      ],
+      "eager": "Death Stare (Tatsuya)",
+      "happy": "Do Impressions (Tatsuya)",
+      "cards": "40 Lovers / 30 Free"
+    },
+    {
+      "name": "Kanaloa",
+      "lv": 27,
+      "arcana": "Tower",
+      "dungeons": [
+        "Aerospace Museum",
+        "Mt. Iwato",
+        "Abandoned Factory"
+      ],
+      "weak": [],
+      "avoid": [
+        "WAT (Null)",
+        "LGT (Null)",
+        "DRK (Null)"
+      ],
+      "eager": "Take Control (Eikichi)",
+      "happy": "Consult (Maya)",
+      "cards": "35 Tower / 26 Free"
+    },
+    {
+      "name": "Taranis",
+      "lv": 27,
+      "arcana": "Chariot",
+      "dungeons": [
+        "Aerospace Museum",
+        "Mt. Iwato",
+        "Abandoned Factory"
+      ],
+      "weak": [
+        "FIR",
+        "WAT",
+        "WND",
+        "EAR",
+        "ICE",
+        "ELE",
+        "NUC",
+        "ALM"
+      ],
+      "avoid": [
+        "PHY (Strong)"
+      ],
+      "eager": "Take Control (Eikichi)",
+      "happy": "Consult (Maya)",
+      "cards": "40 Chariot / 30 Free"
+    },
+    {
+      "name": "Camazotz",
+      "lv": 28,
+      "arcana": "Temperance",
+      "dungeons": [
+        "Mt. Iwato",
+        "Abandoned Factory"
+      ],
+      "weak": [],
+      "avoid": [
+        "RNG (Repel)",
+        "THR (Repel)",
+        "LGT (Strong)",
+        "DRK (Strong)"
+      ],
+      "eager": "Discuss Manliness (Tatsuya)",
+      "happy": "Discuss Life (Eikichi)",
+      "cards": "35 Temperance / 26 Free"
+    },
+    {
+      "name": "Cwn Annwn",
+      "lv": 28,
+      "arcana": "Hermit",
+      "dungeons": [
+        "Mt. Iwato",
+        "Abandoned Factory"
+      ],
+      "weak": [],
+      "avoid": [
+        "PHY (Strong)",
+        "LGT (Strong)",
+        "DRK (Strong)"
+      ],
+      "eager": "Take Control (Eikichi)",
+      "happy": "Speak w/ Fists (Yukino)",
+      "cards": "35 Hermit / 26 Free"
+    },
+    {
+      "name": "Culebre",
+      "lv": 29,
+      "arcana": "Strength",
+      "dungeons": [
+        "Mt. Iwato",
+        "Mt. Katatsumuri",
+        "Abandoned Factory"
+      ],
+      "weak": [
+        "STK",
+        "HVC"
+      ],
+      "avoid": [
+        "All Magic (Strong)"
+      ],
+      "eager": "Do Impressions (Tatsuya)",
+      "happy": "Discuss Life (Eikichi)",
+      "cards": "40 Strength / 30 Free"
+    },
+    {
+      "name": "Principality",
+      "lv": 29,
+      "arcana": "Judgement",
+      "dungeons": [
+        "Mt. Iwato",
+        "Mt. Katatsumuri",
+        "Abandoned Factory"
+      ],
+      "weak": [
+        "DRK"
+      ],
+      "avoid": [
+        "LGT (Null)"
+      ],
+      "eager": "Discuss Parents (Maya)",
+      "happy": "Discuss Life (Eikichi)",
+      "cards": "40 Judgement / 30 Free"
+    },
+    {
+      "name": "Hunhau",
+      "lv": 30,
+      "arcana": "Death",
+      "dungeons": [
+        "Mt. Iwato",
+        "Mt. Katatsumuri",
+        "Abandoned Factory"
+      ],
+      "weak": [],
+      "avoid": [
+        "LGT (Null)",
+        "DRK (Null)"
+      ],
+      "eager": "Interview (Maya)",
+      "happy": "Speak w/ Fists (Yukino)",
+      "cards": "45 Death / 33 Free"
+    },
+    {
+      "name": "Picollus",
+      "lv": 30,
+      "arcana": "Star",
+      "dungeons": [
+        "Mt. Iwato",
+        "Mt. Katatsumuri",
+        "Abandoned Factory"
+      ],
+      "weak": [
+        "FIR"
+      ],
+      "avoid": [
+        "WAT (Null)",
+        "ICE (Null)",
+        "LGT (Strong)",
+        "DRK (Strong)"
+      ],
+      "eager": "Kungfu (Lisa)",
+      "happy": "Do Impressions (Tatsuya)",
+      "cards": "40 Star / 30 Free"
+    },
+    {
+      "name": "Agrippa",
+      "lv": 31,
+      "arcana": "Magician",
+      "dungeons": [
+        "Mt. Iwato",
+        "Mt. Katatsumuri",
+        "Abandoned Factory"
+      ],
+      "weak": [
+        "PHY"
+      ],
+      "avoid": [
+        "All Magic/Alm (Strong)"
+      ],
+      "eager": "Do Impressions (Tatsuya)",
+      "happy": "Discuss Life (Eikichi)",
+      "cards": "45 Magician / 33 Free"
+    },
+    {
+      "name": "Demeter",
+      "lv": 31,
+      "arcana": "World",
+      "dungeons": [
+        "Mt. Iwato",
+        "Mt. Katatsumuri",
+        "Abandoned Factory"
+      ],
+      "weak": [],
+      "avoid": [
+        "LGT (Null)",
+        "DRK (Null)"
+      ],
+      "eager": "Persuade (Tatsuya)",
+      "happy": "Discuss Love (Lisa)",
+      "cards": "30 World / 22 Free"
+    },
+    {
+      "name": "Zaebos",
+      "lv": 32,
+      "arcana": "Hanged Man",
+      "dungeons": [
+        "Mt. Katatsumuri",
+        "Abandoned Factory"
+      ],
+      "weak": [
+        "LGT"
+      ],
+      "avoid": [
+        "DRK (Null)"
+      ],
+      "eager": "Kungfu (Lisa)",
+      "happy": "Do Impressions (Tatsuya)",
+      "cards": "42 Hanged Man / 31 Free"
+    },
+    {
+      "name": "Wanyudo",
+      "lv": 33,
+      "arcana": "Fortune",
+      "dungeons": [
+        "Mt. Katatsumuri",
+        "Abandoned Factory"
+      ],
+      "weak": [
+        "LGT"
+      ],
+      "avoid": [
+        "DRK (Repel)"
+      ],
+      "eager": "Death Stare (Tatsuya)",
+      "happy": "Speak w/ Fists (Yukino)",
+      "cards": "33 Fortune / 24 Free"
+    },
+    {
+      "name": "Demon King",
+      "lv": 34,
+      "arcana": "Devil",
+      "dungeons": [
+        "Mt. Iwato",
+        "Mt. Katatsumuri",
+        "Caracol",
+        "Abandoned Factory"
+      ],
+      "weak": [
+        "LGT"
+      ],
+      "avoid": [
+        "DRK (Null)"
+      ],
+      "eager": "Interview (Maya)",
+      "happy": "Speak w/ Fists (Yukino)",
+      "cards": "44 Devil / 33 Free"
+    },
+    {
+      "name": "Python",
+      "lv": 35,
+      "arcana": "Strength",
+      "dungeons": [
+        "Mt. Katatsumuri",
+        "Caracol",
+        "Abandoned Factory"
+      ],
+      "weak": [
+        "STK",
+        "HVC"
+      ],
+      "avoid": [
+        "All Magic (Strong)"
+      ],
+      "eager": "Death Stare (Tatsuya)",
+      "happy": "Speak w/ Fists (Yukino)",
+      "cards": "40 Strength / 33 Free"
+    },
+    {
+      "name": "Shoggoth",
+      "lv": 35,
+      "arcana": "Tower",
+      "dungeons": [
+        "Mt. Katatsumuri",
+        "Caracol",
+        "Abandoned Factory"
+      ],
+      "weak": [
+        "SWD",
+        "LGT"
+      ],
+      "avoid": [
+        "RNG (Null)",
+        "STK (Null)",
+        "THR (Null)",
+        "HVC (Null)",
+        "DRK (Null)"
+      ],
+      "eager": "Self-Promotion (Eikichi)",
+      "happy": "Discuss Parents (Maya)",
+      "cards": "40 Tower / 30 Free"
+    },
+    {
+      "name": "Lilim",
+      "lv": 36,
+      "arcana": "Moon",
+      "dungeons": [
+        "Mt. Katatsumuri",
+        "Caracol",
+        "Abandoned Factory"
+      ],
+      "weak": [
+        "LGT"
+      ],
+      "avoid": [
+        "DRK (Null)"
+      ],
+      "eager": "Discuss Manliness (Tatsuya)",
+      "happy": "Discuss Life (Eikichi)",
+      "cards": "56 Moon / 42 Free"
+    },
+    {
+      "name": "Satyr",
+      "lv": 36,
+      "arcana": "Lovers",
+      "dungeons": [
+        "Mt. Katatsumuri",
+        "Caracol",
+        "Abandoned Factory"
+      ],
+      "weak": [
+        "WND"
+      ],
+      "avoid": [
+        "EAR (Drain)",
+        "LGT (Strong)",
+        "DRK (Strong)"
+      ],
+      "eager": "Death Stare (Tatsuya)",
+      "happy": "Do Impressions (Tatsuya)",
+      "cards": "50 Lovers / 37 Free"
+    },
+    {
+      "name": "Stymphalides",
+      "lv": 37,
+      "arcana": "Temperance",
+      "dungeons": [
+        "Caracol",
+        "Abandoned Factory"
+      ],
+      "weak": [
+        "RNG",
+        "EAR"
+      ],
+      "avoid": [
+        "SWD/STK/HVC (Strong)",
+        "WND (Null)",
+        "LGT/DRK (Strong)"
+      ],
+      "eager": "Do Impressions (Tatsuya)",
+      "happy": "Consult (Maya)",
+      "cards": "40 Temperance / 30 Free"
+    },
+    {
+      "name": "Crowley",
+      "lv": 38,
+      "arcana": "Magician",
+      "dungeons": [
+        "Caracol",
+        "Abandoned Factory"
+      ],
+      "weak": [
+        "PHY"
+      ],
+      "avoid": [
+        "All Magic/Alm (Repel)"
+      ],
+      "eager": "Discuss Manliness (Tatsuya)",
+      "happy": "Discuss Life (Eikichi)",
+      "cards": "55 Magician / 41 Free"
+    },
+    {
+      "name": "Hoenir",
+      "lv": 38,
+      "arcana": "Star",
+      "dungeons": [
+        "Caracol",
+        "Abandoned Factory"
+      ],
+      "weak": [],
+      "avoid": [
+        "RNG (Null)",
+        "THR (Null)",
+        "LGT (Strong)",
+        "DRK (Strong)"
+      ],
+      "eager": "Maya + Yukino",
+      "happy": "Discuss Parents (Maya)",
+      "cards": "48 Star / 36 Free"
+    },
+    {
+      "name": "Leviathan",
+      "lv": 39,
+      "arcana": "World",
+      "dungeons": [
+        "Caracol",
+        "Abandoned Factory"
+      ],
+      "weak": [
+        "FIR"
+      ],
+      "avoid": [
+        "WAT (Drain)",
+        "LGT (Strong)",
+        "DRK (Strong)"
+      ],
+      "eager": "Take Control (Eikichi)",
+      "happy": "Speak w/ Fists (Yukino)",
+      "cards": "45 World / 33 Free"
+    },
+    {
+      "name": "Rakshasa",
+      "lv": 39,
+      "arcana": "Chariot",
+      "dungeons": [
+        "Caracol",
+        "Abandoned Factory"
+      ],
+      "weak": [
+        "FIR",
+        "WAT",
+        "WND",
+        "EAR",
+        "ICE",
+        "ELE",
+        "NUC",
+        "ALM"
+      ],
+      "avoid": [
+        "PHY (Strong)"
+      ],
+      "eager": "Do Impressions (Tatsuya)",
+      "happy": "Consult (Maya)",
+      "cards": "55 Chariot / 41 Free"
+    },
+    {
+      "name": "Orthrus",
+      "lv": 40,
+      "arcana": "Fortune",
+      "dungeons": [
+        "Caracol",
+        "Zodiac Temples",
+        "Abandoned Factory"
+      ],
+      "weak": [],
+      "avoid": [
+        "PHY (Strong)",
+        "LGT (Strong)",
+        "DRK (Strong)"
+      ],
+      "eager": "Take Control (Eikichi)",
+      "happy": "Speak w/ Fists (Yukino)",
+      "cards": "55 Fortune / 45 Free"
+    },
+    {
+      "name": "Barbatos",
+      "lv": 41,
+      "arcana": "Hanged Man",
+      "dungeons": [
+        "Caracol",
+        "Zodiac Temples",
+        "Abandoned Factory"
+      ],
+      "weak": [
+        "WND"
+      ],
+      "avoid": [
+        "EAR (Repel)",
+        "LGT (Strong)",
+        "DRK (Strong)"
+      ],
+      "eager": "Discuss Manliness (Tatsuya)",
+      "happy": "Discuss Life (Eikichi)",
+      "cards": "55 Hanged Man / 41 Free"
+    },
+    {
+      "name": "Aeshma",
+      "lv": 42,
+      "arcana": "Tower",
+      "dungeons": [
+        "Caracol",
+        "Zodiac Temples",
+        "Abandoned Factory"
+      ],
+      "weak": [],
+      "avoid": [
+        "LGT (Null)",
+        "DRK (Null)"
+      ],
+      "eager": "Take Control (Eikichi)",
+      "happy": "Consult (Maya)",
+      "cards": "52 Tower / 39 Free"
+    },
+    {
+      "name": "Catoblepas",
+      "lv": 42,
+      "arcana": "Hermit",
+      "dungeons": [
+        "Caracol",
+        "Zodiac Temples",
+        "Abandoned Factory"
+      ],
+      "weak": [],
+      "avoid": [
+        "PHY (Strong)",
+        "LGT (Strong)",
+        "DRK (Strong)"
+      ],
+      "eager": "Persuade (Tatsuya)",
+      "happy": "Tell Horoscope (Jun — post-Caracol)",
+      "cards": "58 Hermit / 43 Free"
+    },
+    {
+      "name": "Melchizedek",
+      "lv": 43,
+      "arcana": "Judgement",
+      "dungeons": [
+        "Zodiac Temples",
+        "Abandoned Factory"
+      ],
+      "weak": [
+        "DRK"
+      ],
+      "avoid": [
+        "LGT (Repel)"
+      ],
+      "eager": "Self-Promotion (Eikichi)",
+      "happy": "Persuade (Tatsuya)",
+      "cards": "60 Judgement / 45 Free"
+    },
+    {
+      "name": "Taksaka",
+      "lv": 43,
+      "arcana": "Strength",
+      "dungeons": [
+        "Zodiac Temples",
+        "Abandoned Factory"
+      ],
+      "weak": [
+        "ELE"
+      ],
+      "avoid": [
+        "PHY/Magic/Alm (Strong)",
+        "LGT/DRK (Null)"
+      ],
+      "eager": "Discuss Manliness (Tatsuya)",
+      "happy": "Discuss Life (Eikichi)",
+      "cards": "60 Strength / 45 Free"
+    },
+    {
+      "name": "Ankou",
+      "lv": 44,
+      "arcana": "Death",
+      "dungeons": [
+        "Zodiac Temples",
+        "Abandoned Factory"
+      ],
+      "weak": [],
+      "avoid": [
+        "LGT (Repel)",
+        "DRK (Repel)"
+      ],
+      "eager": "Tell Horoscope (Jun)",
+      "happy": "Lisa + Jun",
+      "cards": "52 Death / 39 Free"
+    },
+    {
+      "name": "Vucub-Caquix",
+      "lv": 45,
+      "arcana": "Temperance",
+      "dungeons": [
+        "Silver River",
+        "Xibalba",
+        "Abandoned Factory"
+      ],
+      "weak": [
+        "RNG",
+        "EAR"
+      ],
+      "avoid": [
+        "SWD/STK/HVC (Strong)",
+        "WND (Null)",
+        "LGT/DRK (Strong)"
+      ],
+      "eager": "Do Impressions (Tatsuya)",
+      "happy": "Discuss Life (Eikichi)",
+      "cards": "48 Temperance / 36 Free"
+    },
+    {
+      "name": "Hunab Ku",
+      "lv": 46,
+      "arcana": "World",
+      "dungeons": [
+        "Silver River",
+        "Xibalba",
+        "Abandoned Factory"
+      ],
+      "weak": [
+        "WND"
+      ],
+      "avoid": [
+        "EAR (Null)",
+        "ICE/ELE/NUC (Strong)",
+        "LGT/DRK (Strong)"
+      ],
+      "eager": "Discuss Parents (Maya)",
+      "happy": "Persuade (Tatsuya)",
+      "cards": "52 World / 39 Free"
+    },
+    {
+      "name": "Lucifuge",
+      "lv": 46,
+      "arcana": "Devil",
+      "dungeons": [
+        "Silver River",
+        "Xibalba",
+        "Abandoned Factory"
+      ],
+      "weak": [
+        "PHY"
+      ],
+      "avoid": [
+        "All Magic/Alm (Null)"
+      ],
+      "eager": "Tatsuya + Jun",
+      "happy": "Persuade (Tatsuya)",
+      "cards": "66 Devil / 49 Free"
+    },
+    {
+      "name": "Succubus",
+      "lv": 47,
+      "arcana": "Moon",
+      "dungeons": [
+        "Silver River",
+        "Xibalba",
+        "Abandoned Factory"
+      ],
+      "weak": [
+        "PHY"
+      ],
+      "avoid": [
+        "All Magic/Alm (Strong)"
+      ],
+      "eager": "Tatsuya + Eikichi",
+      "happy": "Sing (Eikichi)",
+      "cards": "67 Moon / 50 Free"
+    },
+    {
+      "name": "Pucel",
+      "lv": 48,
+      "arcana": "Hanged Man",
+      "dungeons": [
+        "Silver River",
+        "Xibalba",
+        "Abandoned Factory"
+      ],
+      "weak": [
+        "LGT"
+      ],
+      "avoid": [
+        "DRK (Null)"
+      ],
+      "eager": "Discuss Parents (Maya)",
+      "happy": "Discuss Life (Eikichi)",
+      "cards": "63 Hanged Man / 47 Free"
+    },
+    {
+      "name": "Manannan",
+      "lv": 49,
+      "arcana": "Magician",
+      "dungeons": [
+        "Silver River",
+        "Xibalba",
+        "Abandoned Factory"
+      ],
+      "weak": [
+        "FIR"
+      ],
+      "avoid": [
+        "WAT (Repel)",
+        "LGT (Strong)",
+        "DRK (Strong)"
+      ],
+      "eager": "Discuss Parents (Maya)",
+      "happy": "Persuade (Tatsuya)",
+      "cards": "70 Magician / 52 Free"
+    },
+    {
+      "name": "Yaksa",
+      "lv": 49,
+      "arcana": "Star",
+      "dungeons": [
+        "Silver River",
+        "Xibalba",
+        "Abandoned Factory"
+      ],
+      "weak": [
+        "FIR",
+        "WAT",
+        "WND",
+        "EAR",
+        "ICE",
+        "ELE",
+        "NUC",
+        "ALM"
+      ],
+      "avoid": [
+        "PHY (Strong)"
+      ],
+      "eager": "Discuss Manliness (Tatsuya) / Say it w/ Flowers (Jun)",
+      "happy": "Do Impressions (Tatsuya)",
+      "cards": "60 Star / 45 Free"
+    },
+    {
+      "name": "Ares",
+      "lv": 50,
+      "arcana": "Chariot",
+      "dungeons": [
+        "Silver River",
+        "Xibalba",
+        "Abandoned Factory"
+      ],
+      "weak": [
+        "WAT"
+      ],
+      "avoid": [
+        "FIR (Strong)",
+        "LGT (Strong)",
+        "DRK (Strong)"
+      ],
+      "eager": "Kungfu (Lisa)",
+      "happy": "Do Impressions (Tatsuya)",
+      "cards": "65 Chariot / 48 Free"
+    },
+    {
+      "name": "Seker",
+      "lv": 50,
+      "arcana": "Tower",
+      "dungeons": [
+        "Silver River",
+        "Xibalba",
+        "Abandoned Factory"
+      ],
+      "weak": [
+        "RNG",
+        "EAR"
+      ],
+      "avoid": [
+        "SWD/STK/HVC (Strong)",
+        "LGT (Strong)",
+        "DRK (Null)"
+      ],
+      "eager": "Death Stare (Tatsuya)",
+      "happy": "Persuade (Tatsuya)",
+      "cards": "60 Tower / 45 Free"
+    },
+    {
+      "name": "Cerberus",
+      "lv": 51,
+      "arcana": "Fortune",
+      "dungeons": [
+        "Xibalba",
+        "Abandoned Factory"
+      ],
+      "weak": [
+        "WND"
+      ],
+      "avoid": [
+        "EAR (Null)",
+        "ICE/ELE/NUC (Repel)",
+        "LGT/DRK (Strong)"
+      ],
+      "eager": "Do Impressions (Tatsuya)",
+      "happy": "Discuss Life (Eikichi)",
+      "cards": "68 Fortune / 51 Free"
+    },
+    {
+      "name": "Fafnir",
+      "lv": 52,
+      "arcana": "Strength",
+      "dungeons": [
+        "Xibalba",
+        "Abandoned Factory"
+      ],
+      "weak": [
+        "STK",
+        "HVC"
+      ],
+      "avoid": [
+        "All Magic (Strong)"
+      ],
+      "eager": "Discuss Parents (Maya)",
+      "happy": "Discuss Life (Eikichi)",
+      "cards": "72 Strength / 54 Free"
+    },
+    {
+      "name": "Throne",
+      "lv": 53,
+      "arcana": "Judgement",
+      "dungeons": [
+        "Xibalba",
+        "Abandoned Factory"
+      ],
+      "weak": [
+        "DRK"
+      ],
+      "avoid": [
+        "LGT (Null)"
+      ],
+      "eager": "Self-Promotion (Eikichi)",
+      "happy": "Persuade (Tatsuya)",
+      "cards": "75 Judgement / 56 Free"
+    },
+    {
+      "name": "Mucalinda",
+      "lv": 54,
+      "arcana": "World",
+      "dungeons": [
+        "Xibalba",
+        "Abandoned Factory"
+      ],
+      "weak": [
+        "PHY"
+      ],
+      "avoid": [
+        "All Magic/Alm (Strong)"
+      ],
+      "eager": "Do Impressions (Tatsuya)",
+      "happy": "Discuss Life (Eikichi)",
+      "cards": "60 World / 45 Free"
+    },
+    {
+      "name": "Phoenix",
+      "lv": 54,
+      "arcana": "Temperance",
+      "dungeons": [
+        "Xibalba",
+        "Abandoned Factory"
+      ],
+      "weak": [],
+      "avoid": [
+        "FIR (Null)",
+        "LGT (Null)",
+        "DRK (Null)"
+      ],
+      "eager": "Do Impressions (Tatsuya)",
+      "happy": "Tell Horoscope (Jun)",
+      "cards": "54 Temperance / 40 Free"
+    },
+    {
+      "name": "Girimehkala",
+      "lv": 55,
+      "arcana": "Chariot",
+      "dungeons": [
+        "Abandoned Factory"
+      ],
+      "weak": [
+        "FIR",
+        "WAT",
+        "WND",
+        "EAR",
+        "ICE",
+        "ELE",
+        "NUC",
+        "LGT",
+        "DRK",
+        "ALM"
+      ],
+      "avoid": [
+        "PHY (Repel)"
+      ],
+      "eager": "Do Impressions (Tatsuya) / Say it w/ Flowers (Jun)",
+      "happy": "Persuade (Tatsuya)",
+      "cards": "75 Chariot / 56 Free"
+    },
+    {
+      "name": "Jahi",
+      "lv": 56,
+      "arcana": "Moon",
+      "dungeons": [
+        "Xibalba",
+        "Abandoned Factory"
+      ],
+      "weak": [
+        "PHY"
+      ],
+      "avoid": [
+        "All Magic/Alm (Strong)"
+      ],
+      "eager": "Tatsuya + Maya",
+      "happy": "Persuade (Tatsuya)",
+      "cards": "78 Moon / 58 Free"
+    },
+    {
+      "name": "Kinich Ahau",
+      "lv": 56,
+      "arcana": "Hermit",
+      "dungeons": [
+        "Xibalba",
+        "Abandoned Factory"
+      ],
+      "weak": [],
+      "avoid": [
+        "PHY (Strong)",
+        "LGT (Strong)",
+        "DRK (Strong)"
+      ],
+      "eager": "Compliment (Maya)",
+      "happy": "Fawn On (Jun)",
+      "cards": "76 Hermit / 57 Free"
+    },
+    {
+      "name": "Adramelech",
+      "lv": 57,
+      "arcana": "Hanged Man",
+      "dungeons": [
+        "Xibalba",
+        "Abandoned Factory"
+      ],
+      "weak": [
+        "LGT"
+      ],
+      "avoid": [
+        "DRK (Repel)"
+      ],
+      "eager": "Do Impressions (Tatsuya)",
+      "happy": "Tatsuya + Lisa",
+      "cards": "78 Hanged Man / 58 Free"
+    },
+    {
+      "name": "Tezcatlipoca",
+      "lv": 59,
+      "arcana": "Tower",
+      "dungeons": [
+        "Xibalba",
+        "Abandoned Factory"
+      ],
+      "weak": [],
+      "avoid": [
+        "PHY/Magic/Alm (Strong)",
+        "LGT/DRK (Null)"
+      ],
+      "eager": "Lisa + Jun",
+      "happy": "Persuade (Tatsuya)",
+      "cards": "75 Tower / 56 Free"
+    },
+    {
+      "name": "Tzitzimitl",
+      "lv": 59,
+      "arcana": "Devil",
+      "dungeons": [
+        "Xibalba",
+        "Abandoned Factory"
+      ],
+      "weak": [],
+      "avoid": [
+        "LGT (Null)",
+        "DRK (Null)"
+      ],
+      "eager": "Interview (Maya)",
+      "happy": "Tatsuya + Eikichi + Jun",
+      "cards": "85 Devil / 63 Free"
+    },
+    {
+      "name": "Kisin",
+      "lv": 60,
+      "arcana": "Death",
+      "dungeons": [
+        "Xibalba",
+        "Abandoned Factory"
+      ],
+      "weak": [],
+      "avoid": [
+        "LGT (Null)",
+        "DRK (Null)"
+      ],
+      "eager": "Tatsuya + Jun",
+      "happy": "Persuade (Tatsuya)",
+      "cards": "65 Death / 48 Free"
+    },
+    {
+      "name": "Valkyrie",
+      "lv": 60,
+      "arcana": "Star",
+      "dungeons": [
+        "Xibalba",
+        "Abandoned Factory"
+      ],
+      "weak": [
+        "FIR",
+        "WAT",
+        "WND",
+        "EAR",
+        "ICE",
+        "ELE",
+        "NUC",
+        "ALM"
+      ],
+      "avoid": [
+        "PHY (Strong)"
+      ],
+      "eager": "Lisa + Jun",
+      "happy": "Do Impressions (Tatsuya)",
+      "cards": "70 Star / 52 Free"
+    },
+    {
+      "name": "Ouroboros",
+      "lv": 62,
+      "arcana": "World",
+      "dungeons": [
+        "Xibalba",
+        "Abandoned Factory"
+      ],
+      "weak": [
+        "STK",
+        "HVC"
+      ],
+      "avoid": [
+        "All Magic (Strong)"
+      ],
+      "eager": "Discuss Parents (Maya)",
+      "happy": "Persuade (Tatsuya)",
+      "cards": "72 World / 54 Free"
+    },
+    {
+      "name": "Ah Puch",
+      "lv": 66,
+      "arcana": "Death",
+      "dungeons": [
+        "Xibalba",
+        "Abandoned Factory"
+      ],
+      "weak": [],
+      "avoid": [
+        "LGT (Repel)",
+        "DRK (Repel)"
+      ],
+      "eager": "Discuss Manliness (Tatsuya)",
+      "happy": "Discuss Life (Eikichi)",
+      "cards": "80 Death / 60 Free"
+    },
+    {
+      "name": "Fenrir",
+      "lv": 70,
+      "arcana": "Fortune",
+      "dungeons": [
+        "Abandoned Factory"
+      ],
+      "weak": [],
+      "avoid": [
+        "FIR (Null)",
+        "LGT (Null)",
+        "DRK (Null)"
+      ],
+      "eager": "Say it w/ Flowers (Jun) [cancel Happy]",
+      "happy": "Say it w/ Flowers (Jun) [cancel Eager]",
+      "cards": "80 Fortune / 60 Free"
+    },
+    {
+      "name": "Alice",
+      "lv": 80,
+      "arcana": "Lovers",
+      "dungeons": [
+        "Abandoned Factory"
+      ],
+      "weak": [],
+      "avoid": [
+        "PHY/Magic/Alm (Strong)",
+        "LGT/DRK (Null)"
+      ],
+      "eager": "Self-Promotion (Eikichi)",
+      "happy": "Sing (Eikichi)",
+      "cards": "100 Lovers / 75 Free"
+    }
+  ]
+}

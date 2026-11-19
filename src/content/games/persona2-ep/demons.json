@@ -1,0 +1,2189 @@
+{
+  "game": "persona2-ep",
+  "items": [
+    {
+      "name": "Ghost",
+      "lv": 1,
+      "arcana": "Devil",
+      "dungeons": [
+        "Seven Sisters High",
+        "Bomb Shelter"
+      ],
+      "weak": [
+        "SWD",
+        "LGT"
+      ],
+      "avoid": [
+        "RNG (Strong)",
+        "STK (Strong)",
+        "THR (Strong)",
+        "HVC (Strong)"
+      ],
+      "eager": "Wire Tapping / Investigation (Scam)",
+      "happy": "Advise / Advise Special",
+      "cards": "Devil (+Free w/ Pact)"
+    },
+    {
+      "name": "Slime",
+      "lv": 1,
+      "arcana": "Tower",
+      "dungeons": [
+        "Seven Sisters High",
+        "Bomb Shelter"
+      ],
+      "weak": [
+        "LGT"
+      ],
+      "avoid": [
+        "DRK (Strong)"
+      ],
+      "eager": "Interview / Fortune Telling",
+      "happy": "Advise / Special Report",
+      "cards": "Tower (+Free w/ Pact)"
+    },
+    {
+      "name": "Pixie",
+      "lv": 2,
+      "arcana": "Lovers",
+      "dungeons": [
+        "Seven Sisters High",
+        "Bomb Shelter"
+      ],
+      "weak": [
+        "EAR"
+      ],
+      "avoid": [
+        "WND (Strong)"
+      ],
+      "eager": "Wire Tapping / Investigation (Scam)",
+      "happy": "Persuade Special / Flamenco de la Pasion",
+      "cards": "Lovers (+Free w/ Pact)"
+    },
+    {
+      "name": "Poltergeist",
+      "lv": 2,
+      "arcana": "Devil",
+      "dungeons": [
+        "Seven Sisters High",
+        "Bomb Shelter"
+      ],
+      "weak": [
+        "LGT"
+      ],
+      "avoid": [
+        "DRK (Void)"
+      ],
+      "eager": "Advise Special / Group Therapy",
+      "happy": "Advise ? / Ah, Alcool is my life !!!",
+      "cards": "Devil (+Free w/ Pact)"
+    },
+    {
+      "name": "Guzfan",
+      "lv": 3,
+      "arcana": "Hanged Man",
+      "dungeons": [
+        "Seven Sisters High",
+        "Mt. Mifune",
+        "Bomb Shelter"
+      ],
+      "weak": [
+        "WAT"
+      ],
+      "avoid": [
+        "FIR (Strong)"
+      ],
+      "eager": "Wire Tapping / Investigation (Scam)",
+      "happy": "Persuade Special / Flamenco de la Pasion",
+      "cards": "Hanged Man (+Free w/ Pact)"
+    },
+    {
+      "name": "Nightmare",
+      "lv": 3,
+      "arcana": "Moon",
+      "dungeons": [
+        "Seven Sisters High",
+        "Mt. Mifune",
+        "Bomb Shelter"
+      ],
+      "weak": [
+        "SWD",
+        "LGT"
+      ],
+      "avoid": [
+        "RNG (Strong)",
+        "STK (Strong)",
+        "THR (Strong)",
+        "HVC (Strong)"
+      ],
+      "eager": "Advise Special / Group Therapy",
+      "happy": "Advise ? / Ah, Alcool is my life !!!",
+      "cards": "Moon (+Free w/ Pact)"
+    },
+    {
+      "name": "Ratatosk",
+      "lv": 4,
+      "arcana": "Hermit",
+      "dungeons": [
+        "Seven Sisters High",
+        "Mt. Mifune",
+        "Bomb Shelter"
+      ],
+      "weak": [
+        "WND"
+      ],
+      "avoid": [
+        "EAR (Strong)"
+      ],
+      "eager": "Fortune Telling / Wire Tapping is a Crime",
+      "happy": "Group Therapy / Persuade Special",
+      "cards": "Hermit (+Free w/ Pact)"
+    },
+    {
+      "name": "Blob",
+      "lv": 5,
+      "arcana": "Tower",
+      "dungeons": [
+        "Mt. Mifune",
+        "Bomb Shelter"
+      ],
+      "weak": [
+        "LGT"
+      ],
+      "avoid": [
+        "DRK (Strong)"
+      ],
+      "eager": "Interview / Fortune Telling",
+      "happy": "Advise / Special Report",
+      "cards": "Tower (+Free w/ Pact)"
+    },
+    {
+      "name": "Harpie",
+      "lv": 5,
+      "arcana": "Temperance",
+      "dungeons": [
+        "Mt. Mifune",
+        "Bomb Shelter"
+      ],
+      "weak": [
+        "RNG",
+        "EAR"
+      ],
+      "avoid": [
+        "SWD (Strong)",
+        "HVC (Strong)"
+      ],
+      "eager": "Wire Tapping is a Crime / Interrogation",
+      "happy": "Group Therapy / Persuade Special",
+      "cards": "Temperance (+Free w/ Pact)"
+    },
+    {
+      "name": "Phantom",
+      "lv": 6,
+      "arcana": "Devil",
+      "dungeons": [
+        "Mt. Mifune",
+        "Bomb Shelter"
+      ],
+      "weak": [
+        "SWD",
+        "LGT"
+      ],
+      "avoid": [
+        "RNG (Strong)",
+        "STK (Strong)",
+        "THR (Strong)",
+        "HVC (Strong)"
+      ],
+      "eager": "Fortune Telling / Interrogation",
+      "happy": "Group Therapy / Persuade Special",
+      "cards": "Devil (+Free w/ Pact)"
+    },
+    {
+      "name": "Puck",
+      "lv": 6,
+      "arcana": "Lovers",
+      "dungeons": [
+        "Mt. Mifune",
+        "Bomb Shelter"
+      ],
+      "weak": [
+        "EAR"
+      ],
+      "avoid": [
+        "WND (Reflect)"
+      ],
+      "eager": "Wire Tapping / Investigation (Scam)",
+      "happy": "Persuade Special / Flamenco de la Pasion",
+      "cards": "Lovers (+Free w/ Pact)"
+    },
+    {
+      "name": "Empusas",
+      "lv": 7,
+      "arcana": "Magician",
+      "dungeons": [
+        "Mt. Mifune",
+        "Sanitarium",
+        "Bomb Shelter"
+      ],
+      "weak": [],
+      "avoid": [
+        "LGT (Void)",
+        "DRK (Void)"
+      ],
+      "eager": "Wire Tapping / Investigation (Scam)",
+      "happy": "Persuade Special / What is \"Justice\" ?",
+      "cards": "Magician (+Free w/ Pact)"
+    },
+    {
+      "name": "Agathion",
+      "lv": 8,
+      "arcana": "Star",
+      "dungeons": [
+        "Mt. Mifune",
+        "Sanitarium"
+      ],
+      "weak": [
+        "WAT"
+      ],
+      "avoid": [
+        "FIR (Void)"
+      ],
+      "eager": "Advise / Group Therapy",
+      "happy": "Fortune Telling / Flamenco de la Pasion",
+      "cards": "Star (+Free w/ Pact)"
+    },
+    {
+      "name": "Ogre",
+      "lv": 8,
+      "arcana": "Chariot",
+      "dungeons": [
+        "Mt. Mifune",
+        "Sanitarium",
+        "Bomb Shelter"
+      ],
+      "weak": [
+        "FIR",
+        "WAT",
+        "WND",
+        "EAR",
+        "ICE",
+        "ELE",
+        "NUC",
+        "ALM"
+      ],
+      "avoid": [
+        "PHY (Strong)"
+      ],
+      "eager": "Interview / Investigation of Terror",
+      "happy": "Advise / Persuade ?",
+      "cards": "Chariot (+Free w/ Pact)"
+    },
+    {
+      "name": "Apep",
+      "lv": 9,
+      "arcana": "Strength",
+      "dungeons": [
+        "Mt. Mifune",
+        "Sanitarium",
+        "Bomb Shelter"
+      ],
+      "weak": [
+        "FIR"
+      ],
+      "avoid": [
+        "WAT (Strong)"
+      ],
+      "eager": "Wire Tapping / Investigation (Scam)",
+      "happy": "Persuade Special / What is \"Justice\" ?",
+      "cards": "Strength (+Free w/ Pact)"
+    },
+    {
+      "name": "Erinys",
+      "lv": 10,
+      "arcana": "Moon",
+      "dungeons": [
+        "Sanitarium",
+        "Bomb Shelter"
+      ],
+      "weak": [],
+      "avoid": [
+        "THR (Void)",
+        "HVC (Void)",
+        "LGT (Void)",
+        "DRK (Void)",
+        "Mind (Void)",
+        "Nerve (Void)"
+      ],
+      "eager": "Wire Tapping / Investigation (Scam)",
+      "happy": "Persuade Special / Costing a Fortune",
+      "cards": "Moon (+Free w/ Pact)"
+    },
+    {
+      "name": "Nisroc",
+      "lv": 10,
+      "arcana": "Hanged Man",
+      "dungeons": [
+        "Sanitarium",
+        "Bomb Shelter"
+      ],
+      "weak": [
+        "WAT"
+      ],
+      "avoid": [
+        "FIR (Void)",
+        "NUC (Reflect)"
+      ],
+      "eager": "Wire Tapping / Investigation of Terror",
+      "happy": "Persuade ? / Flamenco de la Pasion",
+      "cards": "Hanged Man (+Free w/ Pact)"
+    },
+    {
+      "name": "Cockatrice",
+      "lv": 11,
+      "arcana": "World",
+      "dungeons": [
+        "Sanitarium",
+        "Sky Museum",
+        "Bomb Shelter"
+      ],
+      "weak": [
+        "RNG",
+        "EAR"
+      ],
+      "avoid": [
+        "SWD (Strong)",
+        "HVC (Strong)"
+      ],
+      "eager": "Interview / Fortune Telling",
+      "happy": "Advise / Special Report",
+      "cards": "World (+Free w/ Pact)"
+    },
+    {
+      "name": "Robin Goodfellow",
+      "lv": 11,
+      "arcana": "Lovers",
+      "dungeons": [
+        "Sanitarium",
+        "Sky Museum",
+        "Bomb Shelter"
+      ],
+      "weak": [
+        "WND"
+      ],
+      "avoid": [
+        "EAR (Strong)"
+      ],
+      "eager": "Interview / Fortune Telling",
+      "happy": "Advise / Flamenco de la Pasion",
+      "cards": "Lovers (+Free w/ Pact)"
+    },
+    {
+      "name": "Kimnara",
+      "lv": 12,
+      "arcana": "Star",
+      "dungeons": [
+        "Sky Museum",
+        "GOLD",
+        "Bomb Shelter"
+      ],
+      "weak": [
+        "WAT"
+      ],
+      "avoid": [
+        "FIR (Void)"
+      ],
+      "eager": "Interview / Investigation of Terror",
+      "happy": "Advise / Flamenco de la Pasion",
+      "cards": "Star (+Free w/ Pact)"
+    },
+    {
+      "name": "Mou Shobo",
+      "lv": 12,
+      "arcana": "Temperance",
+      "dungeons": [
+        "Sanitarium",
+        "Sky Museum",
+        "Bomb Shelter"
+      ],
+      "weak": [
+        "RNG",
+        "EAR"
+      ],
+      "avoid": [
+        "SWD (Strong)",
+        "HVC (Strong)"
+      ],
+      "eager": "Wire Tapping / Investigation (Scam)",
+      "happy": "Costing a Fortune / Prince",
+      "cards": "Temperance (+Free w/ Pact)"
+    },
+    {
+      "name": "Ixtab",
+      "lv": 13,
+      "arcana": "Death",
+      "dungeons": [
+        "Sky Museum",
+        "GOLD",
+        "Bomb Shelter"
+      ],
+      "weak": [],
+      "avoid": [
+        "LGT (Void)",
+        "DRK (Void)"
+      ],
+      "eager": "Wire Tapping / Investigation (Scam)",
+      "happy": "Costing a Fortune / Prince",
+      "cards": "Death (+Free w/ Pact)"
+    },
+    {
+      "name": "Ochre Jelly",
+      "lv": 13,
+      "arcana": "Tower",
+      "dungeons": [
+        "Sky Museum",
+        "GOLD",
+        "Bomb Shelter"
+      ],
+      "weak": [
+        "LGT"
+      ],
+      "avoid": [
+        "DRK (Strong)"
+      ],
+      "eager": "Wire Tapping / Investigation (Scam)",
+      "happy": "Advise / Ah, Alcool is my life !!!",
+      "cards": "Tower (+Free w/ Pact)"
+    },
+    {
+      "name": "Angel",
+      "lv": 14,
+      "arcana": "Judgement",
+      "dungeons": [
+        "GOLD",
+        "Bomb Shelter"
+      ],
+      "weak": [
+        "DRK"
+      ],
+      "avoid": [
+        "LGT (Void)"
+      ],
+      "eager": "Fortune Telling / Wire Tapping is a Crime",
+      "happy": "Group Therapy / Persuade Special",
+      "cards": "Judgement (+Free w/ Pact)"
+    },
+    {
+      "name": "Nekomata",
+      "lv": 14,
+      "arcana": "Hermit",
+      "dungeons": [
+        "GOLD",
+        "Bomb Shelter"
+      ],
+      "weak": [],
+      "avoid": [
+        "Mind (Reflect)",
+        "Nerve (Reflect)"
+      ],
+      "eager": "Fortune Telling / Wire Tapping is a Crime",
+      "happy": "Group Therapy / Persuade Special",
+      "cards": "Hermit (+Free w/ Pact)"
+    },
+    {
+      "name": "Minotaur",
+      "lv": 15,
+      "arcana": "Chariot",
+      "dungeons": [
+        "GOLD",
+        "Bomb Shelter"
+      ],
+      "weak": [
+        "FIR",
+        "WAT",
+        "WND",
+        "EAR",
+        "ICE",
+        "ELE",
+        "NUC",
+        "ALM"
+      ],
+      "avoid": [
+        "PHY (Strong)"
+      ],
+      "eager": "Interview / Investigation of Terror",
+      "happy": "Advise / Persuade ?",
+      "cards": "Chariot (+Free w/ Pact)"
+    },
+    {
+      "name": "Tengu",
+      "lv": 16,
+      "arcana": "Magician",
+      "dungeons": [
+        "GOLD",
+        "Club Zodiac",
+        "Bomb Shelter"
+      ],
+      "weak": [
+        "EAR"
+      ],
+      "avoid": [
+        "WND (Void)"
+      ],
+      "eager": "Wire Tapping is a Crime / Interrogation",
+      "happy": "Group Therapy / Persuade Special",
+      "cards": "Magician (+Free w/ Pact)"
+    },
+    {
+      "name": "Wraith",
+      "lv": 16,
+      "arcana": "Devil",
+      "dungeons": [
+        "GOLD",
+        "Club Zodiac",
+        "Bomb Shelter"
+      ],
+      "weak": [
+        "SWD",
+        "LGT"
+      ],
+      "avoid": [
+        "RNG (Strong)",
+        "STK (Strong)",
+        "THR (Strong)",
+        "HVC (Strong)"
+      ],
+      "eager": "Wire Tapping / Investigation (Scam)",
+      "happy": "Costing a Fortune / Comparing Heights",
+      "cards": "Devil (+Free w/ Pact)"
+    },
+    {
+      "name": "Kiyohime",
+      "lv": 17,
+      "arcana": "Strength",
+      "dungeons": [
+        "GOLD",
+        "Club Zodiac",
+        "Bomb Shelter"
+      ],
+      "weak": [
+        "WAT"
+      ],
+      "avoid": [
+        "FIR (Void)",
+        "NUC (Absorb)"
+      ],
+      "eager": "Fortune Telling / Investigation (Scam)",
+      "happy": "Special Report / Persuade Special",
+      "cards": "Strength (+Free w/ Pact)"
+    },
+    {
+      "name": "Shax",
+      "lv": 17,
+      "arcana": "Hanged Man",
+      "dungeons": [
+        "GOLD",
+        "Club Zodiac",
+        "Bomb Shelter"
+      ],
+      "weak": [
+        "RNG",
+        "FIR",
+        "EAR"
+      ],
+      "avoid": [
+        "SWD (Strong)",
+        "HVC (Strong)",
+        "WAT (Void)"
+      ],
+      "eager": "Wire Tapping / Investigation (Scam)",
+      "happy": "Persuade Special / What is \"Justice\" ?",
+      "cards": "Hanged Man (+Free w/ Pact)"
+    },
+    {
+      "name": "Jack Frost",
+      "lv": 18,
+      "arcana": "Lovers",
+      "dungeons": [
+        "Club Zodiac",
+        "Aoba Park",
+        "Sewers",
+        "Bomb Shelter"
+      ],
+      "weak": [
+        "FIR"
+      ],
+      "avoid": [
+        "WAT (Void)",
+        "ICE (Absorb)"
+      ],
+      "eager": "Interview / Fortune Telling",
+      "happy": "Advise / Flamenco de la Pasion",
+      "cards": "Lovers (+Free w/ Pact)"
+    },
+    {
+      "name": "Fearal",
+      "lv": 19,
+      "arcana": "Temperance",
+      "dungeons": [
+        "Club Zodiac",
+        "Aoba Park",
+        "Bomb Shelter"
+      ],
+      "weak": [
+        "RNG",
+        "EAR"
+      ],
+      "avoid": [
+        "SWD (Strong)",
+        "HVC (Strong)"
+      ],
+      "eager": "Special Report / Interrogation",
+      "happy": "Fortune Telling / What is \"Justice\" ?",
+      "cards": "Temperance (+Free w/ Pact)"
+    },
+    {
+      "name": "Pariker",
+      "lv": 20,
+      "arcana": "Moon",
+      "dungeons": [
+        "Aoba Park",
+        "Sewers",
+        "Sumaru TV",
+        "Bomb Shelter"
+      ],
+      "weak": [
+        "SWD",
+        "LGT"
+      ],
+      "avoid": [
+        "RNG (Void)",
+        "STK (Void)",
+        "THR (Void)",
+        "HVC (Void)"
+      ],
+      "eager": "Wire Tapping / Investigation (Scam)",
+      "happy": "Costing a Fortune / Prince",
+      "cards": "Moon (+Free w/ Pact)"
+    },
+    {
+      "name": "Archangel",
+      "lv": 21,
+      "arcana": "Judgement",
+      "dungeons": [
+        "Aoba Park",
+        "Sewers",
+        "Sumaru TV",
+        "Bomb Shelter"
+      ],
+      "weak": [
+        "DRK"
+      ],
+      "avoid": [
+        "LGT (Null)"
+      ],
+      "eager": "Fortune Telling / Wire Tapping is a Crime",
+      "happy": "Group Therapy / Persuade Special",
+      "cards": "Judgement (+Free w/ Pact)"
+    },
+    {
+      "name": "Faust",
+      "lv": 22,
+      "arcana": "Magician",
+      "dungeons": [
+        "GOLD",
+        "Club Zodiac",
+        "Aoba Park",
+        "Sewers",
+        "Sumaru TV",
+        "Bomb Shelter"
+      ],
+      "weak": [
+        "LGT"
+      ],
+      "avoid": [
+        "DRK (Null)"
+      ],
+      "eager": "Wire Tapping is a Crime / Interrogation",
+      "happy": "Group Therapy / Persuade Special",
+      "cards": "Magician (+Free w/ Pact)"
+    },
+    {
+      "name": "Hel",
+      "lv": 22,
+      "arcana": "Death",
+      "dungeons": [
+        "Aoba Park",
+        "Sewers",
+        "Sumaru TV",
+        "Bomb Shelter"
+      ],
+      "weak": [],
+      "avoid": [
+        "LGT (Null)",
+        "DRK (Null)"
+      ],
+      "eager": "Wire Tapping / Interrogation",
+      "happy": "Costing a Fortune / Comparing Heights",
+      "cards": "Death (+Free w/ Pact)"
+    },
+    {
+      "name": "Gandharva",
+      "lv": 23,
+      "arcana": "Star",
+      "dungeons": [
+        "Aoba Park",
+        "Sewers",
+        "Sumaru TV",
+        "Bomb Shelter"
+      ],
+      "weak": [
+        "WAT"
+      ],
+      "avoid": [
+        "FIR (Drain)"
+      ],
+      "eager": "Special Report / Wire Tapping is a Crime",
+      "happy": "Group Therapy / Fortune Telling",
+      "cards": "Star (+Free w/ Pact)"
+    },
+    {
+      "name": "Kraken",
+      "lv": 23,
+      "arcana": "World",
+      "dungeons": [
+        "Sewers",
+        "Sumaru TV",
+        "Bomb Shelter"
+      ],
+      "weak": [
+        "FIR"
+      ],
+      "avoid": [
+        "WAT (Null)"
+      ],
+      "eager": "Interview / Fortune Telling",
+      "happy": "Special Report / Persuade Special",
+      "cards": "World (+Free w/ Pact)"
+    },
+    {
+      "name": "Kabanda",
+      "lv": 24,
+      "arcana": "Hanged Man",
+      "dungeons": [
+        "Sewers",
+        "Science Lab",
+        "Sumaru TV",
+        "Bomb Shelter"
+      ],
+      "weak": [
+        "FIR"
+      ],
+      "avoid": [
+        "WAT (Null)",
+        "ICE (Drain)"
+      ],
+      "eager": "Advise ? / Wire Tapping",
+      "happy": "Persuade Special / Flamenco de la Pasion",
+      "cards": "Hanged Man (+Free w/ Pact)"
+    },
+    {
+      "name": "Kanaloa",
+      "lv": 24,
+      "arcana": "Tower",
+      "dungeons": [
+        "Sewers",
+        "Science Lab",
+        "Sumaru TV",
+        "Bomb Shelter"
+      ],
+      "weak": [],
+      "avoid": [
+        "WAT (Null)",
+        "LGT (Null)",
+        "DRK (Null)"
+      ],
+      "eager": "Interview / Investigation of Terror",
+      "happy": "Advise / Persuade ?",
+      "cards": "Tower (+Free w/ Pact)"
+    },
+    {
+      "name": "Lich",
+      "lv": 25,
+      "arcana": "Devil",
+      "dungeons": [
+        "Sewers",
+        "Science Lab",
+        "Sumaru TV",
+        "Bomb Shelter"
+      ],
+      "weak": [
+        "LGT"
+      ],
+      "avoid": [
+        "DRK (Null)"
+      ],
+      "eager": "Wire Tapping / Interrogation",
+      "happy": "Persuade Special / Costing a Fortune",
+      "cards": "Devil (+Free w/ Pact)"
+    },
+    {
+      "name": "Jack O' Lantern",
+      "lv": 26,
+      "arcana": "Lovers",
+      "dungeons": [
+        "Sumaru TV",
+        "Bomb Shelter"
+      ],
+      "weak": [
+        "WAT"
+      ],
+      "avoid": [
+        "FIR (Drain)"
+      ],
+      "eager": "Interview / Fortune Telling",
+      "happy": "Persuade Special / Flamenco de la Pasion",
+      "cards": "Lovers (+Free w/ Pact)"
+    },
+    {
+      "name": "Kun Anun",
+      "lv": 27,
+      "arcana": "Hermit",
+      "dungeons": [
+        "Science Lab",
+        "Sumaru TV",
+        "Bomb Shelter"
+      ],
+      "weak": [],
+      "avoid": [
+        "PHY (Resist)"
+      ],
+      "eager": "Interview / Wire Tapping",
+      "happy": "Special Report / Persuade ?",
+      "cards": "Hermit (+Free w/ Pact)"
+    },
+    {
+      "name": "Taranis",
+      "lv": 27,
+      "arcana": "Chariot",
+      "dungeons": [
+        "Science Lab",
+        "Sumaru TV",
+        "Smile Mall",
+        "Bomb Shelter"
+      ],
+      "weak": [
+        "FIR",
+        "WAT",
+        "WND",
+        "EAR",
+        "ICE",
+        "ELE",
+        "NUC",
+        "ALM"
+      ],
+      "avoid": [
+        "PHY (Resist)"
+      ],
+      "eager": "Interview / Investigation of Terror",
+      "happy": "Advise / Persuade ?",
+      "cards": "Chariot (+Free w/ Pact)"
+    },
+    {
+      "name": "Kamasos",
+      "lv": 28,
+      "arcana": "Temperance",
+      "dungeons": [
+        "Science Lab",
+        "Sumaru TV",
+        "Bomb Shelter"
+      ],
+      "weak": [],
+      "avoid": [
+        "RNG (Repel)",
+        "THR (Repel)"
+      ],
+      "eager": "Wire Tapping / Interrogation",
+      "happy": "Persuade Special / Costing a Fortune",
+      "cards": "Temperance (+Free w/ Pact)"
+    },
+    {
+      "name": "Rasputin",
+      "lv": 28,
+      "arcana": "Magician",
+      "dungeons": [
+        "Science Lab",
+        "Sumaru TV",
+        "Smile Mall",
+        "Bomb Shelter"
+      ],
+      "weak": [
+        "PHY"
+      ],
+      "avoid": [
+        "FIR (Null)",
+        "WAT (Null)",
+        "WND (Null)",
+        "EAR (Null)",
+        "ICE (Null)",
+        "ELE (Null)",
+        "NUC (Null)",
+        "ALM (Null)",
+        "LGT (Null)",
+        "DRK (Null)"
+      ],
+      "eager": "Wire Tapping / Interrogation",
+      "happy": "Costing a Fortune / Comparing Heights",
+      "cards": "Magician (+Free w/ Pact)"
+    },
+    {
+      "name": "Kerepres",
+      "lv": 29,
+      "arcana": "Strength",
+      "dungeons": [
+        "Smile Mall",
+        "Aoba Park",
+        "Bomb Shelter"
+      ],
+      "weak": [
+        "STK",
+        "HVC"
+      ],
+      "avoid": [
+        "ELE (Resist)",
+        "NUC (Resist)",
+        "ICE (Resist)"
+      ],
+      "eager": "Wire Tapping is a Crime / Interrogation",
+      "happy": "Group Therapy / Persuade Special",
+      "cards": "Strength (+Free w/ Pact)"
+    },
+    {
+      "name": "Principality",
+      "lv": 29,
+      "arcana": "Judgement",
+      "dungeons": [
+        "Science Lab",
+        "Sumaru TV",
+        "Smile Mall",
+        "Bomb Shelter"
+      ],
+      "weak": [
+        "DRK"
+      ],
+      "avoid": [
+        "LGT (Null)"
+      ],
+      "eager": "Interrogation / Investigation (Scam)",
+      "happy": "Persuade Special / Adult's Excuse",
+      "cards": "Judgement (+Free w/ Pact)"
+    },
+    {
+      "name": "Hunhau",
+      "lv": 30,
+      "arcana": "Death",
+      "dungeons": [
+        "Smile Mall",
+        "Aoba Park",
+        "Bomb Shelter"
+      ],
+      "weak": [],
+      "avoid": [
+        "LGT (Null)",
+        "DRK (Null)"
+      ],
+      "eager": "Wire Tapping / Investigation of Terror",
+      "happy": "Advise / Persuade ?",
+      "cards": "Death (+Free w/ Pact)"
+    },
+    {
+      "name": "Picollus",
+      "lv": 30,
+      "arcana": "Star",
+      "dungeons": [
+        "Smile Mall",
+        "Bomb Shelter"
+      ],
+      "weak": [
+        "FIR"
+      ],
+      "avoid": [
+        "WAT (Null)",
+        "ICE (Null)"
+      ],
+      "eager": "Wire Tapping / Advise ?",
+      "happy": "Persuade ? / Flamenco de la Pasion",
+      "cards": "Star (+Free w/ Pact)"
+    },
+    {
+      "name": "Demeter",
+      "lv": 31,
+      "arcana": "World",
+      "dungeons": [
+        "Smile Mall",
+        "Aoba Park",
+        "Bomb Shelter"
+      ],
+      "weak": [],
+      "avoid": [
+        "LGT (Null)",
+        "DRK (Null)"
+      ],
+      "eager": "Advise / Group Therapy",
+      "happy": "Fortune Telling / Comparing Heights",
+      "cards": "World (+Free w/ Pact)"
+    },
+    {
+      "name": "Zaeboth",
+      "lv": 32,
+      "arcana": "Hanged Man",
+      "dungeons": [
+        "Smile Mall",
+        "Aoba Park",
+        "Bomb Shelter"
+      ],
+      "weak": [
+        "LGT"
+      ],
+      "avoid": [
+        "DRK (Null)"
+      ],
+      "eager": "Wire Tapping / Advise ?",
+      "happy": "Persuade ? / Flamenco de la Pasion",
+      "cards": "Hanged Man (+Free w/ Pact)"
+    },
+    {
+      "name": "Lilim",
+      "lv": 33,
+      "arcana": "Moon",
+      "dungeons": [
+        "Aoba Park",
+        "Abandoned Factory",
+        "Bomb Shelter"
+      ],
+      "weak": [
+        "LGT"
+      ],
+      "avoid": [
+        "DRK (Null)"
+      ],
+      "eager": "Wire Tapping / Interrogation",
+      "happy": "Persuade Special / Costing a Fortune",
+      "cards": "Moon (+Free w/ Pact)"
+    },
+    {
+      "name": "Wanyuudo",
+      "lv": 33,
+      "arcana": "Fortune",
+      "dungeons": [
+        "Aoba Park",
+        "Abandoned Factory",
+        "Bomb Shelter"
+      ],
+      "weak": [
+        "LGT"
+      ],
+      "avoid": [
+        "DRK (Repel)"
+      ],
+      "eager": "Interview / Fortune Telling",
+      "happy": "Special Report / Persuade Special",
+      "cards": "Fortune (+Free w/ Pact)"
+    },
+    {
+      "name": "Agrippa",
+      "lv": 34,
+      "arcana": "Magician",
+      "dungeons": [
+        "Abandoned Factory",
+        "Bomb Shelter"
+      ],
+      "weak": [
+        "PHY"
+      ],
+      "avoid": [
+        "FIR (Resist)",
+        "WAT (Resist)",
+        "WND (Resist)",
+        "EAR (Resist)",
+        "ICE (Resist)",
+        "ELE (Resist)",
+        "NUC (Resist)",
+        "ALM (Resist)",
+        "LGT (Resist)",
+        "DRK (Resist)"
+      ],
+      "eager": "Wire Tapping / Interrogation",
+      "happy": "Persuade Special / What is \"Justice\" ?",
+      "cards": "Magician (+Free w/ Pact)"
+    },
+    {
+      "name": "Dairoku Tenmaou",
+      "lv": 34,
+      "arcana": "Devil",
+      "dungeons": [
+        "Abandoned Factory",
+        "Bomb Shelter"
+      ],
+      "weak": [
+        "LGT"
+      ],
+      "avoid": [
+        "DRK (Null)"
+      ],
+      "eager": "Wire Tapping / Investigation of Terror",
+      "happy": "Advise / Persuade ?",
+      "cards": "Devil (+Free w/ Pact)"
+    },
+    {
+      "name": "Python",
+      "lv": 35,
+      "arcana": "Strength",
+      "dungeons": [
+        "Abandoned Factory",
+        "Nichirinmaru",
+        "Bomb Shelter"
+      ],
+      "weak": [
+        "STK",
+        "HVC"
+      ],
+      "avoid": [
+        "ELE (Resist)",
+        "NUC (Resist)",
+        "ICE (Resist)"
+      ],
+      "eager": "Interview / Fortune Telling",
+      "happy": "Special Report / Persuade Special",
+      "cards": "Strength (+Free w/ Pact)"
+    },
+    {
+      "name": "Shoggoth",
+      "lv": 35,
+      "arcana": "Tower",
+      "dungeons": [
+        "Abandoned Factory",
+        "Nichirinmaru",
+        "Bomb Shelter"
+      ],
+      "weak": [
+        "SWD",
+        "LGT"
+      ],
+      "avoid": [
+        "RNG (Resist)",
+        "STK (Resist)",
+        "THR (Resist)",
+        "HVC (Resist)"
+      ],
+      "eager": "Fortune Telling / Wire Tapping is a Crime",
+      "happy": "Group Therapy / Persuade Special",
+      "cards": "Tower (+Free w/ Pact)"
+    },
+    {
+      "name": "Power",
+      "lv": 36,
+      "arcana": "Judgement",
+      "dungeons": [
+        "Abandoned Factory",
+        "Nichirinmaru",
+        "Bomb Shelter"
+      ],
+      "weak": [
+        "DRK"
+      ],
+      "avoid": [
+        "LGT (Null)"
+      ],
+      "eager": "Investigation of Terror (Scam Special)",
+      "happy": "Persuade ? / Alcool, Tears, Men and Women",
+      "cards": "Judgement (+Free w/ Pact)"
+    },
+    {
+      "name": "Satyrus",
+      "lv": 36,
+      "arcana": "Lovers",
+      "dungeons": [
+        "Abandoned Factory",
+        "Nichirinmaru",
+        "Bomb Shelter"
+      ],
+      "weak": [
+        "WND"
+      ],
+      "avoid": [
+        "EAR (Drain)"
+      ],
+      "eager": "Interview / Fortune Telling",
+      "happy": "Persuade Special / Flamenco de la Pasion",
+      "cards": "Lovers (+Free w/ Pact)"
+    },
+    {
+      "name": "Stuparideth",
+      "lv": 37,
+      "arcana": "Temperance",
+      "dungeons": [
+        "Nichirinmaru",
+        "Bomb Shelter"
+      ],
+      "weak": [
+        "RNG",
+        "EAR"
+      ],
+      "avoid": [
+        "SWD (Resist)",
+        "HVC (Resist)",
+        "WND (Null)"
+      ],
+      "eager": "Investigation of Terror / Dance of Passion Special",
+      "happy": "Persuade ?",
+      "cards": "Temperance (+Free w/ Pact)"
+    },
+    {
+      "name": "Heinir",
+      "lv": 38,
+      "arcana": "Star",
+      "dungeons": [
+        "Nichirinmaru",
+        "Bomb Shelter"
+      ],
+      "weak": [],
+      "avoid": [
+        "RNG (Null)",
+        "THR (Null)"
+      ],
+      "eager": "Special Report / Persuade Special",
+      "happy": "Fortune Telling / Debate Till Dawn",
+      "cards": "Star (+Free w/ Pact)"
+    },
+    {
+      "name": "Leviathan",
+      "lv": 39,
+      "arcana": "World",
+      "dungeons": [
+        "Nichirinmaru",
+        "Undersea Ruins",
+        "Bomb Shelter"
+      ],
+      "weak": [
+        "FIR"
+      ],
+      "avoid": [
+        "WAT (Drain)"
+      ],
+      "eager": "Interview / Wire Tapping",
+      "happy": "Special Report / Persuade ?",
+      "cards": "World (+Free w/ Pact)"
+    },
+    {
+      "name": "Rakshasa",
+      "lv": 39,
+      "arcana": "Chariot",
+      "dungeons": [
+        "Nichirinmaru",
+        "Undersea Ruins",
+        "Bomb Shelter"
+      ],
+      "weak": [
+        "FIR",
+        "WAT",
+        "WND",
+        "EAR",
+        "ICE",
+        "ELE",
+        "NUC",
+        "ALM"
+      ],
+      "avoid": [
+        "PHY (Resist)"
+      ],
+      "eager": "Investigation of Terror / Dance of Passion Special",
+      "happy": "Persuade ?",
+      "cards": "Chariot (+Free w/ Pact)"
+    },
+    {
+      "name": "Orthros",
+      "lv": 40,
+      "arcana": "Fortune",
+      "dungeons": [
+        "Nichirinmaru",
+        "Undersea Ruins",
+        "Bomb Shelter"
+      ],
+      "weak": [],
+      "avoid": [
+        "PHY (Resist)"
+      ],
+      "eager": "Interview / Wire Tapping",
+      "happy": "Special Report / Persuade ?",
+      "cards": "Fortune (+Free w/ Pact)"
+    },
+    {
+      "name": "Barbatos",
+      "lv": 41,
+      "arcana": "Hanged Man",
+      "dungeons": [
+        "Undersea Ruins",
+        "Bomb Shelter"
+      ],
+      "weak": [
+        "WND"
+      ],
+      "avoid": [
+        "EAR (Repel)"
+      ],
+      "eager": "Wire Tapping / Interrogation",
+      "happy": "Persuade Special / Costing a Fortune",
+      "cards": "Hanged Man (+Free w/ Pact)"
+    },
+    {
+      "name": "Waitry",
+      "lv": 41,
+      "arcana": "Magician",
+      "dungeons": [
+        "Undersea Ruins",
+        "Bomb Shelter"
+      ],
+      "weak": [
+        "PHY"
+      ],
+      "avoid": [
+        "FIR (Null)",
+        "WAT (Null)",
+        "WND (Null)",
+        "EAR (Null)",
+        "ICE (Null)",
+        "ELE (Null)",
+        "NUC (Null)",
+        "ALM (Null)",
+        "LGT (Null)",
+        "DRK (Null)"
+      ],
+      "eager": "Wire Tapping / Investigation of Terror",
+      "happy": "Brothers Kindness",
+      "cards": "Magician (+Free w/ Pact)"
+    },
+    {
+      "name": "Aeshma",
+      "lv": 42,
+      "arcana": "Tower",
+      "dungeons": [
+        "Undersea Ruins",
+        "Mt. Iwato",
+        "Bomb Shelter"
+      ],
+      "weak": [],
+      "avoid": [
+        "LGT (Null)",
+        "DRK (Null)"
+      ],
+      "eager": "Interview / Investigation of Terror",
+      "happy": "Advise / Persuade ?",
+      "cards": "Tower (+Free w/ Pact)"
+    },
+    {
+      "name": "Biyarky",
+      "lv": 42,
+      "arcana": "Devil",
+      "dungeons": [
+        "Bomb Shelter"
+      ],
+      "weak": [],
+      "avoid": [
+        "PHY (Resist)",
+        "FIR (Resist)",
+        "WAT (Resist)",
+        "WND (Resist)",
+        "EAR (Resist)",
+        "ICE (Resist)",
+        "ELE (Resist)",
+        "NUC (Resist)",
+        "ALM (Resist)",
+        "LGT (Null)",
+        "DRK (Null)"
+      ],
+      "eager": "Advise ? / Fortune Telling (inferred from Demeter Reverse)",
+      "happy": "Costing a Fortune / Ah, Alcool is my life !!!",
+      "cards": "Devil (+Free w/ Pact)"
+    },
+    {
+      "name": "Catoblepas",
+      "lv": 42,
+      "arcana": "Hermit",
+      "dungeons": [
+        "Undersea Ruins",
+        "Mt. Iwato",
+        "Bomb Shelter"
+      ],
+      "weak": [],
+      "avoid": [
+        "PHY (Resist)"
+      ],
+      "eager": "Group Therapy / Fortune Telling",
+      "happy": "Advise ? / Ah, Alcool is my life !!!",
+      "cards": "Hermit (+Free w/ Pact)"
+    },
+    {
+      "name": "Takshaka",
+      "lv": 43,
+      "arcana": "Strength",
+      "dungeons": [
+        "Undersea Ruins",
+        "Mt. Iwato",
+        "Bomb Shelter (Area 5)",
+        "Extra Dungeon (2-A)"
+      ],
+      "weak": [
+        "ELE"
+      ],
+      "avoid": [
+        "PHY/FIR/WAT/WND/EAR/ICE/NUC/ALM (Strong)",
+        "LGT/DRK (Null)"
+      ],
+      "eager": "Wire Tapping / Interrogation",
+      "happy": "Persuade Special / Child Claim",
+      "cards": "Strength (+Free w/ Pact)"
+    },
+    {
+      "name": "Ankou",
+      "lv": 44,
+      "arcana": "Death",
+      "dungeons": [
+        "Mt. Iwato",
+        "Bomb Shelter (Area 6)"
+      ],
+      "weak": [],
+      "avoid": [
+        "LGT/DRK (Repel)"
+      ],
+      "eager": "Wire Tapping / Investigation of Terror",
+      "happy": "Brothers Kindness / Persuade ? (GY)",
+      "cards": "Death (+Free w/ Pact)"
+    },
+    {
+      "name": "Virtue",
+      "lv": 44,
+      "arcana": "Judgement",
+      "dungeons": [
+        "Mt. Iwato",
+        "Bomb Shelter (Area 6)",
+        "Extra Dungeon (2-C)"
+      ],
+      "weak": [
+        "DRK"
+      ],
+      "avoid": [
+        "LGT (Repel)"
+      ],
+      "eager": "None pure Y (RY: Interview / Fortune Telling; Reverse Y: Investigation of Terror (Scam Special))",
+      "happy": "Special Report / Persuade ?",
+      "cards": "Judgement (+Free w/ Pact)"
+    },
+    {
+      "name": "Vucub Kakish",
+      "lv": 45,
+      "arcana": "Temperance",
+      "dungeons": [
+        "Mt. Iwato",
+        "Subway Tunnel",
+        "Bomb Shelter (Area 6)"
+      ],
+      "weak": [
+        "RNG",
+        "EAR"
+      ],
+      "avoid": [
+        "SWD/STK/HVC (Strong)",
+        "WND (Null)"
+      ],
+      "eager": "Wire Tapping / Interrogation",
+      "happy": "Persuade Special / Child Claim",
+      "cards": "Temperance (+Free w/ Pact)"
+    },
+    {
+      "name": "Hunab Ku",
+      "lv": 46,
+      "arcana": "World",
+      "dungeons": [
+        "Mt. Iwato",
+        "Subway Tunnel",
+        "Bomb Shelter (Area 6)"
+      ],
+      "weak": [
+        "WND"
+      ],
+      "avoid": [
+        "EAR (Null)",
+        "ICE/ELE/NUC (Strong)"
+      ],
+      "eager": "Wire Tapping is a Crime / Interrogation",
+      "happy": "Group Therapy / Persuade Special",
+      "cards": "World (+Free w/ Pact)"
+    },
+    {
+      "name": "Lucifugus",
+      "lv": 46,
+      "arcana": "Devil",
+      "dungeons": [
+        "Mt. Iwato",
+        "Subway Tunnel",
+        "Bomb Shelter (Area 6)"
+      ],
+      "weak": [
+        "PHY"
+      ],
+      "avoid": [
+        "FIR/WAT/WND/EAR/ICE/ELE/NUC/LGT/DRK/ALM (Null)"
+      ],
+      "eager": "Wire Tapping is a Crime / Interrogation",
+      "happy": "Group Therapy / Persuade Special",
+      "cards": "Devil (+Free w/ Pact)"
+    },
+    {
+      "name": "Succubus",
+      "lv": 47,
+      "arcana": "Moon",
+      "dungeons": [
+        "Mt. Iwato",
+        "Subway Tunnel",
+        "Bomb Shelter (Area 6)"
+      ],
+      "weak": [
+        "PHY"
+      ],
+      "avoid": [
+        "FIR/WAT/WND/EAR/ICE/ELE/NUC/LGT/DRK/ALM (Strong)"
+      ],
+      "eager": "Persuade Special / Comparing Heights",
+      "happy": "Radiant Women Unite / Costing a Fortune",
+      "cards": "Moon (+Free w/ Pact)"
+    },
+    {
+      "name": "Pucel",
+      "lv": 48,
+      "arcana": "Hanged Man",
+      "dungeons": [
+        "Subway Tunnel",
+        "Bomb Shelter (Area 6)"
+      ],
+      "weak": [
+        "LGT"
+      ],
+      "avoid": [
+        "DRK (Null)"
+      ],
+      "eager": "Interrogation / Investigation (Scam)",
+      "happy": "Persuade Special / Adult's Excuse",
+      "cards": "Hanged Man (+Free w/ Pact)"
+    },
+    {
+      "name": "Crowley",
+      "lv": 49,
+      "arcana": "Magician",
+      "dungeons": [
+        "Mt. Iwato",
+        "Subway Tunnel",
+        "Bomb Shelter (Area 6)",
+        "Extra Dungeon (2-A)"
+      ],
+      "weak": [
+        "PHY"
+      ],
+      "avoid": [
+        "FIR/WAT/WND/EAR/ICE/ELE/NUC/LGT/DRK/ALM (Repel)"
+      ],
+      "eager": "Wire Tapping / Interrogation",
+      "happy": "Persuade Special / Child Claim",
+      "cards": "Magician (+Free w/ Pact)"
+    },
+    {
+      "name": "Yaksha",
+      "lv": 49,
+      "arcana": "Star",
+      "dungeons": [
+        "Subway Tunnel",
+        "Bomb Shelter (Area 6)"
+      ],
+      "weak": [
+        "FIR",
+        "WAT",
+        "WND",
+        "EAR",
+        "ICE",
+        "ELE",
+        "NUC",
+        "ALM"
+      ],
+      "avoid": [
+        "PHY (Strong)"
+      ],
+      "eager": "Investigation (Scam)",
+      "happy": "Persuade Special / Radiant Women Unite",
+      "cards": "Star (+Free w/ Pact)"
+    },
+    {
+      "name": "Ares",
+      "lv": 50,
+      "arcana": "Chariot",
+      "dungeons": [
+        "Subway Tunnel",
+        "Ameno Torifune",
+        "Bomb Shelter (Area 6)"
+      ],
+      "weak": [
+        "WAT"
+      ],
+      "avoid": [
+        "FIR (Strong)"
+      ],
+      "eager": "Wire Tapping / Investigation of Terror",
+      "happy": "Persuade ? / Flamenco de la Pasion",
+      "cards": "Chariot (+Free w/ Pact)"
+    },
+    {
+      "name": "Seker",
+      "lv": 50,
+      "arcana": "Tower",
+      "dungeons": [
+        "Subway Tunnel",
+        "Ameno Torifune",
+        "Bomb Shelter (Area 6)"
+      ],
+      "weak": [
+        "RNG",
+        "EAR"
+      ],
+      "avoid": [
+        "SWD/STK/HVC (Strong)",
+        "DRK (Null)"
+      ],
+      "eager": "Interrogation / Fortune Telling",
+      "happy": "Group Therapy / Persuade Special",
+      "cards": "Tower (+Free w/ Pact)"
+    },
+    {
+      "name": "Cerberus",
+      "lv": 51,
+      "arcana": "Fortune",
+      "dungeons": [
+        "Ameno Torifune",
+        "Bomb Shelter (Area 7)"
+      ],
+      "weak": [
+        "WND"
+      ],
+      "avoid": [
+        "EAR (Null)",
+        "ICE/ELE/NUC (Repel)"
+      ],
+      "eager": "Wire Tapping / Interrogation",
+      "happy": "Persuade Special / Child Claim",
+      "cards": "Fortune (+Free w/ Pact)"
+    },
+    {
+      "name": "Dominion",
+      "lv": 52,
+      "arcana": "Judgement",
+      "dungeons": [
+        "Ameno Torifune",
+        "Bomb Shelter (Area 7)",
+        "Extra Dungeon (2-C)"
+      ],
+      "weak": [
+        "DRK"
+      ],
+      "avoid": [
+        "LGT (Repel)"
+      ],
+      "eager": "Investigation of Terror (Scam Special)",
+      "happy": "Persuade ?",
+      "cards": "Judgement (+Free w/ Pact)"
+    },
+    {
+      "name": "Fafnir",
+      "lv": 53,
+      "arcana": "Strength",
+      "dungeons": [
+        "Ameno Torifune",
+        "Bomb Shelter (Area 7)"
+      ],
+      "weak": [
+        "STK",
+        "HVC"
+      ],
+      "avoid": [
+        "ICE/ELE/NUC (Strong)"
+      ],
+      "eager": "Interrogation / Investigation (Scam)",
+      "happy": "Persuade Special / Adult's Excuse",
+      "cards": "Strength (+Free w/ Pact)"
+    },
+    {
+      "name": "Mucalinda",
+      "lv": 54,
+      "arcana": "World",
+      "dungeons": [
+        "Ameno Torifune",
+        "Sumaru Castle",
+        "Bomb Shelter (Area 7)"
+      ],
+      "weak": [
+        "PHY"
+      ],
+      "avoid": [
+        "FIR/WAT/WND/EAR/ICE/ELE/NUC/LGT/DRK/ALM (Strong)"
+      ],
+      "eager": "Wire Tapping / Interrogation",
+      "happy": "Persuade Special / Child Claim",
+      "cards": "World (+Free w/ Pact)"
+    },
+    {
+      "name": "Phoenix",
+      "lv": 54,
+      "arcana": "Temperance",
+      "dungeons": [
+        "Ameno Torifune",
+        "Sumaru Castle",
+        "Bomb Shelter (Area 7)"
+      ],
+      "weak": [],
+      "avoid": [
+        "FIR/LGT/DRK (Null)"
+      ],
+      "eager": "Advise / Group Therapy / Persuade Special",
+      "happy": "Comparing Heights",
+      "cards": "Temperance (+Free w/ Pact)"
+    },
+    {
+      "name": "Mananan",
+      "lv": 55,
+      "arcana": "Magician",
+      "dungeons": [
+        "Ameno Torifune",
+        "Sumaru Castle",
+        "Bomb Shelter (Area 7)"
+      ],
+      "weak": [
+        "FIR"
+      ],
+      "avoid": [
+        "WAT (Repel)"
+      ],
+      "eager": "Wire Tapping is a Crime / Interrogation",
+      "happy": "Group Therapy / Persuade Special",
+      "cards": "Magician (+Free w/ Pact)"
+    },
+    {
+      "name": "Jahi",
+      "lv": 56,
+      "arcana": "Moon",
+      "dungeons": [
+        "Sumaru Castle",
+        "Bomb Shelter (Area 7)",
+        "Extra Dungeon (3-C)"
+      ],
+      "weak": [
+        "PHY"
+      ],
+      "avoid": [
+        "FIR/WAT/WND/EAR/ICE/ELE/NUC/LGT/DRK/ALM (Strong)"
+      ],
+      "eager": "Wire Tapping is a Crime / Interrogation",
+      "happy": "Group Therapy / Persuade Special",
+      "cards": "Moon (+Free w/ Pact)"
+    },
+    {
+      "name": "Kinich Ahau",
+      "lv": 56,
+      "arcana": "Hermit",
+      "dungeons": [
+        "Ameno Torifune",
+        "Sumaru Castle",
+        "Bomb Shelter (Area 7)"
+      ],
+      "weak": [],
+      "avoid": [
+        "PHY (Strong)"
+      ],
+      "eager": "Fortune Telling / Investigation (Scam)",
+      "happy": "Special Report / Persuade Special",
+      "cards": "Hermit (+Free w/ Pact)"
+    },
+    {
+      "name": "Adramelech",
+      "lv": 57,
+      "arcana": "Hanged Man",
+      "dungeons": [
+        "Sumaru Castle",
+        "Bomb Shelter (Area 7)",
+        "Extra Dungeon (3-C)"
+      ],
+      "weak": [
+        "LGT"
+      ],
+      "avoid": [
+        "DRK (Repel)"
+      ],
+      "eager": "Wire Tapping / Investigation of Terror",
+      "happy": "Persuade ?",
+      "cards": "Hanged Man (+Free w/ Pact)"
+    },
+    {
+      "name": "Throne",
+      "lv": 57,
+      "arcana": "Judgement",
+      "dungeons": [
+        "Sumaru Castle",
+        "Monado Mandala",
+        "Bomb Shelter (Areas 7-8)",
+        "Extra Dungeon (2-C)"
+      ],
+      "weak": [
+        "DRK"
+      ],
+      "avoid": [
+        "LGT (Null)"
+      ],
+      "eager": "Wire Tapping is a Crime / Interrogation",
+      "happy": "Group Therapy / Persuade Special",
+      "cards": "Judgement (+Free w/ Pact)"
+    },
+    {
+      "name": "Girimekara",
+      "lv": 58,
+      "arcana": "Chariot",
+      "dungeons": [
+        "Ameno Torifune",
+        "Sumaru Castle",
+        "Bomb Shelter (Area 7)",
+        "Extra Dungeon (2-A)"
+      ],
+      "weak": [
+        "FIR",
+        "WAT",
+        "WND",
+        "EAR",
+        "ICE",
+        "ELE",
+        "NUC",
+        "LGT",
+        "DRK",
+        "ALM"
+      ],
+      "avoid": [
+        "PHY (Repel)"
+      ],
+      "eager": "Investigation of Terror (Scam Special)",
+      "happy": "Persuade ?",
+      "cards": "Chariot (+Free w/ Pact)"
+    },
+    {
+      "name": "Tezcatlipoca",
+      "lv": 59,
+      "arcana": "Tower",
+      "dungeons": [
+        "Sumaru Castle",
+        "Bomb Shelter (Area 7)"
+      ],
+      "weak": [],
+      "avoid": [
+        "PHY/FIR/WAT/WND/EAR/ICE/ELE/NUC/ALM (Strong)",
+        "LGT/DRK (Null)"
+      ],
+      "eager": "Interview / Wire Tapping / Investigation of Terror",
+      "happy": "Special Report / Persuade ?",
+      "cards": "Tower (+Free w/ Pact)"
+    },
+    {
+      "name": "Tzitzimitl",
+      "lv": 59,
+      "arcana": "Devil",
+      "dungeons": [
+        "Sumaru Castle",
+        "Bomb Shelter (Area 7)",
+        "Extra Dungeon (3-C)"
+      ],
+      "weak": [],
+      "avoid": [
+        "LGT/DRK (Null)"
+      ],
+      "eager": "Wire Tapping / Investigation of Terror / Radiant Women Unite",
+      "happy": "Advise / Persuade ?",
+      "cards": "Devil (+Free w/ Pact)"
+    },
+    {
+      "name": "Kishin",
+      "lv": 60,
+      "arcana": "Death",
+      "dungeons": [
+        "Sumaru Castle",
+        "Bomb Shelter (Area 7)"
+      ],
+      "weak": [],
+      "avoid": [
+        "LGT/DRK (Null)"
+      ],
+      "eager": "Wire Tapping is a Crime / Interrogation",
+      "happy": "Group Therapy / Persuade Special",
+      "cards": "Death (+Free w/ Pact)"
+    },
+    {
+      "name": "Valkyrie",
+      "lv": 60,
+      "arcana": "Star",
+      "dungeons": [
+        "Monado Mandala",
+        "Bomb Shelter (Area 8)",
+        "Extra Dungeon (3-C)"
+      ],
+      "weak": [
+        "FIR",
+        "WAT",
+        "WND",
+        "EAR",
+        "ICE",
+        "ELE",
+        "NUC",
+        "ALM"
+      ],
+      "avoid": [
+        "PHY (Strong)"
+      ],
+      "eager": "Investigation (Scam) / Passionnate Gaze",
+      "happy": "Persuade Special",
+      "cards": "Star (+Free w/ Pact)"
+    },
+    {
+      "name": "Saji",
+      "lv": 61,
+      "arcana": "Magician",
+      "dungeons": [
+        "Monado Mandala",
+        "Bomb Shelter (Area 8)",
+        "Extra Dungeon (3-C)"
+      ],
+      "weak": [
+        "PHY"
+      ],
+      "avoid": [
+        "FIR/WAT/WND/EAR/ICE/ELE/NUC/LGT/DRK/ALM (Repel)"
+      ],
+      "eager": "Wire Tapping / Interrogation",
+      "happy": "Persuade Special / Child Claim",
+      "cards": "Magician (+Free w/ Pact)"
+    },
+    {
+      "name": "Kau",
+      "lv": 62,
+      "arcana": "Temperance",
+      "dungeons": [
+        "Monado Mandala",
+        "Bomb Shelter (Area 8)",
+        "Extra Dungeon (3-C)"
+      ],
+      "weak": [
+        "RNG",
+        "WAT",
+        "EAR"
+      ],
+      "avoid": [
+        "SWD/STK/HVC (Strong)",
+        "FIR (Null)"
+      ],
+      "eager": "Wire Tapping is a Crime / Interrogation",
+      "happy": "Group Therapy / Persuade Special / Fortune Telling",
+      "cards": "Temperance (+Free w/ Pact)"
+    },
+    {
+      "name": "Uroboros",
+      "lv": 62,
+      "arcana": "World",
+      "dungeons": [
+        "Sumaru Castle",
+        "Monado Mandala",
+        "Bomb Shelter (Areas 7-8)",
+        "Extra Dungeon (3-C)"
+      ],
+      "weak": [
+        "STK",
+        "HVC"
+      ],
+      "avoid": [
+        "FIR/WAT/WND/EAR/ICE/ELE/NUC/LGT/DRK (Strong)"
+      ],
+      "eager": "Wire Tapping is a Crime / Interrogation",
+      "happy": "Group Therapy / Persuade Special",
+      "cards": "World (+Free w/ Pact)"
+    },
+    {
+      "name": "Vasuki",
+      "lv": 63,
+      "arcana": "Strength",
+      "dungeons": [
+        "Monado Mandala",
+        "Bomb Shelter (Area 8)",
+        "Extra Dungeon (3-C)"
+      ],
+      "weak": [
+        "FIR"
+      ],
+      "avoid": [
+        "WAT (Null)",
+        "ICE (Repel)",
+        "LGT/DRK (Strong)"
+      ],
+      "eager": "Wire Tapping / Interrogation",
+      "happy": "Persuade Special / Child Claim",
+      "cards": "Strength (+Free w/ Pact)"
+    },
+    {
+      "name": "Cherub",
+      "lv": 64,
+      "arcana": "Judgement",
+      "dungeons": [
+        "Monado Mandala",
+        "Bomb Shelter (Area 8)",
+        "Extra Dungeon (2-C, 3-C)"
+      ],
+      "weak": [
+        "DRK"
+      ],
+      "avoid": [
+        "LGT (Repel)"
+      ],
+      "eager": "Interrogation / Investigation (Scam)",
+      "happy": "Persuade Special / Adult's Excuse",
+      "cards": "Judgement (+Free w/ Pact)"
+    },
+    {
+      "name": "Shub-Niggurath",
+      "lv": 64,
+      "arcana": "Tower",
+      "dungeons": [
+        "Monado Mandala",
+        "Bomb Shelter (Area 8)",
+        "Extra Dungeon (3-C)"
+      ],
+      "weak": [
+        "PHY"
+      ],
+      "avoid": [
+        "FIR/WAT/WND/EAR/ICE/ELE/NUC/LGT/DRK/ALM (Repel)"
+      ],
+      "eager": "None pure Y (RY: Interview / Fortune Telling; Reverse Y: Investigation of Terror (Scam Special))",
+      "happy": "Special Report / Persuade ?",
+      "cards": "Tower (+Free w/ Pact)"
+    },
+    {
+      "name": "Berserk",
+      "lv": 65,
+      "arcana": "Chariot",
+      "dungeons": [
+        "Monado Mandala",
+        "Bomb Shelter (Area 8)"
+      ],
+      "weak": [],
+      "avoid": [
+        "LGT/DRK (Null)",
+        "SWD/HVC (Repel)"
+      ],
+      "eager": "Wire Tapping / Investigation of Terror",
+      "happy": "Persuade ? / Flamenco de la Pasion",
+      "cards": "Chariot (+Free w/ Pact)"
+    },
+    {
+      "name": "Ah Puch",
+      "lv": 66,
+      "arcana": "Death",
+      "dungeons": [
+        "Sumaru Castle",
+        "Monado Mandala",
+        "Bomb Shelter (Areas 7-8)",
+        "Extra Dungeon (3-C)"
+      ],
+      "weak": [],
+      "avoid": [
+        "LGT/DRK (Repel)"
+      ],
+      "eager": "Wire Tapping / Interrogation",
+      "happy": "Persuade Special / Child Claim",
+      "cards": "Death (+Free w/ Pact)"
+    },
+    {
+      "name": "Apaosha",
+      "lv": 68,
+      "arcana": "Hermit",
+      "dungeons": [
+        "Monado Mandala",
+        "Bomb Shelter (Area 8)",
+        "Extra Dungeon (3-C)"
+      ],
+      "weak": [],
+      "avoid": [
+        "FIR/LGT/DRK (Null)"
+      ],
+      "eager": "Fortune Telling / Wire Tapping is a Crime",
+      "happy": "Special Report / Group Therapy / Persuade Special",
+      "cards": "Hermit (+Free w/ Pact)"
+    },
+    {
+      "name": "Fenrir",
+      "lv": 70,
+      "arcana": "Fortune",
+      "dungeons": [
+        "Monado Mandala",
+        "Bomb Shelter (Area 8)",
+        "Extra Dungeon (3-C)"
+      ],
+      "weak": [],
+      "avoid": [
+        "FIR/LGT/DRK (Null)"
+      ],
+      "eager": "Investigation of Terror (Scam Special)",
+      "happy": "Persuade ? / Alcool, Tears, Men and Women",
+      "cards": "Fortune (+Free w/ Pact)"
+    },
+    {
+      "name": "Talos",
+      "lv": 74,
+      "arcana": "Chariot",
+      "dungeons": [
+        "Monado Mandala",
+        "Bomb Shelter (Area 8)",
+        "Extra Dungeon (3-C)"
+      ],
+      "weak": [
+        "FIR",
+        "WAT",
+        "WND",
+        "EAR",
+        "ICE",
+        "ELE",
+        "NUC",
+        "ALM"
+      ],
+      "avoid": [
+        "PHY (Null)"
+      ],
+      "eager": "Interview / Investigation of Terror",
+      "happy": "Special Report / Advise / Persuade ?",
+      "cards": "Chariot (+Free w/ Pact)"
+    },
+    {
+      "name": "Alice",
+      "lv": 80,
+      "arcana": "Lovers",
+      "dungeons": [
+        "Bomb Shelter (Area 8)",
+        "Extra Dungeon (3-C)"
+      ],
+      "weak": [],
+      "avoid": [
+        "PHY/FIR/WAT/WND/EAR/ICE/ELE/NUC/ALM (Strong)",
+        "LGT/DRK (Null)"
+      ],
+      "eager": "Fortune Telling / Wire Tapping is a Crime / Child Claim",
+      "happy": "Group Therapy / Persuade Special",
+      "cards": "Lovers (+Free w/ Pact)"
+    }
+  ]
+}

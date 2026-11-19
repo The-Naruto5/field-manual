@@ -1,0 +1,19 @@
+---
+import { getCollection } from "astro:content";
+import AppShell from "../layouts/AppShell.astro";
+
+const games = await getCollection("games");
+---
+<AppShell title="Game Library">
+  <div class="ch-head"><div class="ch-num-bg">LIB</div><h1 class="ch-title">Game Library</h1></div>
+  <div class="grid-2">
+    {games.map(g => (
+      <div class="panel" style={`border-top:3px solid ${g.data.accent};`}>
+        <div class="fm" style="font-size:11px;color:var(--muted);">{g.data.platform}</div>
+        <h2 class="fh" style="margin:4px 0 8px;">{g.data.title}</h2>
+        <p style="font-size:14px;color:var(--muted);margin:0 0 12px;">{g.data.summary}</p>
+        <a class="btn btn-accent" href={`/g/${g.data.id}`}>Open Field Manual</a>
+      </div>
+    ))}
+  </div>
+</AppShell>

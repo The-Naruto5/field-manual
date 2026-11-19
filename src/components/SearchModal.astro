@@ -1,0 +1,63 @@
+<div id="searchBackdrop" class="backdrop" role="dialog" aria-modal="true" aria-label="Search Field Manual">
+  <div class="modal">
+    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+      <strong class="fh">Search All Guides (Pagefind)</strong>
+      <button type="button" id="btnCloseSearch" class="btn">Esc</button>
+    </div>
+    <input id="pfInput" type="text" placeholder="Search steps, bosses, demons, personas, glossary..." style="width:100%;background:var(--bg);border:1px solid var(--line);color:var(--text);padding:8px 10px;border-radius:var(--r);margin-bottom:10px;" />
+    <div id="pfResults" style="max-height:55vh;overflow-y:auto;display:grid;gap:6px;font-size:13px;color:var(--muted);">
+      Type to search across all indexed games (run <code>npm run build &amp;&amp; npm run preview</code> to generate the Pagefind index).
+    </div>
+  </div>
+</div>
+
+<script is:inline>
+  (function () {
+    const bd = document.getElementById("searchBackdrop");
+    const inp = document.getElementById("pfInput");
+    const res = document.getElementById("pfResults");
+    let pf = null;
+
+    async function ensurePagefind() {
+      if (pf) return pf;
+      try {
+        pf = await import("/pagefind/pagefind.js");
+        await pf.init();
+      } catch {
+        pf = null;
+      }
+      return pf;
+    }
+
+    function openModal() {
+      bd.classList.add("open");
+      inp.focus();
+      ensurePagefind();
+    }
+    function closeModal() { bd.classList.remove("open"); }
+
+    document.getElementById("btnOpenSearch")?.addEventListener("click", openModal);
+    document.getElementById("btnCloseSearch")?.addEventListener("click", closeModal);
+    bd?.addEventListener("click", (e) => { if (e.target === bd) closeModal(); });
+
+    document.addEventListener("keydown", (e) => {
+      if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === "k") { e.preventDefault(); openModal(); }
+      else if (e.key === "Escape") closeModal();
+    });
+
+    inp?.addEventListener("input", async () => {
+      const q = inp.value.trim();
+      if (!q) { res.textContent = "Type to search across all games..."; return; }
+      const engine = await ensurePagefind();
+      if (!engine) {
+        res.innerHTML = "Pagefind index is built on production build. Run <code>npm run build &amp;&amp; npm run preview</code> to enable full-text search.";
+        return;
+      }
+      const search = await engine.search(q);
+      const top = await Promise.all(search.results.slice(0, 12).map(r => r.data()));
+      res.innerHTML = top.length ? top.map(item =>
+        `<a href="${item.url}" class="panel" style="padding:8px 10px;display:block;"><strong style="color:var(--text);">${item.meta?.title || item.url}</strong><div style="font-size:12px;color:var(--muted);margin-top:2px;">${item.excerpt || ""}</div></a>`
+      ).join("") : "No results found.";
+    });
+  })();
+</script>

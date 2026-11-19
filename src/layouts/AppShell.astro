@@ -1,0 +1,136 @@
+---
+import "../styles/tokens.css";
+import { getCollection } from "astro:content";
+import SearchModal from "../components/SearchModal.astro";
+
+interface Props {
+  title: string;
+  gameId?: string;
+  accent?: string;
+  activePath?: string;
+}
+
+const { title, gameId = "persona2-is", accent, activePath = "beginner" } = Astro.props;
+const allGames = await getCollection("games");
+const currentGame = allGames.find(g => g.data.id === gameId)?.data;
+const resolvedAccent = accent || currentGame?.accent || "#D9412B";
+
+const chapters = (await getCollection("chapters"))
+  .filter(c => c.data.game === gameId)
+  .sort((a, b) => a.data.order - b.data.order);
+
+const areaMaps = (await getCollection("areas")).find(a => a.data.game === gameId)?.data.items || [];
+const demonCount = (await getCollection("demons")).find(d => d.data.game === gameId)?.data.items.length || 0;
+---
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#121316" />
+  <link rel="manifest" href="/manifest.webmanifest" />
+  <link rel="icon" href="/icon.svg" type="image/svg+xml" />
+  <title>{title} — Field Manual</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=IBM+Plex+Mono:wght@400;600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <style define:vars={{ accent: resolvedAccent }}>{`:root { --accent: var(--accent); }`}</style>
+</head>
+<body>
+  <header class="topbar topbar-pattern">
+    <svg class="topbar-svg-bg" aria-hidden="true">
+      <defs>
+        {gameId === "persona2-ep" ? (
+          <pattern id="fmPat" width="12" height="12" patternUnits="userSpaceOnUse">
+            <circle cx="3" cy="3" r="1.2" fill="var(--accent)" />
+          </pattern>
+        ) : (
+          <pattern id="fmPat" width="10" height="10" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+            <line x1="0" y1="0" x2="0" y2="10" stroke="var(--accent)" stroke-width="1.2" />
+          </pattern>
+        )}
+      </defs>
+      <rect width="100%" height="100%" fill="url(#fmPat)" />
+    </svg>
+    <div class="topbar-inner">
+      <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap;">
+        <button type="button" id="btnMobileMenu" class="btn">Menu</button>
+        <a href="/" class="fh" style="font-size:20px;font-weight:800;color:var(--text);">Field Manual</a>
+        <div style="display:flex;gap:4px;flex-wrap:wrap;">
+          {allGames.map(g => (
+            <a class={g.data.id === gameId ? "btn btn-accent" : "btn"} href={`/g/${g.data.id}`}>{g.data.title}</a>
+          ))}
+        </div>
+      </div>
+      <div style="display:flex;gap:8px;flex-wrap:wrap;">
+        <button type="button" id="btnOpenSearch" class="btn">Search <span class="fm" style="font-size:10px;color:var(--muted);">Ctrl+K</span></button>
+        <a class="btn" href={`/g/${gameId}/ref/demons`}>Demons ({demonCount})</a>
+        <a class="btn" href={`/g/${gameId}/ref/bosses`}>Bosses</a>
+        <a class="btn" href="/settings">Settings</a>
+      </div>
+    </div>
+  </header>
+
+  <div class="shell">
+    <aside class="sidebar" id="sidebarNav">
+      <div class="nav-label">Library &amp; Hub</div>
+      <a class="nav-link" href="/">Game Library ({allGames.length})</a>
+      <a class="nav-link" href={`/g/${gameId}`}>Path Picker</a>
+
+      <div class="nav-label">Walkthrough</div>
+      {chapters.map(ch => (
+        <a class="nav-link" href={`/g/${gameId}/${activePath}/${ch.data.id}`}>Ch. {ch.data.num}</a>
+      ))}
+
+      <div class="nav-label">Reference</div>
+      <a class="nav-link" href={`/g/${gameId}/ref/bosses`}>Bosses</a>
+      <a class="nav-link" href={`/g/${gameId}/ref/demons`}>Battle &amp; Contact ({demonCount})</a>
+      <a class="nav-link" href={`/g/${gameId}/ref/personas`}>Personas</a>
+      <a class="nav-link" href={`/g/${gameId}/ref/fusions`}>Fusion Spells</a>
+      <a class="nav-link" href={`/g/${gameId}/ref/quests`}>Quests &amp; Weapons</a>
+      <a class="nav-link" href={`/g/${gameId}/ref/glossary`}>Glossary</a>
+
+      {areaMaps.length > 0 && (
+        <>
+          <div class="nav-label">Maps</div>
+          {areaMaps.map(m => (
+            <a class="nav-link" href={`/g/${gameId}/maps/${m.id}`}>{m.name}</a>
+          ))}
+        </>
+      )}
+    </aside>
+
+    <main data-pagefind-body>
+      <slot />
+    </main>
+  </div>
+
+  <div id="drawerBackdrop" class="drawer-backdrop"></div>
+  <nav class="mobile-bar" aria-label="Mobile Navigation">
+    <a href={`/g/${gameId}`}>Hub</a>
+    <a href={`/g/${gameId}/${activePath}/ch01`}>Guide</a>
+    <a href={`/g/${gameId}/ref/demons`}>Demons</a>
+    <a href={`/g/${gameId}/ref/bosses`}>Bosses</a>
+    <a href="/settings">Settings</a>
+  </nav>
+
+  <SearchModal />
+
+  <script is:inline>
+    (function () {
+      const sb = document.getElementById("sidebarNav");
+      const bd = document.getElementById("drawerBackdrop");
+      const toggle = (force) => {
+        const open = typeof force === "boolean" ? force : !sb.classList.contains("mobile-open");
+        sb.classList.toggle("mobile-open", open);
+        bd.classList.toggle("open", open);
+      };
+      document.getElementById("btnMobileMenu")?.addEventListener("click", () => toggle());
+      bd?.addEventListener("click", () => toggle(false));
+      if ("serviceWorker" in navigator) {
+        navigator.serviceWorker.register("/sw.js").catch(() => {});
+      }
+    })();
+  </script>
+</body>
+</html>
