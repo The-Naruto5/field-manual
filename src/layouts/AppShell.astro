@@ -12,6 +12,7 @@ interface Props {
 }
 
 const { title, gameId = "persona2-is", accent, activePath = "beginner", chapterId = "ch01" } = Astro.props;
+const pathname = Astro.url.pathname.replace(/\/$/, "") || "/";
 const allGames = await getCollection("games");
 const currentGame = allGames.find(g => g.data.id === gameId)?.data;
 const resolvedAccent = accent || currentGame?.accent || "#D9412B";
@@ -20,9 +21,12 @@ const chapters = (await getCollection("chapters"))
   .filter(c => c.data.game === gameId)
   .sort((a, b) => a.data.order - b.data.order);
 
+const chapterStepMap = Object.fromEntries(chapters.map(c => [c.data.id, c.data.steps.map(s => s.id)]));
 const allStepIds = chapters.flatMap(c => c.data.steps.map(s => s.id));
 const areaMaps = (await getCollection("areas")).find(a => a.data.game === gameId)?.data.items || [];
 const demonCount = (await getCollection("demons")).find(d => d.data.game === gameId)?.data.items.length || 0;
+
+const isActive = (href: string) => pathname === href.replace(/\/$/, "");
 ---
 <!doctype html>
 <html lang="en">
@@ -38,7 +42,7 @@ const demonCount = (await getCollection("demons")).find(d => d.data.game === gam
   <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=IBM+Plex+Mono:wght@400;600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <style define:vars={{ accent: resolvedAccent }}>{`:root { --accent: var(--accent); }`}</style>
 </head>
-<body data-game={gameId} data-steps={JSON.stringify(allStepIds)}>
+<body data-game={gameId} data-steps={JSON.stringify(allStepIds)} data-chmap={JSON.stringify(chapterStepMap)}>
   <header class="topbar topbar-pattern">
     <svg class="topbar-svg-bg" aria-hidden="true">
       <defs>
@@ -54,18 +58,19 @@ const demonCount = (await getCollection("demons")).find(d => d.data.game === gam
       </defs>
       <rect width="100%" height="100%" fill="url(#fmPat)" />
     </svg>
+
     <div class="topbar-inner">
       <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;">
         <button type="button" id="btnMobileMenu" class="btn">Menu</button>
-        <a href="/" class="fh" style="font-size:20px;font-weight:800;color:var(--text);">Field Manual</a>
-        <div style="display:flex;gap:4px;flex-wrap:wrap;">
+        <a href="/" class="fh" style="font-size:19px;font-weight:800;color:var(--text);">Field Manual</a>
+        <select id="gameSwitcher" class="game-select" aria-label="Switch Game">
           {allGames.map(g => (
-            <a class={g.data.id === gameId ? "btn btn-accent" : "btn"} href={`/g/${g.data.id}`}>{g.data.title}</a>
+            <option value={g.data.id} selected={g.data.id === gameId}>{g.data.title}</option>
           ))}
-        </div>
+        </select>
       </div>
 
-      <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;">
+      <div style="display:flex;align-items:center;gap:7px;flex-wrap:wrap;">
         <div class="seg" aria-label="Playthrough Path">
           {[
             { id: "full", label: "Full" },
@@ -87,39 +92,51 @@ const demonCount = (await getCollection("demons")).find(d => d.data.game === gam
           <span id="syncText">Local</span>
         </a>
 
+        <button type="button" id="btnDensity" class="btn" title="Toggle Compact / Comfortable Density">Compact</button>
         <button type="button" id="btnOpenSearch" class="btn">Search <span class="fm" style="font-size:10px;color:var(--muted);">Ctrl+K</span></button>
         <button type="button" id="btnOpenKeys" class="btn" title="Keyboard Shortcuts (?)">?</button>
       </div>
     </div>
+    <div class="read-hairline" id="readHairline"></div>
   </header>
 
   <div class="shell">
     <aside class="sidebar" id="sidebarNav">
       <div class="nav-label">Library &amp; Hub</div>
-      <a class="nav-link" href="/">Game Library ({allGames.length})</a>
-      <a class="nav-link" href={`/g/${gameId}`}>Path Picker</a>
+      <a class={`nav-link ${isActive("/") ? "active" : ""}`} href="/">Game Library ({allGames.length})</a>
+      <a class={`nav-link ${isActive(`/g/${gameId}`) ? "active" : ""}`} href={`/g/${gameId}`}>Path Picker</a>
 
       <div class="nav-label">Walkthrough</div>
-      {chapters.map(ch => (
-        <a class="nav-link" href={`/g/${gameId}/${activePath}/${ch.data.id}`}>Ch. {ch.data.num}</a>
-      ))}
+      {chapters.map(ch => {
+        const href = `/g/${gameId}/${activePath}/${ch.data.id}`;
+        return (
+          <a class={`nav-link ${isActive(href) ? "active" : ""}`} href={href}>
+            <span>Ch. {ch.data.num}</span>
+            <span class="fm ch-cnt" data-chid={ch.data.id} style="font-size:11px;color:var(--muted);">0/{ch.data.steps.length}</span>
+          </a>
+        );
+      })}
 
       <div class="nav-label">Reference</div>
-      <a class="nav-link" href={`/g/${gameId}/ref/bosses`}>Bosses</a>
-      <a class="nav-link" href={`/g/${gameId}/ref/demons`}>Battle &amp; Contact ({demonCount})</a>
-      <a class="nav-link" href={`/g/${gameId}/ref/personas`}>Personas</a>
-      <a class="nav-link" href={`/g/${gameId}/ref/fusions`}>Fusion Spells</a>
-      <a class="nav-link" href={`/g/${gameId}/ref/quests`}>Quests &amp; Weapons</a>
-      <a class="nav-link" href={`/g/${gameId}/ref/glossary`}>Glossary</a>
+      <a class={`nav-link ${isActive(`/g/${gameId}/ref/bosses`) ? "active" : ""}`} href={`/g/${gameId}/ref/bosses`}>Bosses</a>
+      <a class={`nav-link ${isActive(`/g/${gameId}/ref/demons`) ? "active" : ""}`} href={`/g/${gameId}/ref/demons`}>Battle &amp; Contact ({demonCount})</a>
+      <a class={`nav-link ${isActive(`/g/${gameId}/ref/personas`) ? "active" : ""}`} href={`/g/${gameId}/ref/personas`}>Personas &amp; Mutations</a>
+      <a class={`nav-link ${isActive(`/g/${gameId}/ref/fusions`) ? "active" : ""}`} href={`/g/${gameId}/ref/fusions`}>Fusion Simulator</a>
+      <a class={`nav-link ${isActive(`/g/${gameId}/ref/quests`) ? "active" : ""}`} href={`/g/${gameId}/ref/quests`}>Quests &amp; Weapons</a>
+      <a class={`nav-link ${isActive(`/g/${gameId}/ref/glossary`) ? "active" : ""}`} href={`/g/${gameId}/ref/glossary`}>Glossary</a>
 
       {areaMaps.length > 0 && (
         <>
           <div class="nav-label">Maps</div>
-          {areaMaps.map(m => (
-            <a class="nav-link" href={`/g/${gameId}/maps/${m.id}`}>{m.name}</a>
-          ))}
+          {areaMaps.map(m => {
+            const href = `/g/${gameId}/maps/${m.id}`;
+            return <a class={`nav-link ${isActive(href) ? "active" : ""}`} href={href}>{m.name}</a>;
+          })}
         </>
       )}
+
+      <div class="nav-label">System</div>
+      <a class={`nav-link ${isActive("/settings") ? "active" : ""}`} href="/settings">Settings &amp; Sync</a>
     </aside>
 
     <main data-pagefind-body>
@@ -129,12 +146,15 @@ const demonCount = (await getCollection("demons")).find(d => d.data.game === gam
 
   <div id="drawerBackdrop" class="drawer-backdrop"></div>
   <nav class="mobile-bar" aria-label="Mobile Navigation">
-    <a href={`/g/${gameId}`}>Hub</a>
-    <a href={`/g/${gameId}/${activePath}/${chapterId}`}>Guide</a>
-    <a href={`/g/${gameId}/ref/demons`}>Demons</a>
-    <a href={`/g/${gameId}/ref/bosses`}>Bosses</a>
-    <a href="/settings">Settings</a>
+    <a class={isActive(`/g/${gameId}`) ? "active" : ""} href={`/g/${gameId}`}>Hub</a>
+    <a class={pathname.includes(`/${activePath}/`) ? "active" : ""} href={`/g/${gameId}/${activePath}/${chapterId}`}>Guide</a>
+    <a class={isActive(`/g/${gameId}/ref/demons`) ? "active" : ""} href={`/g/${gameId}/ref/demons`}>Demons</a>
+    <a class={isActive(`/g/${gameId}/ref/bosses`) ? "active" : ""} href={`/g/${gameId}/ref/bosses`}>Bosses</a>
+    <a class={isActive("/settings") ? "active" : ""} href="/settings">Sync</a>
   </nav>
+
+  <a href={`/g/${gameId}/ref/demons`} id="pactFab" class="pact-fab" title="View Active Demon Pacts">Pacts (0/3)</a>
+  <div id="fmToast" class="fm-toast" role="status" aria-live="polite"></div>
 
   <SearchModal />
 
@@ -156,14 +176,58 @@ const demonCount = (await getCollection("demons")).find(d => d.data.game === gam
 
   <script is:inline>
     (function () {
-      // Theme hydration
+      // Theme & density hydration
       try {
         const raw = localStorage.getItem("field_manual_v2");
         if (raw) {
           const p = JSON.parse(raw);
           if (p.theme === "light" || p.theme === "dark") document.documentElement.setAttribute("data-theme", p.theme);
         }
+        const dens = localStorage.getItem("fm_density") || "comfortable";
+        if (dens === "compact") document.documentElement.setAttribute("data-density", "compact");
       } catch {}
+
+      // Toast helper
+      let toastTimer = null;
+      window.showFmToast = (msg) => {
+        const el = document.getElementById("fmToast");
+        if (!el) return;
+        el.textContent = msg;
+        el.classList.add("show");
+        clearTimeout(toastTimer);
+        toastTimer = setTimeout(() => el.classList.remove("show"), 2400);
+      };
+      window.addEventListener("fm:toast", (e) => window.showFmToast(String(e.detail || "")));
+
+      // Game switcher dropdown
+      document.getElementById("gameSwitcher")?.addEventListener("change", (e) => {
+        window.location.href = `/g/${e.target.value}`;
+      });
+
+      // Density toggle
+      const btnDens = document.getElementById("btnDensity");
+      const syncDensLabel = () => {
+        const isC = document.documentElement.getAttribute("data-density") === "compact";
+        if (btnDens) btnDens.textContent = isC ? "Roomy" : "Compact";
+      };
+      syncDensLabel();
+      btnDens?.addEventListener("click", () => {
+        const isC = document.documentElement.getAttribute("data-density") === "compact";
+        if (isC) { document.documentElement.removeAttribute("data-density"); localStorage.setItem("fm_density", "comfortable"); window.showFmToast("Comfortable spacing"); }
+        else { document.documentElement.setAttribute("data-density", "compact"); localStorage.setItem("fm_density", "compact"); window.showFmToast("Compact density"); }
+        syncDensLabel();
+      });
+
+      // Reading progress hairline
+      const hairline = document.getElementById("readHairline");
+      const updateHairline = () => {
+        if (!hairline) return;
+        const h = document.documentElement.scrollHeight - window.innerHeight;
+        const pct = h > 0 ? Math.min(100, Math.max(0, (window.scrollY / h) * 100)) : 0;
+        hairline.style.width = `${pct}%`;
+      };
+      window.addEventListener("scroll", updateHairline, { passive: true });
+      updateHairline();
 
       // Mobile drawer
       const sb = document.getElementById("sidebarNav");
@@ -190,13 +254,14 @@ const demonCount = (await getCollection("demons")).find(d => d.data.game === gam
         else if (e.key === "Escape") closeKeys();
       });
 
-      // Live Topbar Progress Bar
+      // Live Topbar Progress + Sidebar Chapter Counts + Floating Pact Pill
       const renderProgress = () => {
         const gameId = document.body.dataset.game || "persona2-is";
-        let stepIds = [];
+        let stepIds = [], chMap = {}, parsed = {};
         try { stepIds = JSON.parse(document.body.dataset.steps || "[]"); } catch {}
-        let checked = {};
-        try { checked = JSON.parse(localStorage.getItem("field_manual_v2") || "{}").checked || {}; } catch {}
+        try { chMap = JSON.parse(document.body.dataset.chmap || "{}"); } catch {}
+        try { parsed = JSON.parse(localStorage.getItem("field_manual_v2") || "{}"); } catch {}
+        const checked = parsed.checked || {};
         const done = stepIds.filter(id => Boolean(checked[`${gameId}:${id}`])).length;
         const pct = stepIds.length ? Math.round((done / stepIds.length) * 100) : 0;
         const filled = Math.round((pct / 100) * 10);
@@ -204,6 +269,20 @@ const demonCount = (await getCollection("demons")).find(d => d.data.game === gam
         const pctEl = document.getElementById("topProgPct");
         if (track) track.innerHTML = Array.from({ length: 10 }, (_, i) => `<span class="prog-seg ${i < filled ? "filled" : ""}"></span>`).join("");
         if (pctEl) pctEl.textContent = `${pct}%`;
+
+        document.querySelectorAll(".ch-cnt[data-chid]").forEach(el => {
+          const ids = chMap[el.dataset.chid] || [];
+          const cd = ids.filter(id => Boolean(checked[`${gameId}:${id}`])).length;
+          el.textContent = `${cd}/${ids.length}`;
+          el.style.color = ids.length && cd === ids.length ? "var(--done)" : "var(--muted)";
+        });
+
+        const pacts = Array.isArray(parsed.activePacts) ? parsed.activePacts : [];
+        const fab = document.getElementById("pactFab");
+        if (fab) {
+          fab.classList.toggle("has-pacts", pacts.length > 0);
+          fab.textContent = `Pacts (${pacts.length}/3): ${pacts.join(", ")}`;
+        }
       };
       renderProgress();
       window.addEventListener("fm:progress-changed", renderProgress);
@@ -253,6 +332,7 @@ const demonCount = (await getCollection("demons")).find(d => d.data.game === gam
                     });
                   }
                   window.dispatchEvent(new CustomEvent("fm:synced"));
+                  window.showFmToast("Pulled latest progress from cloud");
                 }
                 setSyncUI("synced", "Synced");
               })

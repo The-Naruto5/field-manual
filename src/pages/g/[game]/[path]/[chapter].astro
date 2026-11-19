@@ -20,12 +20,21 @@ const prevUrl = idx > 0 ? `/g/${ch.game}/${pathId}/${allGameChapters[idx - 1].da
 const nextUrl = idx < allGameChapters.length - 1 ? `/g/${ch.game}/${pathId}/${allGameChapters[idx + 1].data.id}` : undefined;
 const glossary = (await getCollection("glossary")).find(g => g.data.game === ch.game)?.data.terms || {};
 const filteredSteps = ch.steps.filter(s => stepMatchesPath(s.tags, pathId));
+const bossCount = filteredSteps.filter(s => s.tags.includes("boss")).length;
+const missCount = filteredSteps.filter(s => s.tags.includes("missable")).length;
+const minLv = Math.max(0, ...filteredSteps.map(s => s.grind?.min_level || 0));
 ---
 <AppShell title={`${ch.title} (${PATHS[pathId].name})`} gameId={ch.game} activePath={pathId} chapterId={ch.id}>
   <div class="ch-head">
     <div class="ch-num-bg">{ch.num}</div>
     <h1 class="ch-title">{ch.title}</h1>
-    <p style="font-size:14px;color:var(--muted);margin:4px 0 0;">{ch.summary}</p>
+    <p style="font-size:13.5px;color:var(--muted);margin:4px 0 0;max-width:72ch;">{ch.summary}</p>
+    <div class="ch-meta-strip">
+      <span>Steps: {filteredSteps.length}</span>
+      <span>Bosses: {bossCount}</span>
+      <span>Missables: {missCount}</span>
+      {minLv > 0 && <span>Target Lv. {minLv}+</span>}
+    </div>
   </div>
   <StepChecklist client:load gameId={ch.game} pathId={pathId} chapterId={ch.id} prevUrl={prevUrl} nextUrl={nextUrl} glossary={glossary} steps={filteredSteps} />
 </AppShell>

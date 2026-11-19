@@ -21,7 +21,7 @@ export default function DemonLookup({ demons }: { demons: Demon[] }) {
     else { if (nextPacts.length >= 3) nextPacts.shift(); nextPacts.push(name); }
     const next = { ...st, activePacts: nextPacts };
     setSt(next);
-    saveManualState(next);
+    saveManualState(next); window.dispatchEvent(new CustomEvent("fm:toast", { detail: nextPacts.includes(name) ? `Pact active: ${name} (${nextPacts.length}/3)` : `Released Pact: ${name}` }));
   };
 
   const filtered = demons.filter(d => {
