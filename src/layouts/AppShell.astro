@@ -8,9 +8,10 @@ interface Props {
   gameId?: string;
   accent?: string;
   activePath?: string;
+  chapterId?: string;
 }
 
-const { title, gameId = "persona2-is", accent, activePath = "beginner" } = Astro.props;
+const { title, gameId = "persona2-is", accent, activePath = "beginner", chapterId = "ch01" } = Astro.props;
 const allGames = await getCollection("games");
 const currentGame = allGames.find(g => g.data.id === gameId)?.data;
 const resolvedAccent = accent || currentGame?.accent || "#D9412B";
@@ -19,6 +20,7 @@ const chapters = (await getCollection("chapters"))
   .filter(c => c.data.game === gameId)
   .sort((a, b) => a.data.order - b.data.order);
 
+const allStepIds = chapters.flatMap(c => c.data.steps.map(s => s.id));
 const areaMaps = (await getCollection("areas")).find(a => a.data.game === gameId)?.data.items || [];
 const demonCount = (await getCollection("demons")).find(d => d.data.game === gameId)?.data.items.length || 0;
 ---
@@ -36,7 +38,7 @@ const demonCount = (await getCollection("demons")).find(d => d.data.game === gam
   <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=IBM+Plex+Mono:wght@400;600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <style define:vars={{ accent: resolvedAccent }}>{`:root { --accent: var(--accent); }`}</style>
 </head>
-<body>
+<body data-game={gameId} data-steps={JSON.stringify(allStepIds)}>
   <header class="topbar topbar-pattern">
     <svg class="topbar-svg-bg" aria-hidden="true">
       <defs>
@@ -53,7 +55,7 @@ const demonCount = (await getCollection("demons")).find(d => d.data.game === gam
       <rect width="100%" height="100%" fill="url(#fmPat)" />
     </svg>
     <div class="topbar-inner">
-      <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap;">
+      <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;">
         <button type="button" id="btnMobileMenu" class="btn">Menu</button>
         <a href="/" class="fh" style="font-size:20px;font-weight:800;color:var(--text);">Field Manual</a>
         <div style="display:flex;gap:4px;flex-wrap:wrap;">
@@ -62,11 +64,31 @@ const demonCount = (await getCollection("demons")).find(d => d.data.game === gam
           ))}
         </div>
       </div>
-      <div style="display:flex;gap:8px;flex-wrap:wrap;">
+
+      <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;">
+        <div class="seg" aria-label="Playthrough Path">
+          {[
+            { id: "full", label: "Full" },
+            { id: "story", label: "Story" },
+            { id: "beginner", label: "Beginner" },
+            { id: "grind", label: "Grind" }
+          ].map(p => (
+            <a class={activePath === p.id ? "active" : ""} href={`/g/${gameId}/${p.id}/${chapterId}`}>{p.label}</a>
+          ))}
+        </div>
+
+        <div class="prog-wrap" title="Overall Game Progress">
+          <div class="prog-track" id="topProgTrack"></div>
+          <span class="fm" id="topProgPct" style="font-size:11px;color:var(--muted);">0%</span>
+        </div>
+
+        <a href="/settings" class="sync-pill" id="syncPill" title="Cloud Sync Status">
+          <span class="sync-dot" id="syncDot"></span>
+          <span id="syncText">Local</span>
+        </a>
+
         <button type="button" id="btnOpenSearch" class="btn">Search <span class="fm" style="font-size:10px;color:var(--muted);">Ctrl+K</span></button>
-        <a class="btn" href={`/g/${gameId}/ref/demons`}>Demons ({demonCount})</a>
-        <a class="btn" href={`/g/${gameId}/ref/bosses`}>Bosses</a>
-        <a class="btn" href="/settings">Settings</a>
+        <button type="button" id="btnOpenKeys" class="btn" title="Keyboard Shortcuts (?)">?</button>
       </div>
     </div>
   </header>
@@ -108,7 +130,7 @@ const demonCount = (await getCollection("demons")).find(d => d.data.game === gam
   <div id="drawerBackdrop" class="drawer-backdrop"></div>
   <nav class="mobile-bar" aria-label="Mobile Navigation">
     <a href={`/g/${gameId}`}>Hub</a>
-    <a href={`/g/${gameId}/${activePath}/ch01`}>Guide</a>
+    <a href={`/g/${gameId}/${activePath}/${chapterId}`}>Guide</a>
     <a href={`/g/${gameId}/ref/demons`}>Demons</a>
     <a href={`/g/${gameId}/ref/bosses`}>Bosses</a>
     <a href="/settings">Settings</a>
@@ -116,17 +138,129 @@ const demonCount = (await getCollection("demons")).find(d => d.data.game === gam
 
   <SearchModal />
 
+  <div id="keysBackdrop" class="backdrop" role="dialog" aria-modal="true" aria-label="Keyboard Shortcuts">
+    <div class="modal" style="max-width:440px;">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px;">
+        <strong class="fh" style="font-size:18px;">Keyboard Shortcuts</strong>
+        <button type="button" id="btnCloseKeys" class="btn">Esc</button>
+      </div>
+      <div style="display:grid;gap:8px;font-size:13px;">
+        <div style="display:flex;justify-content:space-between;"><span>Open Search Palette</span><kbd class="fm">Ctrl + K</kbd></div>
+        <div style="display:flex;justify-content:space-between;"><span>Next / Previous Step</span><kbd class="fm">J / K</kbd></div>
+        <div style="display:flex;justify-content:space-between;"><span>Toggle Focused Step</span><kbd class="fm">Space</kbd></div>
+        <div style="display:flex;justify-content:space-between;"><span>Show Shortcuts</span><kbd class="fm">?</kbd></div>
+        <div style="display:flex;justify-content:space-between;"><span>Close Modals</span><kbd class="fm">Esc</kbd></div>
+      </div>
+    </div>
+  </div>
+
   <script is:inline>
     (function () {
+      // Theme hydration
+      try {
+        const raw = localStorage.getItem("field_manual_v2");
+        if (raw) {
+          const p = JSON.parse(raw);
+          if (p.theme === "light" || p.theme === "dark") document.documentElement.setAttribute("data-theme", p.theme);
+        }
+      } catch {}
+
+      // Mobile drawer
       const sb = document.getElementById("sidebarNav");
       const bd = document.getElementById("drawerBackdrop");
-      const toggle = (force) => {
+      const toggleDrawer = (force) => {
         const open = typeof force === "boolean" ? force : !sb.classList.contains("mobile-open");
         sb.classList.toggle("mobile-open", open);
         bd.classList.toggle("open", open);
       };
-      document.getElementById("btnMobileMenu")?.addEventListener("click", () => toggle());
-      bd?.addEventListener("click", () => toggle(false));
+      document.getElementById("btnMobileMenu")?.addEventListener("click", () => toggleDrawer());
+      bd?.addEventListener("click", () => toggleDrawer(false));
+
+      // Shortcuts modal
+      const kbd = document.getElementById("keysBackdrop");
+      const openKeys = () => kbd?.classList.add("open");
+      const closeKeys = () => kbd?.classList.remove("open");
+      document.getElementById("btnOpenKeys")?.addEventListener("click", openKeys);
+      document.getElementById("btnCloseKeys")?.addEventListener("click", closeKeys);
+      kbd?.addEventListener("click", (e) => { if (e.target === kbd) closeKeys(); });
+      document.addEventListener("keydown", (e) => {
+        const tag = (document.activeElement?.tagName || "").toLowerCase();
+        if (tag === "input" || tag === "textarea" || tag === "select") return;
+        if (e.key === "?") { e.preventDefault(); openKeys(); }
+        else if (e.key === "Escape") closeKeys();
+      });
+
+      // Live Topbar Progress Bar
+      const renderProgress = () => {
+        const gameId = document.body.dataset.game || "persona2-is";
+        let stepIds = [];
+        try { stepIds = JSON.parse(document.body.dataset.steps || "[]"); } catch {}
+        let checked = {};
+        try { checked = JSON.parse(localStorage.getItem("field_manual_v2") || "{}").checked || {}; } catch {}
+        const done = stepIds.filter(id => Boolean(checked[`${gameId}:${id}`])).length;
+        const pct = stepIds.length ? Math.round((done / stepIds.length) * 100) : 0;
+        const filled = Math.round((pct / 100) * 10);
+        const track = document.getElementById("topProgTrack");
+        const pctEl = document.getElementById("topProgPct");
+        if (track) track.innerHTML = Array.from({ length: 10 }, (_, i) => `<span class="prog-seg ${i < filled ? "filled" : ""}"></span>`).join("");
+        if (pctEl) pctEl.textContent = `${pct}%`;
+      };
+      renderProgress();
+      window.addEventListener("fm:progress-changed", renderProgress);
+      window.addEventListener("fm:synced", renderProgress);
+
+      // Sync Dot + Automatic Cloud Pull on Page Load
+      const setSyncUI = (status, label) => {
+        const dot = document.getElementById("syncDot");
+        const txt = document.getElementById("syncText");
+        if (dot) dot.className = `sync-dot ${status}`;
+        if (txt) txt.textContent = label;
+      };
+      window.addEventListener("fm:sync-status", (e) => {
+        const st = e.detail;
+        if (st === "syncing") setSyncUI("syncing", "Syncing...");
+        else if (st === "synced") setSyncUI("synced", "Synced");
+        else if (st === "offline") setSyncUI("", "Offline");
+        else setSyncUI("error", "Sync Err");
+      });
+
+      try {
+        const authRaw = localStorage.getItem("fm_sync_auth");
+        if (authRaw) {
+          const auth = JSON.parse(authRaw);
+          if (auth?.username && auth?.password) {
+            setSyncUI("syncing", "Syncing...");
+            fetch("/api/sync", {
+              method: "POST",
+              headers: { "Content-Type": "application/json" },
+              body: JSON.stringify({ action: "pull", username: auth.username, password: auth.password })
+            })
+              .then(r => r.json())
+              .then(data => {
+                if (!data?.ok) { setSyncUI("error", "Auth Err"); return; }
+                const localRaw = JSON.parse(localStorage.getItem("field_manual_v2") || "{}");
+                const localTs = Number(localRaw.localUpdatedAt || 0);
+                if (data.payload && Number(data.updatedAt || 0) > localTs) {
+                  const payload = data.payload;
+                  const incoming = payload.version === 2 && payload.state ? payload.state : payload;
+                  const merged = { ...localRaw, ...incoming, localUpdatedAt: Number(data.updatedAt) };
+                  localStorage.setItem("field_manual_v2", JSON.stringify(merged));
+                  if (payload.version === 2 && payload.extra) {
+                    Object.entries(payload.extra).forEach(([k, v]) => {
+                      if ((k.startsWith("fm_party_") || k.startsWith("fm_personas_")) && typeof v === "string") {
+                        localStorage.setItem(k, v);
+                      }
+                    });
+                  }
+                  window.dispatchEvent(new CustomEvent("fm:synced"));
+                }
+                setSyncUI("synced", "Synced");
+              })
+              .catch(() => setSyncUI("", "Offline"));
+          }
+        }
+      } catch {}
+
       if ("serviceWorker" in navigator) {
         navigator.serviceWorker.register("/sw.js").catch(() => {});
       }

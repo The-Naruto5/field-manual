@@ -44,15 +44,20 @@ function splitDetailLines(raw: string): { intro?: string; items: Array<{ num: st
 export default function StepChecklist({ gameId, pathId, chapterId, prevUrl, nextUrl, glossary, steps }: Props) {
   const [st, setSt] = useState<ManualState>(loadManualState);
   const [expanded, setExpanded] = useState<Record<string, boolean>>({});
+  const [openNotes, setOpenNotes] = useState<Record<string, boolean>>({});
   const [revealedSpoilers, setRevealedSpoilers] = useState<Record<string, boolean>>({});
   const [glossTerm, setGlossTerm] = useState<string | null>(null);
+  const [focusIdx, setFocusIdx] = useState<number>(-1);
 
   useEffect(() => {
     const loaded = loadManualState();
     loaded.activePath = pathId as ManualState["activePath"];
     if (pathId === "beginner") loaded.revealSpoilers = false;
-    saveManualState(loaded);
     setSt(loaded);
+
+    const onSynced = () => setSt(loadManualState());
+    window.addEventListener("fm:synced", onSynced);
+    return () => window.removeEventListener("fm:synced", onSynced);
   }, [pathId]);
 
   const keyFor = (id: string) => `${gameId}:${id}`;
@@ -69,6 +74,41 @@ export default function StepChecklist({ gameId, pathId, chapterId, prevUrl, next
     setSt(next);
     saveManualState(next);
   };
+
+  const setNote = (id: string, val: string) => {
+    const k = keyFor(id);
+    const next: ManualState = { ...st, notes: { ...st.notes, [k]: val } };
+    setSt(next);
+    saveManualState(next);
+  };
+
+  useEffect(() => {
+    const onKey = (e: KeyboardEvent) => {
+      const tag = ((document.activeElement as HTMLElement | null)?.tagName || "").toLowerCase();
+      if (tag === "input" || tag === "textarea" || tag === "select") return;
+      if (e.ctrlKey || e.metaKey || e.altKey) return;
+      if (e.key === "j" || e.key === "J") {
+        e.preventDefault();
+        setFocusIdx(prev => {
+          const next = Math.min(steps.length - 1, prev + 1);
+          document.getElementById(`step-${steps[next]?.id}`)?.scrollIntoView({ behavior: "smooth", block: "center" });
+          return next;
+        });
+      } else if (e.key === "k" || e.key === "K") {
+        e.preventDefault();
+        setFocusIdx(prev => {
+          const next = Math.max(0, prev <= 0 ? 0 : prev - 1);
+          document.getElementById(`step-${steps[next]?.id}`)?.scrollIntoView({ behavior: "smooth", block: "center" });
+          return next;
+        });
+      } else if (e.key === " " && focusIdx >= 0 && focusIdx < steps.length) {
+        e.preventDefault();
+        toggle(steps[focusIdx].id);
+      }
+    };
+    document.addEventListener("keydown", onKey);
+    return () => document.removeEventListener("keydown", onKey);
+  }, [focusIdx, steps, st]);
 
   const markAbove = (idx: number) => {
     const checked = { ...st.checked };
@@ -100,9 +140,10 @@ export default function StepChecklist({ gameId, pathId, chapterId, prevUrl, next
   };
 
   const jumpNextUnchecked = () => {
-    const first = steps.find(s => !isDone(s.id));
-    if (first) {
-      document.getElementById(`step-${first.id}`)?.scrollIntoView({ behavior: "smooth", block: "center" });
+    const idx = steps.findIndex(s => !isDone(s.id));
+    if (idx >= 0) {
+      setFocusIdx(idx);
+      document.getElementById(`step-${steps[idx].id}`)?.scrollIntoView({ behavior: "smooth", block: "center" });
     }
   };
 
@@ -167,10 +208,18 @@ export default function StepChecklist({ gameId, pathId, chapterId, prevUrl, next
       <div style="display:grid;gap:10px;">
         {steps.map((s, idx) => {
           const done = isDone(s.id);
+          const noteVal = st.notes[keyFor(s.id)] || "";
+          const hasNote = noteVal.trim().length > 0;
           const body = pathId === "beginner" && s.variants?.beginner ? s.variants.beginner : s.text;
           const parsed = s.detail ? splitDetailLines(s.detail) : null;
           return (
-            <div key={s.id} id={`step-${s.id}`} class="panel" style={done ? "opacity:0.65;border-left:3px solid var(--done);" : ""}>
+            <div
+              key={s.id}
+              id={`step-${s.id}`}
+              class={`panel ${focusIdx === idx ? "step-focused" : ""}`}
+              style={done ? "opacity:0.65;border-left:3px solid var(--done);" : ""}
+              onClick={() => setFocusIdx(idx)}
+            >
               <div style="display:flex;gap:10px;align-items:flex-start;">
                 <input type="checkbox" checked={done} onChange={() => toggle(s.id)} style="margin-top:4px;cursor:pointer;" />
                 <div style="flex:1;">
@@ -202,6 +251,13 @@ export default function StepChecklist({ gameId, pathId, chapterId, prevUrl, next
                         {expanded[s.id] ? "Hide Details" : "Step-by-Step Details"}
                       </button>
                     )}
+                    <button
+                      type="button"
+                      class={hasNote ? "btn btn-accent" : "btn"}
+                      onClick={() => setOpenNotes(p => ({ ...p, [s.id]: !p[s.id] }))}
+                    >
+                      {hasNote ? "Note ✓" : "+ Note"}
+                    </button>
                     <button type="button" class="btn" onClick={() => markAbove(idx)}>Mark all above</button>
                   </div>
                   {expanded[s.id] && parsed && (
@@ -213,6 +269,17 @@ export default function StepChecklist({ gameId, pathId, chapterId, prevUrl, next
                           <span>{renderInline(it.text, `${s.id}-d${i}`)}</span>
                         </div>
                       ))}
+                    </div>
+                  )}
+                  {(openNotes[s.id] || hasNote) && (
+                    <div style="margin-top:8px;">
+                      <textarea
+                        rows={2}
+                        value={noteVal}
+                        onInput={e => setNote(s.id, (e.target as HTMLTextAreaElement).value)}
+                        placeholder="Personal note for this step (auto-syncs to cloud)..."
+                        style="width:100%;background:var(--bg);border:1px solid var(--line);color:var(--text);border-radius:var(--r);padding:6px 8px;font-family:var(--font-body);font-size:12px;"
+                      />
                     </div>
                   )}
                 </div>

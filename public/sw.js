@@ -1,4 +1,4 @@
-const CACHE = "field-manual-offline-v1";
+const CACHE = "field-manual-offline-v2";
 const PRECACHE = ["/", "/settings", "/manifest.webmanifest", "/icon.svg"];
 
 self.addEventListener("install", (e) => {

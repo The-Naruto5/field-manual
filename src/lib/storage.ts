@@ -6,6 +6,7 @@ export interface ManualState {
   revealSpoilers: boolean;
   activePath: "full" | "story" | "beginner" | "grind";
   epRoute: "all" | "nate" | "ellen";
+  localUpdatedAt: number;
   checked: Record<string, boolean>;
   undoStack: Array<{ key: string; prev: boolean }>;
   activePacts: string[];
@@ -25,6 +26,7 @@ export const defaultState: ManualState = {
   revealSpoilers: false,
   activePath: "beginner",
   epRoute: "all",
+  localUpdatedAt: 0,
   checked: {},
   undoStack: [],
   activePacts: [],
@@ -66,10 +68,11 @@ export function collectFullBackup(): FullBackupPayload {
       }
     }
   } catch {}
-  return { version: 2, updatedAt: Date.now(), state: loadManualState(), extra };
+  const st = loadManualState();
+  return { version: 2, updatedAt: st.localUpdatedAt || Date.now(), state: st, extra };
 }
 
-export function restoreFullBackup(input: unknown): ManualState {
+export function restoreFullBackup(input: unknown, cloudUpdatedAt?: number): ManualState {
   const obj = (input && typeof input === "object") ? (input as Record<string, unknown>) : {};
   const incomingState = (obj.version === 2 && obj.state && typeof obj.state === "object")
     ? (obj.state as Partial<ManualState>)
@@ -79,6 +82,7 @@ export function restoreFullBackup(input: unknown): ManualState {
     ...defaultState,
     ...loadManualState(),
     ...incomingState,
+    localUpdatedAt: cloudUpdatedAt || (typeof obj.updatedAt === "number" ? obj.updatedAt : Date.now()),
     checked: incomingState.checked || {},
     activePacts: Array.isArray(incomingState.activePacts) ? incomingState.activePacts.slice(0, 3) : [],
     notes: incomingState.notes || {}
@@ -92,6 +96,7 @@ export function restoreFullBackup(input: unknown): ManualState {
         }
       });
     }
+    window.dispatchEvent(new CustomEvent("fm:synced"));
   } catch {}
   return merged;
 }
@@ -112,18 +117,24 @@ export function scheduleCloudPush(): void {
   const auth = getSavedSyncAuth();
   if (!auth) return;
   if (pushTimer) clearTimeout(pushTimer);
+  window.dispatchEvent(new CustomEvent("fm:sync-status", { detail: "syncing" }));
   pushTimer = setTimeout(() => {
     fetch("/api/sync", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ action: "push", username: auth.username, password: auth.password, payload: collectFullBackup() })
-    }).catch(() => {});
-  }, 1500);
+    })
+      .then(r => r.json())
+      .then(d => window.dispatchEvent(new CustomEvent("fm:sync-status", { detail: d?.ok ? "synced" : "error" })))
+      .catch(() => window.dispatchEvent(new CustomEvent("fm:sync-status", { detail: "offline" })));
+  }, 1200);
 }
 
 export function saveManualState(s: ManualState): void {
   try {
-    localStorage.setItem(STORAGE_KEY, JSON.stringify(s));
+    const stamped = { ...s, localUpdatedAt: Date.now() };
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(stamped));
+    window.dispatchEvent(new CustomEvent("fm:progress-changed"));
     scheduleCloudPush();
   } catch {}
 }

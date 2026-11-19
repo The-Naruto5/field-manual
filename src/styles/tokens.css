@@ -107,3 +107,18 @@ a:hover { text-decoration: underline; }
 .map-marker circle { transition: transform 150ms, stroke 150ms; transform-box: fill-box; transform-origin: center; }
 .map-marker:hover circle { transform: scale(1.22); stroke: var(--text); stroke-width: 2; }
 .map-marker:hover text { fill: var(--accent); font-weight: 700; }
+
+/* Bundled QoL: Topbar Path Switcher, Segmented Progress, Sync Dot & Keyboard Focus */
+.seg { display: inline-flex; background: var(--bg); border: 1px solid var(--line); border-radius: var(--r); padding: 2px; gap: 2px; }
+.seg a { padding: 3px 8px; border-radius: 3px; font-size: 11px; font-weight: 700; color: var(--muted); text-decoration: none; }
+.seg a.active { background: var(--accent); color: #fff; }
+.prog-wrap { display: inline-flex; align-items: center; gap: 6px; }
+.prog-track { display: inline-flex; gap: 2px; }
+.prog-seg { width: 7px; height: 8px; border-radius: 1px; background: var(--line); }
+.prog-seg.filled { background: var(--done); }
+.sync-pill { display: inline-flex; align-items: center; gap: 5px; font-family: var(--font-mono); font-size: 11px; color: var(--muted); padding: 4px 8px; border: 1px solid var(--line); border-radius: var(--r); background: var(--bg); }
+.sync-dot { width: 7px; height: 7px; border-radius: 50%; background: var(--muted); }
+.sync-dot.synced { background: var(--done); }
+.sync-dot.syncing { background: var(--warn); }
+.sync-dot.error { background: var(--accent); }
+.step-focused { outline: 2px solid var(--tip); outline-offset: 2px; }
