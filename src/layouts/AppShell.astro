@@ -124,6 +124,7 @@ const isActive = (href: string) => pathname === href.replace(/\/$/, "");
       <a class={`nav-link ${isActive(`/g/${gameId}/ref/fusions`) ? "active" : ""}`} href={`/g/${gameId}/ref/fusions`}>Fusion Simulator</a>
       <a class={`nav-link ${isActive(`/g/${gameId}/ref/quests`) ? "active" : ""}`} href={`/g/${gameId}/ref/quests`}>Quests &amp; Weapons</a>
       <a class={`nav-link ${isActive(`/g/${gameId}/ref/glossary`) ? "active" : ""}`} href={`/g/${gameId}/ref/glossary`}>Glossary</a>
+      <a class={`nav-link ${isActive(`/g/${gameId}/ref/cheats`) ? "active" : ""}`} href={`/g/${gameId}/ref/cheats`}>CWCheats &amp; QoL</a>
 
       {areaMaps.length > 0 && (
         <>

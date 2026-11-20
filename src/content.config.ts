@@ -62,7 +62,9 @@ export const collections = {
       game: z.string(),
       items: z.array(z.object({
         name: z.string(), lv: z.number(), arcana: z.string(), dungeons: z.array(z.string()), weak: z.array(z.string()), avoid: z.array(z.string()), eager: z.string(), happy: z.string(), cards: z.string()
-      }))
+      })),
+      qa: z.array(z.object({ q: z.string(), type: z.string(), answer: z.string(), effect: z.string() })).optional(),
+      personalities: z.array(z.object({ trait: z.string(), style: z.string(), avoid: z.string() })).optional()
     })
   }),
   personas: defineCollection({

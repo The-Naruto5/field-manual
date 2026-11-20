@@ -23,6 +23,37 @@ interface Props {
   steps: Step[];
 }
 
+
+const AREA_TO_DUNGEON: Record<string, string> = {
+  "seven-sisters": "Seven Sisters High",
+  "sevens": "Seven Sisters High",
+  "zodiac": "Club Zodiac",
+  "kasugayama": "Kasugayama High",
+  "air-raid": "Air Raid Shelter",
+  "mu": "Mu Continent",
+  "giga-macho": "Giga Macho",
+  "aoba": "Aoba Park",
+  "smile": "Smile Hirasaka",
+  "gold": "GOLD",
+  "aerospace": "Aerospace Museum",
+  "sky-museum": "Sky Museum",
+  "mt-iwato": "Mt. Iwato",
+  "katatsumuri": "Mt. Katatsumuri",
+  "mifune": "Mt. Mifune",
+  "caracol": "Caracol",
+  "temples": "Zodiac Temples",
+  "silver-river": "Silver River",
+  "xibalba": "Xibalba",
+  "undersea": "Undersea Ruins",
+  "torifune": "Ameno Torifune",
+  "sumaru-castle": "Sumaru Castle",
+  "monado": "Monado Mandala"
+};
+const AVAILABLE_MAPS: Record<string, string[]> = {
+  "persona2-is": ["seven-sisters", "mt-iwato", "xibalba"],
+  "persona2-ep": ["route-split", "sumaru-castle"]
+};
+
 function emitToast(msg: string) {
   window.dispatchEvent(new CustomEvent("fm:toast", { detail: msg }));
 }
@@ -320,6 +351,12 @@ export default function StepChecklist({ gameId, pathId, chapterId, prevUrl, next
                         {hasNote ? "Note ✓" : "+ Note"}
                       </button>
                       <button type="button" class="btn" onClick={(e) => { e.stopPropagation(); markAbove(origIdx); }}>Mark all above</button>
+                      {AREA_TO_DUNGEON[s.area] && (
+                        <a class="btn" href={`/g/${gameId}/ref/demons?dungeon=${encodeURIComponent(AREA_TO_DUNGEON[s.area])}`} onClick={(e) => e.stopPropagation()}>Dungeon Contacts</a>
+                      )}
+                      {(AVAILABLE_MAPS[gameId] || []).includes(s.area) && (
+                        <a class="btn" href={`/g/${gameId}/maps/${s.area}`} onClick={(e) => e.stopPropagation()}>View Map</a>
+                      )}
                     </div>
 
                     {parsed && (

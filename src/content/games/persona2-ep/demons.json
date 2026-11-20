@@ -2185,5 +2185,121 @@
       "happy": "Group Therapy / Persuade Special",
       "cards": "Lovers (+Free w/ Pact)"
     }
+  ],
+  "qa": [
+    {
+      "q": "What do you think about sexual discrimination?",
+      "type": "Set",
+      "answer": "\"Do you mean 'discrimination'?\"",
+      "effect": "Always accepted; usually raises Happy."
+    },
+    {
+      "q": "Which of the paths do you take?",
+      "type": "Set",
+      "answer": "#3 \"Take the dark path.\"",
+      "effect": "Raises Eager 100%; ends follow-ups."
+    },
+    {
+      "q": "Are you afraid of anything?",
+      "type": "Set",
+      "answer": "\"My mother.\"",
+      "effect": "Always makes demon Scared and stops questions."
+    },
+    {
+      "q": "What is that thing? (TV)",
+      "type": "Set",
+      "answer": "\"A TV.\"",
+      "effect": "Always makes demon Scared and stops questions."
+    },
+    {
+      "q": "Will you still remember me?",
+      "type": "Set",
+      "answer": "\"I can't tell.\"",
+      "effect": "Commends honesty; Yes gets negative response."
+    },
+    {
+      "q": "Do you like Arcades?",
+      "type": "Reliable",
+      "answer": "#1 \"I like them.\" -> \"Yes\"",
+      "effect": "Consistently accepted."
+    },
+    {
+      "q": "Are video games enjoyable?",
+      "type": "Mixed",
+      "answer": "#2 \"They're amazing.\"",
+      "effect": "Usually accepted; avoid #3."
+    },
+    {
+      "q": "Why is the legal age 20?",
+      "type": "Mixed",
+      "answer": "#2 \"You're physically an adult by then.\"",
+      "effect": "Usually accepted and stops questions."
+    },
+    {
+      "q": "Why is sea water salty?",
+      "type": "Mixed",
+      "answer": "#1 \"It's from ancient volcanoes.\" / #2 \"Salt comes from the ocean floor.\"",
+      "effect": "Usually raises Happy."
+    },
+    {
+      "q": "Why is the sky blue?",
+      "type": "Mixed",
+      "answer": "\"Light refraction in the atmosphere.\" / \"An angel spilled blue paint.\"",
+      "effect": "Accepted ~50%+."
+    },
+    {
+      "q": "If I pass out, what will you do?",
+      "type": "RNG",
+      "answer": "#1 \"Help you.\"",
+      "effect": "Best odds (~60–80%)."
+    },
+    {
+      "q": "What are computers used for?",
+      "type": "RNG",
+      "answer": "\"For porn.\" or \"For everything.\"",
+      "effect": "Highest acceptance (~60%+)."
+    }
+  ],
+  "personalities": [
+    {
+      "trait": "Wise",
+      "style": "Sensible, logical, or thoughtful answers",
+      "avoid": "Silly or reckless answers"
+    },
+    {
+      "trait": "Foolish",
+      "style": "Playful, silly, or lighthearted answers (can trigger Fool Card after 4 Eager/Angry Qs)",
+      "avoid": "Overly serious lectures"
+    },
+    {
+      "trait": "Joyful",
+      "style": "Humorous, cheerful, or upbeat responses",
+      "avoid": "Gloomy or harsh responses"
+    },
+    {
+      "trait": "Gloomy",
+      "style": "Ambiguous, melancholic, or subdued answers",
+      "avoid": "Overly peppy answers"
+    },
+    {
+      "trait": "Timid",
+      "style": "Kind, gentle, or reassuring answers",
+      "avoid": "Aggressive threats"
+    },
+    {
+      "trait": "Forceful",
+      "style": "Bold, confident, or direct answers",
+      "avoid": "Meek or hesitant answers"
+    },
+    {
+      "trait": "Snappish",
+      "style": "Short, straightforward, no-nonsense answers",
+      "avoid": "Long-winded or evasive answers"
+    },
+    {
+      "trait": "Haughty",
+      "style": "Agree with the demon's viewpoint or flatter it",
+      "avoid": "Contradicting or mocking it"
+    }
   ]
 }

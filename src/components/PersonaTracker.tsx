@@ -35,12 +35,13 @@ const MUTATION_WATCHLIST: Record<string, WatchItem[]> = {
 
 interface TrackerState {
   freeCards: number;
+  stats: Record<string, number>;
   summoned: Record<string, boolean>;
   maxed: Record<string, boolean>;
   watch: Record<string, boolean>;
 }
 
-const DEFAULT_TRACKER: TrackerState = { freeCards: 0, summoned: {}, maxed: {}, watch: {} };
+const DEFAULT_TRACKER: TrackerState = { freeCards: 0, stats: { Dx: 10, Vt: 8, Ag: 8, Ma: 7, Lu: 6, St: 7 }, summoned: {}, maxed: {}, watch: {} };
 
 export default function PersonaTracker({ gameId, personas }: { gameId: string; personas: Persona[] }) {
   const storageKey = `fm_personas_${gameId}`;
@@ -53,7 +54,7 @@ export default function PersonaTracker({ gameId, personas }: { gameId: string; p
       const raw = localStorage.getItem(storageKey);
       if (raw) {
         const p = JSON.parse(raw);
-        setSt({ ...DEFAULT_TRACKER, ...p, summoned: p.summoned || {}, maxed: p.maxed || {}, watch: p.watch || {} });
+        setSt({ ...DEFAULT_TRACKER, ...p, stats: p.stats || DEFAULT_TRACKER.stats, summoned: p.summoned || {}, maxed: p.maxed || {}, watch: p.watch || {} });
       }
     } catch {}
   }, [gameId]);
@@ -64,6 +65,7 @@ export default function PersonaTracker({ gameId, personas }: { gameId: string; p
   };
 
   const adjCards = (delta: number) => save({ ...st, freeCards: Math.max(0, st.freeCards + delta) });
+  const adjStat = (k: string, d: number) => save({ ...st, stats: { ...st.stats, [k]: Math.max(1, Math.min(99, (st.stats[k] || 1) + d)) } });
   const toggleMap = (field: "summoned" | "maxed" | "watch", key: string) =>
     save({ ...st, [field]: { ...st[field], [key]: !st[field][key] } });
 
@@ -80,6 +82,24 @@ export default function PersonaTracker({ gameId, personas }: { gameId: string; p
 
   return (
     <div>
+
+      <div class="panel" style="margin-bottom:14px;">
+        <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:6px;margin-bottom:8px;">
+          <strong class="fh" style="font-size:15px;">{gameId === "persona2-is" ? "Tatsuya Stat Targets (Stop Dx at 60–80)" : "Maya Stat Targets (Focus Ma / Ag / Vi)"}</strong>
+          <span class="fm" style="font-size:11px;color:var(--muted);">Auto-saved &amp; synced</span>
+        </div>
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(125px,1fr));gap:8px;">
+          {Object.entries(st.stats).map(([k, v]) => (
+            <div key={k} style="display:flex;justify-content:space-between;align-items:center;padding:5px 8px;background:var(--bg);border:1px solid var(--line);border-radius:var(--r);">
+              <span class="fm" style="font-size:12px;"><strong>{k}</strong>: {v}</span>
+              <div style="display:flex;gap:3px;">
+                <button type="button" class="btn" style="padding:2px 6px;" onClick={() => adjStat(k, -1)}>-</button>
+                <button type="button" class="btn" style="padding:2px 6px;" onClick={() => adjStat(k, 1)}>+</button>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
       <div class="grid-2" style="margin-bottom:16px;">
         <div class="panel">
           <div style="display:flex;justify-content:space-between;align-items:center;gap:8px;flex-wrap:wrap;">

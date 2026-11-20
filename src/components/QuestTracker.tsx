@@ -4,8 +4,9 @@ import { loadManualState, saveManualState, type ManualState } from "../lib/stora
 interface SideQuest { id: string; type: string; name: string; window: string; reward: string; missable: boolean; }
 interface Weapon { id: string; char: string; weapon: string; req: string; }
 interface MaterialCard { id: string; card: string; persona: string; arcana: string; lv: number; how: string; route?: "all" | "nate" | "ellen"; }
+interface Rumormonger { name: string; loc: string; district: string; }
 
-export default function QuestTracker({ gameId, sideQuests, ultimateWeapons, materialCards = [] }: { gameId: string; sideQuests: SideQuest[]; ultimateWeapons: Weapon[]; materialCards?: MaterialCard[]; }) {
+export default function QuestTracker({ gameId, sideQuests, ultimateWeapons, rumormongers = [], materialCards = [] }: { gameId: string; sideQuests: SideQuest[]; ultimateWeapons: Weapon[]; rumormongers?: Rumormonger[]; materialCards?: MaterialCard[]; }) {
   const [st, setSt] = useState<ManualState>(loadManualState);
   const keyFor = (id: string) => `${gameId}:${id}`;
   const isDone = (id: string) => Boolean(st.checked[keyFor(id)]);
@@ -52,6 +53,24 @@ export default function QuestTracker({ gameId, sideQuests, ultimateWeapons, mate
         </tbody>
       </table>
 
+
+      {rumormongers.length > 0 && (
+        <>
+          <h2 class="fh" style="margin-top:20px;">Rumormongers ({rumormongers.length})</h2>
+          <table class="dt" style="margin-bottom:20px;">
+            <thead><tr><th>Name</th><th>Location</th><th>District</th></tr></thead>
+            <tbody>
+              {rumormongers.map(r => (
+                <tr key={r.name}>
+                  <td><strong>{r.name}</strong></td>
+                  <td>{r.loc}</td>
+                  <td class="fm" style="font-size:12px;">{r.district}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </>
+      )}
       {materialCards.length > 0 && (
         <>
           <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px;margin-bottom:8px;">

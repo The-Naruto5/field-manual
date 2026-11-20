@@ -9,7 +9,14 @@ export async function getStaticPaths() {
 }
 const { data } = Astro.props;
 ---
-<AppShell title="Side Quests, Weapons & Material Cards" gameId={data.game}>
-  <div class="ch-head"><div class="ch-num-bg">QST</div><h1 class="ch-title">Side Quests, Weapons &amp; Material Cards</h1></div>
-  <QuestTracker client:load gameId={data.game} sideQuests={data.sideQuests} ultimateWeapons={data.ultimateWeapons} materialCards={data.materialCards || []} />
+<AppShell title="Side Quests, Weapons, Rumormongers & Material Cards" gameId={data.game}>
+  <div class="ch-head"><div class="ch-num-bg">QST</div><h1 class="ch-title">Side Quests, Weapons &amp; Rumormongers</h1></div>
+  <QuestTracker
+    client:load
+    gameId={data.game}
+    sideQuests={data.sideQuests}
+    ultimateWeapons={data.ultimateWeapons}
+    rumormongers={data.rumormongers || []}
+    materialCards={data.materialCards || []}
+  />
 </AppShell>
